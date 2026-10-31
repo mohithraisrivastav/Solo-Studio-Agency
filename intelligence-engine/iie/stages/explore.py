@@ -384,16 +384,17 @@ def run_comparison(ctx: Ctx) -> dict:
     ctx.log("inventor", "diversity", rep["explanation"])
 
     reps = [by_id[r] for r in rep["representatives"]]
-    if not cp.get("originality_done"):
+    unchecked = [c for c in reps if not db.one("originality_checks", "concept_id=?", (c["id"],))]
+    if not cp.get("originality_done") and unchecked:
         queries = []
-        for c in reps:
+        for c in unchecked:
             queries += [RQuery(t, p) for t, p in originality.queries_for(c)]
         summary = run_research(ctx, queries, actor="originality_investigator", label="originality", max_queries=24)
         cands = [s for s in db.query("sources", "project_id=?", (ctx.project_id,))
                  if (s.get("meta") or {}).get("label") in ("originality", "research")]
         searched = summary.get("used", [])
         results = {}
-        for c in reps:
+        for c in unchecked:
             r = originality.assess(ctx, c, cands, searched, summary["unavailable_connectors"])
             results[c["id"]] = r["verdict"]
             dups = history_duplicates(db, c)
@@ -401,7 +402,8 @@ def run_comparison(ctx: Ctx) -> dict:
                 ctx.log("originality_investigator", "history_duplicate",
                         f"'{c['title']}' resembles earlier concepts: {dups[:3]}")
         ctx.save_checkpoint({**ctx.checkpoint(), "originality_done": True, "originality": results})
-    results = ctx.checkpoint().get("originality", {})
+    results = {c["id"]: (db.one("originality_checks", "concept_id=? ORDER BY created_at DESC", (c["id"],)) or {})
+               .get("verdict", "not_checked") for c in reps}
     order = {"no_close_match_in_searched_sources": 0, "related_work_found": 1, "not_checked": 2, "close_match_found": 3}
     reps.sort(key=lambda c: order.get(results.get(c["id"], "not_checked"), 2))
     short = reps[:3]

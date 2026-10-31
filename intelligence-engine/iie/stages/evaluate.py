@@ -55,7 +55,11 @@ def run_technical(ctx: Ctx) -> dict:
         if res:
             plan["maturity"] = "rough_concept" if plan.get("maturity") in ("prototype_tested", "validated_design") \
                 and not ctx.db.query("learnings", "project_id=? AND kind='outcome'", (ctx.project_id,)) else plan["maturity"]
-            hazards = hazards + [h for h in detect_hazards(json.dumps(plan)) if h["category"] not in
+            plan_text = " ".join(plan.get("functional_principles") or []) + " " + \
+                " ".join(plan.get("technical_requirements") or []) + " " + \
+                " ".join(plan.get("safety_requirements") or []) + " " + \
+                " ".join(f"{x.get('process')} {x.get('equipment')}" for x in plan.get("processes") or [])
+            hazards = hazards + [h for h in detect_hazards(plan_text) if h["category"] not in
                                  {x["category"] for x in hazards}]
         with ctx.db.tx():
             ctx.db.insert("technical_plans", {"project_id": ctx.project_id, "concept_id": c["id"], "plan": plan,

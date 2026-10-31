@@ -71,7 +71,8 @@ def rule_critiques(ctx: Ctx, concept: dict, state: dict) -> list[str]:
                         + "; ".join(f["message"] for f in cons["findings"] if f["severity"] == "fatal")[:400],
                         "major", "calculation", "R_ECON_CONSERVATIVE_FAILS", "critical_reviewer"))
     for h in state.get("hazards", []):
-        ids.append(_add(ctx, cid, "safety", f"{h['category']} hazard ({', '.join(h['triggers'])}): {h['mandatory_review']}",
+        ids.append(_add(ctx, cid, "safety", f"Keyword scan flagged a possible {h['category']} hazard (words: "
+                        f"{', '.join(h['triggers'])}). If it applies: {h['mandatory_review']}",
                         "major", "calculation", f"R_HAZARD_{h['category'].upper()}", "critical_reviewer"))
     plan = state.get("plan") or {}
     for p in plan.get("processes", []) or []:

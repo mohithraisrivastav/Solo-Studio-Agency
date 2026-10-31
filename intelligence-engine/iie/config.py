@@ -71,7 +71,7 @@ class Settings:
     founder_hourly_value_inr: float = 600.0
     equipment_threshold_inr: float = 50000.0
     premium_price_threshold_inr: float = 200000.0
-    max_revisits: int = 2
+    max_revisits: int = 1
 
     @property
     def db_path(self) -> Path:

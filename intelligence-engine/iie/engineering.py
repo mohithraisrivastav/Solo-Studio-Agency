@@ -14,7 +14,8 @@ from .schema import NUM, STR, STRS, arr, obj
 HAZARDS: dict[str, dict] = {
     "electrical": {
         "words": r"\b(mains|230 ?v|240 ?v|110 ?v|wiring|wired|led driver|transformer|plug|socket|battery|lithium|"
-                 r"li-ion|charger|heating element|heater|electric|electrical|circuit|pcb|solar panel|inverter)\b",
+                 r"li-ion|charger|heating element|heater|electric|electrical|electronics?|circuit|pcb|solar panel|inverter|"
+                 r"bluetooth|usb|amplifier|motor|led|leds|speaker module|power supply)\b",
         "review": "Electrical safety review by a qualified engineer; insulation, earthing, and thermal tests. "
                   "Check which Indian (BIS) or export standards apply before any sale.",
     },
