@@ -7,9 +7,9 @@ Project id: prj_828f5c941b | Created: 2026-10-31T10:58:17Z
 
 ## How this was produced
 
-- Distinct structured requests: 34 via operator:operator (112 request events; repeats after reruns were served from stored answers)
-- 7 stage runs were superseded and rerun: commercial: prompts now rank evidence by relevance to the concept; comparison: judge now also sees sources retrieved for each concept's own queries; comparison: originality judged only above a word-overlap threshold; now the judge reviews the 3 closest sources for every concept; discovery: discovery ran without industry-mapped evidence (bundle import bug, fixed); invention: discovery ran without industry-mapped evidence (bundle import bug, fixed); technical: hazard keyword patterns fixed (plurals, false positives); technical: prompts now rank evidence by relevance to the concept
-- 47 structured requests were answered through the operator queue by: Claude Code session operator (cloud session, 2026-10-31)
+- Distinct structured requests: 34 via operator:operator (143 request events; repeats after reruns were served from stored answers)
+- 17 stage runs were superseded and rerun: commercial: cash model fix: prepaid first batch was charged twice; commercial: prompts now rank evidence by relevance to the concept; comparison: judge now also sees sources retrieved for each concept's own queries; comparison: originality judged only above a word-overlap threshold; now the judge reviews the 3 closest sources for every concept; critique: cash model fix: prepaid first batch was charged twice; decision: cash model fix: prepaid first batch was charged twice; decision: experiment templates refined for services; decision: rebuild decision after superseding stale experiments; discovery: discovery ran without industry-mapped evidence (bundle import bug, fixed); invention: discovery ran without industry-mapped evidence (bundle import bug, fixed); learning: cash model fix: prepaid first batch was charged twice; learning: experiment templates refined for services; learning: rebuild decision after superseding stale experiments; technical: hazard keyword patterns fixed (plurals, false positives); technical: prompts now rank evidence by relevance to the concept; validation: cash model fix: prepaid first batch was charged twice; validation: experiment templates refined for services
+- 53 structured requests were answered through the operator queue by: Claude Code session operator (cloud session, 2026-10-31)
 - Research connectors that could not be used: stackexchange (network_blocked: network policy or proxy refused the connection to api.stackexc…); hackernews (network_blocked: network policy or proxy refused the connection to hn.algolia.c…); searxng (needs searxng credential in environment); brave (needs brave credential in environment); wikipedia (network_blocked: network policy or proxy refused the connection to en.wikipedia…); openalex (network_blocked: network policy or proxy refused the connection to api.openalex…); operator_bundle (operator could not find evidence); patentsview (needs patentsview credential in environment); semantic_scholar (network_blocked: network policy or proxy refused the connection to api.semantic…)
 
 ## Framing
@@ -489,7 +489,7 @@ Industries investigated (seed 6755): parenting and childcare, homebrewing and fe
 | Monthly accounting profit | -₹18,404 | -₹5,984 | ₹7,450 |
 | Founder earnings per hour | -₹462 | -₹132 | ₹155 |
 | Break-even units (12 mo) | inf | 35092.23 | 3206.29 |
-| Peak cash need | ₹9,17,764 | ₹9,52,611 | ₹9,45,333 |
+| Peak cash need | ₹8,09,034 | ₹7,68,857 | ₹7,59,804 |
 | Days to first revenue | 273.5 | 233 | 224.0 |
 | Capacity units/month | 336.16 | 426.8 | 478.62 |
 | Verdict | not_viable | not_viable | not_viable |
@@ -512,7 +512,7 @@ Findings (base):
 - major PROFIT_ONLY_IF_FOUNDER_UNPAID: Positive only while founder time is free; at INR 600/h each unit loses INR 138.
 - major NO_MONTHLY_PROFIT: At 60.0 units/month the business does not cover fixed costs (INR 7,000/month); needs 413.54 units/month.
 - major NO_BREAK_EVEN_IN_HORIZON: Needs 35092 units to recover setup and fixed costs in 12 months; the plan sells about 240.
-- fatal CAPITAL_EXCEEDS_BUDGET: Peak cash need INR 952,611 exceeds the budget INR 300,000.
+- fatal CAPITAL_EXCEEDS_BUDGET: Peak cash need INR 768,857 exceeds the budget INR 300,000.
 - major BELOW_FOUNDER_VALUE: Founder earns about INR -132/hour, below the INR 600/hour opportunity cost.
 - minor SLOW_TO_REVENUE: First revenue in about 233 days.
 - major PRICE_UNSUPPORTED: The selling price is an assumption with no observed comparable, quote, or buyer commitment behind it.
@@ -528,7 +528,7 @@ Sensitivity (+/-20% on monthly cash profit):
 Business model fit:
 - Dependent on continuous founder labour? yes (founder uses 32% of available monthly hours; 0.26 h per unit)
 - Capable of repeat production? yes within capacity (capacity 426.8 units/month vs expected 60)
-- Capital intensive? yes (peak cash need INR 952,611 = 3.2x budget)
+- Capital intensive? yes (peak cash need INR 768,857 = 2.6x budget)
 - Easy to imitate? possibly (related work exists) (originality verdict: related_work_found)
 - Difficult to distribute? moderate (acquisition is 24% of net price; channel commission 20%)
 - High inventory risk? yes (first batch costs INR 162,093)
@@ -567,10 +567,10 @@ Twelve commercial questions:
 | Monthly accounting profit | -₹22,329 | -₹8,685 | ₹5,112 |
 | Founder earnings per hour | -₹345 | -₹107 | ₹100 |
 | Break-even units (12 mo) | inf | inf | 1213.94 |
-| Peak cash need | ₹7,36,255 | ₹7,27,164 | ₹7,07,327 |
+| Peak cash need | ₹5,03,684 | ₹4,89,689 | ₹4,92,118 |
 | Days to first revenue | 143.5 | 112 | 105.7 |
 | Capacity units/month | 229.2 | 291.0 | 326.33 |
-| Verdict | not_viable | not_viable | not_viable |
+| Verdict | not_viable | not_viable | weak |
 
 Price source: assumption . Tax: 0.18 (GST rate is an assumption; confirm the HSN code and current rate.).
 - wall brackets x6 (GI, job shop): ₹270 [assumption] 
@@ -587,21 +587,21 @@ Price source: assumption . Tax: 0.18 (GST rate is an assumption; confirm the HSN
 
 Findings (base):
 - fatal LOSES_MONEY_PER_UNIT: Each sale loses INR 10 before fixed costs, even with the founder working free.
-- fatal CAPITAL_EXCEEDS_BUDGET: Peak cash need INR 727,164 exceeds the budget INR 300,000.
+- major CAPITAL_EXCEEDS_BUDGET: Peak cash need INR 489,689 exceeds the budget INR 300,000.
 - major PRICE_UNSUPPORTED: The selling price is an assumption with no observed comparable, quote, or buyer commitment behind it.
 - info MOSTLY_ASSUMPTIONS: 100% of inputs are assumptions; treat results as a sketch.
 
 Sensitivity (+/-20% on monthly cash profit):
-- price: -₹22,085 to ₹8,047
+- price: -₹22,085 to ₹8,047 (flips verdict)
 - materials: ₹3,084 to -₹17,122 (flips verdict)
-- channel_commission_rate: -₹1,724 to -₹12,313
-- cac: -₹4,352 to -₹9,685
-- shipping: -₹5,519 to -₹8,519
+- channel_commission_rate: -₹1,724 to -₹12,313 (flips verdict)
+- cac: -₹4,352 to -₹9,685 (flips verdict)
+- shipping: -₹5,519 to -₹8,519 (flips verdict)
 
 Business model fit:
 - Dependent on continuous founder labour? yes (founder uses 47% of available monthly hours; 0.31 h per unit)
 - Capable of repeat production? yes within capacity (capacity 291.0 units/month vs expected 50)
-- Capital intensive? yes (peak cash need INR 727,164 = 2.4x budget)
+- Capital intensive? yes (peak cash need INR 489,689 = 1.6x budget)
 - Easy to imitate? possibly (related work exists) (originality verdict: related_work_found)
 - Difficult to distribute? moderate (acquisition is 13% of net price; channel commission 25%)
 - High inventory risk? yes (first batch costs INR 210,062)
@@ -699,7 +699,7 @@ Twelve commercial questions:
 - [major] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_PROFIT_ONLY_IF_FOUNDER_UNPAID) [base case] Positive only while founder time is free; at INR 600/h each unit loses INR 138.
 - [major] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_NO_MONTHLY_PROFIT) [base case] At 60.0 units/month the business does not cover fixed costs (INR 7,000/month); needs 413.54 units/month.
 - [major] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_NO_BREAK_EVEN_IN_HORIZON) [base case] Needs 35092 units to recover setup and fixed costs in 12 months; the plan sells about 240.
-- [fatal] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_CAPITAL_EXCEEDS_BUDGET) [base case] Peak cash need INR 952,611 exceeds the budget INR 300,000.
+- [fatal] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_CAPITAL_EXCEEDS_BUDGET) [base case] Peak cash need INR 768,857 exceeds the budget INR 300,000.
 - [major] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_BELOW_FOUNDER_VALUE) [base case] Founder earns about INR -132/hour, below the INR 600/hour opportunity cost.
 - [major] (Traceable edge-seal treatment applied after cutting, economics, basis: calculation, R_ECON_PRICE_UNSUPPORTED) [base case] The selling price is an assumption with no observed comparable, quote, or buyer commitment behind it.
 - [major] (Traceable edge-seal treatment applied after cutting, safety, basis: calculation, R_HAZARD_CHEMICAL) Keyword scan flagged a possible chemical hazard (words: preservative). If it applies: Safety data sheets for every chemical, ventilation and PPE, waste disposal, and residue testing of the finished product.
@@ -707,14 +707,14 @@ Twelve commercial questions:
 - [major] (Traceable edge-seal treatment applied after cutting, safety, basis: calculation, R_HAZARD_STRUCTURAL) Keyword scan flagged a possible structural hazard (words: bench). If it applies: Load calculation and physical load testing with a safety factor; structural engineer sign-off for anything carrying people or mounted overhead.
 - [minor] (Traceable edge-seal treatment applied after cutting, evidence, basis: calculation, R_STALE_EVIDENCE) 4 price, market, or competitor source(s) may be outdated. Sources: src_0b0058d333, src_2d462c1174, src_a126dcc749, src_ba963d11e8
 - [major] (Traceable edge-seal treatment applied after cutting, evidence, basis: calculation, R_OPEN_CONTRADICTIONS) 1 open contradiction(s) between sources are unresolved.
-- [fatal] (Traceable edge-seal treatment applied after cutting, review, basis: calculation) Does the business work financially? Base case loses ₹138 per kit once founder time is paid, and peak cash of about ₹9.5 lakh is over three times the ₹3 lakh budget.
+- [fatal] (Traceable edge-seal treatment applied after cutting, review, basis: calculation) Does the business work financially? Base case loses ₹138 per kit once founder time is paid, and peak cash of about ₹7.7 lakh is about 2.6 times the ₹3 lakh budget.
 - [major] (Traceable edge-seal treatment applied after cutting, review, basis: reasoning) What could make this fail? A termiticide sealant is likely a regulated pesticide product; registration time and cost could exceed the ₹2.5 lakh assumed and push first revenue well past 233 days. This is reasoning, not a verified rule.
 - [major] (Traceable edge-seal treatment applied after cutting, review, basis: source) Does something similar already exist? Board makers already tell carpenters to treat cut edges with borate, and Greenply moves treatment into the board core to avoid the cut-edge problem. Leaders are solving it at the board level. Sources: src_b64378503f, src_223c73d1cb
 - [major] (Traceable edge-seal treatment applied after cutting, review, basis: reasoning) Which assumption is least reliable? That carpenters will brush every edge and homeowners will check with a torch. Both add effort for people who did not ask for it.
 - [major] (Traceable edge-seal treatment applied after cutting, review, basis: calculation) Would anyone pay for this? No buyer has confirmed the problem or a price; demand is level 1.
 - [major] (Termite-break standoff mounting for built-in furniture, demand, basis: calculation, R_DEMAND_UNPROVEN) Demand is not shown beyond indirect evidence (level 1). No buyer has confirmed the problem, interest, or a price.
 - [fatal] (Termite-break standoff mounting for built-in furniture, economics, basis: calculation, R_ECON_LOSES_MONEY_PER_UNIT) [base case] Each sale loses INR 10 before fixed costs, even with the founder working free.
-- [fatal] (Termite-break standoff mounting for built-in furniture, economics, basis: calculation, R_ECON_CAPITAL_EXCEEDS_BUDGET) [base case] Peak cash need INR 727,164 exceeds the budget INR 300,000.
+- [major] (Termite-break standoff mounting for built-in furniture, economics, basis: calculation, R_ECON_CAPITAL_EXCEEDS_BUDGET) [base case] Peak cash need INR 489,689 exceeds the budget INR 300,000.
 - [major] (Termite-break standoff mounting for built-in furniture, economics, basis: calculation, R_ECON_PRICE_UNSUPPORTED) [base case] The selling price is an assumption with no observed comparable, quote, or buyer commitment behind it.
 - [major] (Termite-break standoff mounting for built-in furniture, safety, basis: calculation, R_HAZARD_STRUCTURAL) Keyword scan flagged a possible structural hazard (words: brackets, standoff, standoffs, wardrobe, wardrobes). If it applies: Load calculation and physical load testing with a safety factor; structural engineer sign-off for anything carrying people or mounted overhead.
 - [minor] (Termite-break standoff mounting for built-in furniture, evidence, basis: calculation, R_STALE_EVIDENCE) 4 price, market, or competitor source(s) may be outdated. Sources: src_0b0058d333, src_2d462c1174, src_a126dcc749, src_ba963d11e8
@@ -749,7 +749,6 @@ Twelve commercial questions:
 | Termite-break standoff mounti… | Material and production costs are as modelled | Request 3 written quotes each for: wall brackets x6 (GI, job shop), floor feet with shield lip x4, anchors and screws, … | ₹0 | 10.0 | quotes within 15% of model | quotes over 30% higher | L1 | send_message |
 | Termite-break standoff mounti… | No close prior art or registered design exists | Search Google Patents, the Indian Patent Office, and the Indian design registry for the core principle; record each clo… | ₹0 | 3.0 | no close match | a close match exists | L1 | - |
 | Termite-break standoff mounti… | Termites reach built-ins mainly through walls and floors | Interview 5 pest-control technicians about entry routes they find in built-in furniture. | ₹0 | 7.0 | most cite wall or floor contact | most cite infested boards or other routes | L1 | - |
-| Delivery-day material inspect… | Material and production costs are as modelled | Request 3 written quotes each for: travel per visit, report and consumables. | ₹0 | 10.0 | quotes within 15% of model | quotes over 30% higher | L1 | send_message |
 | Delivery-day material inspect… | No close prior art or registered design exists | Search Google Patents, the Indian Patent Office, and the Indian design registry for the core principle; record each clo… | ₹0 | 3.0 | no close match | a close match exists | L1 | - |
 | Delivery-day material inspect… | Designers will refer clients | Ask 5 interior designers directly. | ₹0 | 7.0 | 2 or more agree | none agree | L2 | send_message |
 | Termite-break standoff mounti… | Carpenters will pay a price that covers cost | Show the prototype to 10 carpenters; ask what they would pay and whether clients would accept it. | ₹1,000 | 10.0 | 4 or more at ₹3,500+ | median answer under ₹1,500 | L2 | - |
@@ -764,19 +763,19 @@ Twelve commercial questions:
 | Traceable edge-seal treatment… | Registration for a termiticide edge sealant is affordable o… | One paid consultation with an agrochemical regulatory consultant, plus a check of registered wood-preservative products. | ₹5,000 | 7.0 | clear path under ₹3 lakh and 12 months | path over 12 months or unknown cost | L1 | send_message, spend_money |
 | Termite-break standoff mounti… | Buyers will commit at the proposed price | Deposit-backed pre-order offer to qualified prospects from the interviews; refundable if not delivered. Messages and an… | ₹5,000 | 21.0 | 2+ deposits | 0 deposits after 15 qualified conversations | L4 | send_message, publish |
 | Delivery-day material inspect… | Buyers will commit at the proposed price | Deposit-backed pre-order offer to qualified prospects from the interviews; refundable if not delivered. Messages and an… | ₹5,000 | 21.0 | 2+ deposits | 0 deposits after 15 qualified conversations | L4 | send_message, publish |
+| Termite-break standoff mounti… | Buyers can be reached at the modelled acquisition cost | Run one channel test (partner outreach, marketplace listing, or a capped paid test). | ₹8,000 | 21.0 | cost per qualified lead within model | cost per lead over 2x model | L2 | spend_money, publish |
 | Traceable edge-seal treatment… | The core principle works at prototype scale | Build the smallest prototype that tests the core principle only; follow the safety review list before any user handles … | ₹15,000 | 21.0 | meets the stated requirement | fails requirement after two iterations | L1 | purchase |
 | Termite-break standoff mounti… | The core principle works at prototype scale | Build the smallest prototype that tests the core principle only; follow the safety review list before any user handles … | ₹15,000 | 21.0 | meets the stated requirement | fails requirement after two iterations | L1 | purchase |
-| Delivery-day material inspect… | The core principle works at prototype scale | Build the smallest prototype that tests the core principle only; follow the safety review list before any user handles … | ₹15,000 | 21.0 | meets the stated requirement | fails requirement after two iterations | L1 | purchase |
 
 ## Decision
 
 ### Traceable edge-seal treatment applied after cutting: **reject**
-Base-case economics fail: Peak cash need INR 952,611 exceeds the budget INR 300,000.
+Base-case economics fail: Peak cash need INR 768,857 exceeds the budget INR 300,000.
 
 - Gate originality: pass (related work found)
 - Gate demand: fail (demand evidence level 1)
 - Gate economics: fail (base: not_viable, conservative: not_viable)
-- Gate capital: fail (peak cash need ₹952,611 vs budget ₹300,000)
+- Gate capital: fail (peak cash need ₹768,857 vs budget ₹300,000)
 - Gate safety: review_required (chemical, uv_optical, structural)
 - Next: Commercially stronger direction: a 25% contribution margin needs one of: price of at least ₹2,550; materials of at most ₹53 per unit. If none is credible with evidence, change the business model (for example licensing the design, commissioned work, or a lower-labour production method).
 - Next: Request 3 written quotes each for: borate preservative concentrate, fluorescent tracer, tin and label, brush. (₹0, target L1)
@@ -790,12 +789,12 @@ Base-case economics fail: Peak cash need INR 952,611 exceeds the budget INR 300,
 - Next: At demand level 1, spend at most ₹15,000 (5% of the ₹300,000 budget) until the next level is reached.
 
 ### Termite-break standoff mounting for built-in furniture: **reject**
-Base-case economics fail: Each sale loses INR 10 before fixed costs, even with the founder working free.; Peak cash need INR 727,164 exceeds the budget INR 300,000.
+Base-case economics fail: Each sale loses INR 10 before fixed costs, even with the founder working free.
 
 - Gate originality: pass (related work found)
 - Gate demand: fail (demand evidence level 1)
 - Gate economics: fail (base: not_viable, conservative: not_viable)
-- Gate capital: fail (peak cash need ₹727,164 vs budget ₹300,000)
+- Gate capital: fail (peak cash need ₹489,689 vs budget ₹300,000)
 - Gate safety: review_required (structural)
 - Unresolved: Termite-break standoff mounting for built-in furniture: What could make this fail?: Termite shields mainly make infestations visible; they do not prevent them. Selling this as protection would overstate it.
 - Next: Commercially stronger direction: a 25% contribution margin needs one of: price of at least ₹4,354; materials of at most ₹276 per unit. If none is credible with evidence, change the business model (for example licensing the design, commissioned work, or a lower-labour production method).
@@ -806,6 +805,7 @@ Base-case economics fail: Each sale loses INR 10 before fixed costs, even with t
 - Next: 10 problem interviews (no pitch) with people matching the target buyer; record each one with name/company, date, and current spend. (₹2,000, target L2)
 - Next: Sandbag load test on brick and AAC walls for 24 hours with two prototype sets. (₹4,000, target L1)
 - Next: Deposit-backed pre-order offer to qualified prospects from the interviews; refundable if not delivered. Messages and any page need user approval before sending or publishing. (₹5,000, target L4)
+- Next: Run one channel test (partner outreach, marketplace listing, or a capped paid test). (₹8,000, target L2)
 - Next: Build the smallest prototype that tests the core principle only; follow the safety review list before any user handles it. (₹15,000, target L1)
 - Next: At demand level 1, spend at most ₹15,000 (5% of the ₹300,000 budget) until the next level is reached.
 
@@ -818,19 +818,17 @@ Revise before validation: base-case economics are weak.
 - Gate capital: pass (peak cash need ₹39,000 vs budget ₹300,000)
 - Gate safety: pass (no hazards detected)
 - Next: Commercially stronger direction: a 25% contribution margin needs one of: price of at least ₹6,220; founder time of at most 0.56 h per unit. If none is credible with evidence, change the business model (for example licensing the design, commissioned work, or a lower-labour production method).
-- Next: Request 3 written quotes each for: travel per visit, report and consumables. (₹0, target L1)
 - Next: Search Google Patents, the Indian Patent Office, and the Indian design registry for the core principle; record each close result. (₹0, target L1)
 - Next: Ask 5 interior designers directly. (₹0, target L2)
 - Next: 10 problem interviews (no pitch) with people matching the target buyer; record each one with name/company, date, and current spend. (₹2,000, target L2)
 - Next: Offer the paid video check through two interior designers; messages and any booking page need user approval. (₹2,000, target L4)
 - Next: Record every mismatch found in the first 10 checks and whether the homeowner acted. (₹3,000, target L1)
 - Next: Deposit-backed pre-order offer to qualified prospects from the interviews; refundable if not delivered. Messages and any page need user approval before sending or publishing. (₹5,000, target L4)
-- Next: Build the smallest prototype that tests the core principle only; follow the safety review list before any user handles it. (₹15,000, target L1)
 - Next: At demand level 1, spend at most ₹15,000 (5% of the ₹300,000 budget) until the next level is reached.
 
 ### Decision Director summary
 
-No concept is worth building yet. The edge-seal kit is rejected because its peak cash need of about ₹9.5 lakh exceeds the ₹3 lakh budget. The standoff mounting set is rejected because each sale loses money even with the founder working free. The delivery-day inspection visit is the leading option only in the sense that it is not rejected; its base-case economics are weak and it must be revised before any validation spend.
+No concept is worth building yet. The edge-seal kit is rejected because its peak cash need of about ₹7.7 lakh exceeds the ₹3 lakh budget. The standoff mounting set is rejected because each sale loses money even with the founder working free. The delivery-day inspection visit is the leading option only in the sense that it is not rejected; its base-case economics are weak and it must be revised before any validation spend.
 
 Reasons against:
 - Base-case economics for the inspection visit are weak, so the service as modelled does not justify the founder's time.
@@ -857,8 +855,18 @@ What would change the decision:
 - technical (cycle 0): superseded. 3 technical plan(s)
 - commercial (cycle 0): superseded. prompts now rank evidence by relevance to the concept
 - technical (cycle 0): done. 6 technical plan(s)
+- commercial (cycle 0): superseded. economics for 3 concept(s)
+- critique (cycle 0): superseded. 39 objections recorded
+- validation (cycle 0): superseded. 24 experiments planned
+- decision (cycle 0): superseded. No concept is worth building yet. Leading option: Delivery-day material inspection visit (revise).
+- learning (cycle 0): superseded. 8 learning records
 - commercial (cycle 0): done. economics for 3 concept(s)
-- critique (cycle 0): done. 39 objections recorded
-- validation (cycle 0): done. 24 experiments planned
+- critique (cycle 0): done. 78 objections recorded
+- validation (cycle 0): superseded. 49 experiments planned
+- decision (cycle 0): superseded. No concept is worth building yet. Leading option: Delivery-day material inspection visit (revise).
+- learning (cycle 0): superseded. 11 learning records
+- validation (cycle 0): done. 72 experiments planned
+- decision (cycle 0): superseded. No concept is worth building yet. Leading option: Delivery-day material inspection visit (revise).
+- learning (cycle 0): superseded. 14 learning records
 - decision (cycle 0): done. No concept is worth building yet. Leading option: Delivery-day material inspection visit (revise).
-- learning (cycle 0): done. 8 learning records
+- learning (cycle 0): done. 17 learning records

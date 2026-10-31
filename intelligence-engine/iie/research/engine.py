@@ -257,7 +257,14 @@ def deterministic_claims(ctx: Ctx, src: dict) -> int:
         for sent in sentences(content)[:200]:
             for amount, cur, raw in find_money(sent)[:2]:
                 low = sent.lower()
-                ctype = "market_size" if ("market" in low and amount >= 1e7) else "price_observation"
+                big = amount >= 1e7 or any(w in low for w in ("million", "billion", "crore"))
+                if big and any(w in low for w in ("market", "industry", "sector", "revenue")):
+                    ctype = "market_size"
+                elif not big and re.search(r"\b(price[sd]?|priced|costs?|lists?|listed|listing|sells?|sold|"
+                                           r"mrp|per (month|unit|piece|sq ?ft|kg)|a month|rent)\b", low):
+                    ctype = "price_observation"
+                else:
+                    ctype = "other"
                 add_claim(ctx.db, ctx.project_id, clip(sent, 300), ctype, "extractor",
                           [QuoteRef(src["id"], sent)], value=amount, currency=cur)
                 n += 1
@@ -274,7 +281,14 @@ def extract_claims(ctx: Ctx, source_ids: list[str], focus: str, actor: str = "re
     todo = [s for s in source_ids if s not in done]
     srcs = [ctx.db.get("sources", s) for s in todo]
     srcs = [s for s in srcs if s]
-    det = sum(deterministic_claims(ctx, s) for s in srcs if s["id"] not in done)
+    det_done = set(cp.get(label + "_det", []))
+    det = 0
+    for s in srcs:
+        if s["id"] not in det_done:
+            det += deterministic_claims(ctx, s)
+            det_done.add(s["id"])
+    # record before any model call so a pause-and-resume does not repeat these claims
+    ctx.save_checkpoint({**ctx.checkpoint(), label + "_det": sorted(det_done)})
     created, problems = 0, []
     batches = [srcs[i:i + 6] for i in range(0, len(srcs), 6)]
     tasks = []

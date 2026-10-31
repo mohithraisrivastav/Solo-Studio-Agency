@@ -167,6 +167,20 @@ class Engine:
     def _set_project(self, pid: str, status: str) -> None:
         self.db.execute("UPDATE projects SET status=?, updated_at=? WHERE id=?", (status, now_iso(), pid))
 
+    STATUS_TABLES = {"discovery": ["opportunities"], "invention": ["concepts"],
+                     "critique": ["critiques", "disagreements"], "validation": ["experiments"]}
+
+    def supersede_outputs(self, job: dict) -> int:
+        """Mark records a superseded job created (by its time window) so views and gates ignore them."""
+        n = 0
+        end = job.get("finished_at") or now_iso()
+        for table in self.STATUS_TABLES.get(job["stage"], []):
+            cur = self.db.conn.execute(
+                f"UPDATE {table} SET status='superseded' WHERE project_id=? AND created_at>=? AND created_at<=? "
+                f"AND status!='superseded'", (job["project_id"], job["created_at"], end))
+            n += cur.rowcount
+        return n
+
     def rerun_from(self, pid: str, stage: str, reason: str, actor: str = "user") -> list[str]:
         """Supersede a stage and every later stage in the current cycle so they run again.
 
@@ -183,6 +197,7 @@ class Engine:
             for k in later:
                 for j in self.db.query("jobs", "project_id=? AND stage=? AND cycle=? AND status!='superseded'",
                                        (pid, k, cycle)):
+                    self.supersede_outputs(j)
                     self.db.execute("UPDATE jobs SET status='superseded', error=? WHERE id=?", (reason, j["id"]))
                     self.db.execute("UPDATE operator_tasks SET status='withdrawn' WHERE job_id=? AND status='pending'",
                                     (j["id"],))

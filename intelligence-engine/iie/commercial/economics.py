@@ -129,13 +129,21 @@ def compute(inp: EconInputs) -> dict[str, Any]:
     first_sale_month = int(math.ceil(ttfr_days / 30.0))
     ccc_days = inp.inventory_days + inp.receivable_days - inp.payable_days
     daily_var_cost = units * variable_cash / 30.0
-    working_capital = max(ccc_days, 0) * daily_var_cost
+    daily_cogs = units * cogs_cash / 30.0
+    # If a first batch is modelled explicitly, inventory is already funded by it; count only the
+    # receivable/payable gap, otherwise fund inventory days too.
+    if inp.batch_units > 0:
+        working_capital = max(inp.receivable_days - inp.payable_days, 0) * daily_var_cost
+    else:
+        working_capital = max(inp.inventory_days, 0) * daily_cogs + \
+            max(inp.receivable_days - inp.payable_days, 0) * daily_var_cost
     batch_cost = inp.batch_units * cogs_cash
 
     # Month-by-month cash, with a linear sales ramp and receivable lag.
     lag = int(math.ceil(inp.receivable_days / 30.0)) if inp.receivable_days > 0 else 0
     cash, cum, curve = 0.0, 0.0, []
     units_sold_total = 0.0
+    batch_left = inp.batch_units
     for m in range(inp.horizon_months + 1):
         out = fixed if m > 0 else 0.0
         if m == 0:
@@ -145,8 +153,10 @@ def compute(inp: EconInputs) -> dict[str, Any]:
             ramp = min(1.0, (m - first_sale_month + 1) / max(inp.ramp_months, 1))
             sell_m = units * ramp
         units_sold_total += sell_m
-        # production cost paid when sold (batch already paid up front)
-        out += sell_m * variable_cash
+        # units drawn from the prepaid batch only incur non-production costs
+        from_batch = min(batch_left, sell_m)
+        batch_left -= from_batch
+        out += from_batch * (variable_cash - cogs_cash) + (sell_m - from_batch) * variable_cash
         recv_m = m - lag
         rec = 0.0
         if recv_m >= first_sale_month and recv_m > 0:

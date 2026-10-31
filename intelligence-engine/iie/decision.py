@@ -98,7 +98,8 @@ def experiment_templates(state: dict, concept: dict, flips: list[str]) -> list[d
                     "failure_criteria": "0 deposits after 15 qualified conversations", "evidence_level_target": 4,
                     "gated_actions": ["send_message", "publish"]})
     if econ:
-        assumed = [m["name"] for m in econ["inputs"].get("materials", []) if m.get("source") == "assumption"]
+        assumed = [m["name"] for m in econ["inputs"].get("materials", []) if m.get("source") == "assumption"
+                   and not any(w in m["name"].lower() for w in ("travel", "consumable", "report"))]
         if assumed:
             out.append({"assumption": "Material and production costs are as modelled",
                         "hypothesis": "Written quotes for the largest cost items fall within 15% of the model.",
@@ -113,7 +114,8 @@ def experiment_templates(state: dict, concept: dict, flips: list[str]) -> list[d
                     "cost_inr": 8000, "duration_days": 21, "success_criteria": "cost per qualified lead within model",
                     "failure_criteria": "cost per lead over 2x model", "evidence_level_target": 2,
                     "gated_actions": ["spend_money", "publish"]})
-    if state.get("hazards") or state.get("plan"):
+    mode = (concept.get("axes") or {}).get("interaction_mode")
+    if (state.get("hazards") or state.get("plan")) and mode not in ("service_delivered", "software"):
         out.append({"assumption": "The core principle works at prototype scale",
                     "hypothesis": "A bench prototype meets the main technical requirement.",
                     "method": "Build the smallest prototype that tests the core principle only; follow the safety "

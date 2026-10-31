@@ -251,11 +251,11 @@ def create_app(settings: Settings | None = None, engine: Engine | None = None) -
     @app.get("/critique", response_class=HTMLResponse)
     def critique(request: Request):
         w, a = pfilter(request)
-        crit = db.query("critiques", w, a, "severity, created_at")
+        crit = db.query("critiques", w + " AND status!='superseded'", a, "severity, created_at")
         by: dict[str, list] = {}
         for c in crit:
             by.setdefault(c["target_id"], []).append(c)
-        return render(request, "critique.html", by=by, disagreements=db.query("disagreements", w, a),
+        return render(request, "critique.html", by=by, disagreements=db.query("disagreements", w + " AND status!='superseded'", a),
                       rejected=db.query("decisions", w + " AND verdict IN ('reject','revise','insufficient_evidence')", a),
                       concept_title=concept_title)
 
@@ -263,7 +263,7 @@ def create_app(settings: Settings | None = None, engine: Engine | None = None) -
     @app.get("/prototype", response_class=HTMLResponse)
     def prototype(request: Request):
         w, a = pfilter(request)
-        return render(request, "prototype.html", exps=db.query("experiments", w, a, "status, cost_inr"),
+        return render(request, "prototype.html", exps=db.query("experiments", w + " AND status!='superseded'", a, "status, cost_inr"),
                       concept_title=concept_title, outcomes=db.query("learnings", w + " AND kind='outcome'", a))
 
     @app.post("/experiments/{eid}/result")

@@ -320,6 +320,10 @@ def run_critique(ctx: Ctx) -> dict:
     out = {}
     for c, mc in zip(todo, results if results is not None else [None] * len(todo)):
         st = states[c["id"]]
+        with ctx.db.tx():  # a fresh review replaces earlier open objections for this concept
+            ctx.db.execute("UPDATE critiques SET status='superseded' WHERE target_id=? AND status='open'", (c["id"],))
+            ctx.db.execute("UPDATE disagreements SET status='superseded' WHERE project_id=? AND status='unresolved' "
+                           "AND topic LIKE ?", (ctx.project_id, c["title"] + "%"))
         ids = rule_critiques(ctx, c, st)
         if mc:
             record_model_critique(ctx, c, mc)
@@ -376,6 +380,7 @@ def run_validation(ctx: Ctx) -> dict:
                 e.setdefault("gated_actions", [])
                 exps.append(e)
         with ctx.db.tx():
+            ctx.db.execute("UPDATE experiments SET status='superseded' WHERE concept_id=? AND status='planned'", (c["id"],))
             for e in exps:
                 ctx.db.insert("experiments", {"project_id": ctx.project_id, "concept_id": c["id"], **e, "status": "planned",
                                               "created_by": "experiment_designer"})
@@ -429,6 +434,8 @@ def run_decision(ctx: Ctx) -> dict:
                                     + ". If none is credible with evidence, change the business model (for example "
                                       "licensing the design, commissioned work, or a lower-labour production method)."})
         next_actions.append({"action": spend_limit(st["demand_level"], st.get("budget"))})
+        seen_a: set[str] = set()
+        next_actions = [a for a in next_actions if not (a["action"] in seen_a or seen_a.add(a["action"]))]
         pending_rows.append({"project_id": ctx.project_id, "concept_id": c["id"], "verdict": v, "rationale": why,
                              "gates": g, "unresolved": unresolved, "next_actions": next_actions,
                              "decided_by": "decision_director"})

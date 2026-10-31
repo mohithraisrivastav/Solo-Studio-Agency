@@ -81,7 +81,7 @@ def project_report(db: DB, pid: str) -> str:
     if con:
         L += ["### Contradictions", ""] + [f"- {c['metric']}: {c['note']} (claims {c['claim_a']} vs {c['claim_b']}, ratio {c['ratio']})" for c in con] + [""]
 
-    opps = db.query("opportunities", "project_id=?", (pid,), "created_at")
+    opps = db.query("opportunities", "project_id=? AND status!='superseded'", (pid,), "created_at")
     if opps:
         L += ["## Opportunities", ""]
         for o in opps:
@@ -94,7 +94,7 @@ def project_report(db: DB, pid: str) -> str:
                   f"- Weakest assumption: {d.get('weakest_assumption')}",
                   f"- Test: {d.get('test_for_weakest_assumption')}", ""]
 
-    concepts = db.query("concepts", "project_id=?", (pid,), "created_at")
+    concepts = db.query("concepts", "project_id=? AND status!='superseded'", (pid,), "created_at")
     if concepts:
         L += [f"## Concepts ({len(concepts)})", ""]
         for c in concepts:
@@ -194,7 +194,7 @@ def project_report(db: DB, pid: str) -> str:
                                                            + (f" (claims: {', '.join(a['claim_ids'])})" if a['claim_ids'] else "") for a in ans]
             L.append("")
 
-    crit = db.query("critiques", "project_id=?", (pid,), "created_at")
+    crit = db.query("critiques", "project_id=? AND status!='superseded'", (pid,), "created_at")
     if crit:
         L += ["## Critical review", ""]
         for c in crit:
@@ -203,11 +203,11 @@ def project_report(db: DB, pid: str) -> str:
                      f"{', ' + c['rule_id'] if c['rule_id'] else ''}) {c['objection']}"
                      + (f" Sources: {', '.join(c['source_ids'])}" if c.get('source_ids') else ""))
         L.append("")
-    dis = db.query("disagreements", "project_id=?", (pid,))
+    dis = db.query("disagreements", "project_id=? AND status!='superseded'", (pid,))
     if dis:
         L += ["### Disagreements", ""] + [f"- {d['topic']} [{d['status']}]: {role_title(d['role_a'])} says '{clip(d['position_a'], 160)}'; "
                                          f"{role_title(d['role_b'])} says '{clip(d['position_b'], 200)}'" for d in dis] + [""]
-    exps = db.query("experiments", "project_id=?", (pid,), "cost_inr")
+    exps = db.query("experiments", "project_id=? AND status!='superseded'", (pid,), "cost_inr")
     if exps:
         L += ["## Validation plan", ""]
         L += _tbl(["concept", "assumption", "test", "cost", "days", "success", "failure", "target", "needs approval"],

@@ -104,3 +104,13 @@ def test_commercial_rejection_of_attractive_concept(settings):
     assert "electrical" in crit  # bluetooth speaker flags an electrical review even without a model
     assert hz is None
     assert math.isfinite(e.db.one("economics", "project_id=? AND scenario='base'", (pid,))["outputs"]["peak_cash_need"])
+
+
+def test_prepaid_batch_is_not_charged_twice():
+    base = dict(price=1000, materials=[Line("m", 300)], units_per_month=50, horizon_months=12, dev_weeks=0,
+                lead_time_days=0, sales_cycle_days=0, ramp_months=1, receivable_days=0, inventory_days=30)
+    no_batch = compute(EconInputs(**base, batch_units=0))
+    with_batch = compute(EconInputs(**base, batch_units=100))
+    # paying for 100 units up front only shifts timing; total 12-month cash must match
+    assert abs(no_batch["cash_curve"][-1]["cumulative"] - with_batch["cash_curve"][-1]["cumulative"]) < 2
+    assert with_batch["working_capital_need"] == 0  # inventory already funded by the batch

@@ -3,7 +3,7 @@
   "objections": [
    {
     "question": "Does the business work financially?",
-    "objection": "Base case loses ₹138 per kit once founder time is paid, and peak cash of about ₹9.5 lakh is over three times the ₹3 lakh budget.",
+    "objection": "Base case loses ₹138 per kit once founder time is paid, and peak cash of about ₹7.7 lakh is about 2.6 times the ₹3 lakh budget.",
     "severity": "fatal",
     "basis": "calculation",
     "source_ids": [],

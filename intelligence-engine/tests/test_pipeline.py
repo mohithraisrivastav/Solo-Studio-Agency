@@ -40,3 +40,20 @@ def test_full_cycle_runs_every_stage(settings, transport, scripted):
     assert arts and "CONCEPT GEOMETRY ONLY" in open(arts[0]["path"]).read()
     text = project_report(db, pid)
     assert "## Decision" in text and "## Commercial analysis" in text
+
+
+def test_rerun_supersedes_old_outputs(settings, transport, scripted):
+    e = Engine(settings, provider=scripted, transport=transport)
+    pid = e.create_project("rerun test", "full", budget_inr=300000,
+                           settings={"industries": ["bicycles and urban mobility cycling"]})
+    e.run(pid)
+    before = e.db.scalar("SELECT COUNT(*) FROM experiments WHERE project_id=? AND status!='superseded'", (pid,))
+    e.rerun_from(pid, "critique", "test rerun")
+    assert e.run(pid)["status"] == "complete"
+    live = e.db.scalar("SELECT COUNT(*) FROM experiments WHERE project_id=? AND status!='superseded'", (pid,))
+    assert live == before  # old experiments superseded, new ones replace them one for one
+    assert e.db.scalar("SELECT COUNT(*) FROM critiques WHERE project_id=? AND status='superseded'", (pid,)) > 0
+    d = e.db.query("decisions", "project_id=?", (pid,), "created_at")[-1]
+    actions = [a["action"] for a in d["next_actions"]]
+    assert len(actions) == len(set(actions))
+    assert e.db.scalar("SELECT COUNT(*) FROM jobs WHERE project_id=? AND status='superseded'", (pid,)) == 4
