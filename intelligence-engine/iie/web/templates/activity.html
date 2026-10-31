@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block body %}
+<h1>Agent Activity</h1><p class="muted">Real events from the store: stage runs, tool calls, model requests, skips, errors. Filter: <a href="?kind=tool_error">tool errors</a> · <a href="?kind=model_skipped">skipped model steps</a> · <a href="?kind=verification_failures">quote failures</a> · <a href="?kind=stage_end">stage results</a></p>
+<h2>Jobs</h2><table><tr><th>project</th><th>stage</th><th>cycle</th><th>status</th><th>attempt</th><th>started</th><th>finished</th><th>error</th></tr>
+{% for j in jobs %}<tr><td class="small"><a href="/project/{{ j.project_id }}">{{ j.project_id }}</a></td><td>{{ j.stage }}</td><td>{{ j.cycle }}</td><td class="st-{{ j.status }}">{{ j.status }}</td><td>{{ j.attempt }}</td><td class="small">{{ j.started_at }}</td><td class="small">{{ j.finished_at }}</td><td class="small">{{ (j.error or '')|clip(120) }}</td></tr>{% endfor %}</table>
+<h2>Events</h2><table><tr><th>time</th><th>actor</th><th>kind</th><th>tool</th><th>summary</th></tr>
+{% for ev in events %}<tr><td class="small">{{ ev.ts }}</td><td class="small">{{ roles.get(ev.actor, {}).get('title', ev.actor) }}</td><td class="small {{ 'sev-fatal' if 'error' in ev.kind else '' }}">{{ ev.kind }}</td><td class="small">{{ ev.tool or '' }}</td><td class="small">{{ ev.summary }}</td></tr>{% endfor %}</table>
+{% endblock %}

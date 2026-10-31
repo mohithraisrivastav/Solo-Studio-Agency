@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block body %}
+<h1>Operator Queue</h1><p class="muted">Structured requests waiting for a person or an external agent. Answers must match the schema and name who answered. Research bundles must contain real sources with retrieval dates.</p>
+{% for t in tasks %}<div class="card"><b>{{ t.purpose }}</b> <span class="small muted">({{ t.role }}, project {{ t.project_id }})</span>
+<details><summary class="small">prompt</summary><pre>{{ t.prompt.system }}
+
+{{ t.prompt.prompt }}</pre></details><details><summary class="small">schema</summary><pre>{{ t.schema|j }}</pre></details>
+<form method="post" action="/operator/{{ t.id }}"><textarea name="answer" rows="6" placeholder="JSON answer"></textarea>Answered by <input name="answered_by" required> <button>Submit</button></form></div>{% else %}<p class="muted">Nothing waiting.</p>{% endfor %}
+<h2>Recently answered</h2><table><tr><th>purpose</th><th>answered by</th><th>when</th></tr>{% for t in answered %}<tr><td class="small">{{ t.purpose }}</td><td>{{ t.answered_by }}</td><td class="small">{{ t.answered_at }}</td></tr>{% endfor %}</table>
+{% endblock %}

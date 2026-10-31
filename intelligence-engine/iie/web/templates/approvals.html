@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block body %}
+<h1>Approvals</h1><p class="muted">These actions are blocked in code until you approve the exact payload. Each approval works once.</p>
+<table class="kv">{% for k, v in kinds.items() %}<tr><td>{{ k }}</td><td>{{ v }}</td></tr>{% endfor %}</table>
+<h2>Pending</h2>{% for a in pending %}<div class="card"><b>{{ a.kind }}</b> requested by {{ a.requested_by }}: {{ a.reason }}<pre>{{ a.payload|j }}</pre>
+<form class="inline" method="post" action="/approvals/{{ a.id }}"><button name="decision" value="approve">Approve once</button> <button class="alt" name="decision" value="deny">Deny</button></form></div>{% else %}<p class="muted">Nothing waiting.</p>{% endfor %}
+<h2>Decided</h2><table><tr><th>kind</th><th>status</th><th>by</th><th>when</th><th>used</th></tr>{% for a in decided %}<tr><td>{{ a.kind }}</td><td>{{ a.status }}</td><td>{{ a.decided_by }}</td><td class="small">{{ a.decided_at }}</td><td>{{ 'yes' if a.consumed else 'no' }}</td></tr>{% endfor %}</table>
+{% endblock %}

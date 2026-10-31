@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% block body %}
+<h1>Opportunity Portfolio</h1>
+<div class="grid">
+<div class="card"><h3>Start a project</h3>
+<form method="post" action="/projects">
+<p><textarea name="question" rows="2" placeholder="A question, a product category, or leave general for open discovery" required>Find an overlooked opportunity I have not considered</textarea></p>
+<p>Workflow <select name="workflow">{% for w in workflows %}<option>{{ w }}</option>{% endfor %}</select>
+Mode <select name="mode"><option value="fresh">fresh discovery</option><option value="evidence">evidence mode</option></select></p>
+<p>Budget INR <input name="budget" size="9" placeholder="300000"> Seed <input name="seed" size="5"></p>
+<p>Industries (optional, comma separated) <input name="industries" size="40"></p>
+<p><label><input type="checkbox" name="run_now" value="1" checked> run now</label> <button>Create</button></p></form></div>
+<div class="card"><h3>Observable outcomes</h3><table class="kv">{% for k, v in metrics.items() %}<tr><td>{{ k.replace('_',' ') }}</td><td>{{ v }}</td></tr>{% endfor %}</table></div>
+</div>
+<h2>Projects</h2><table><tr><th>project</th><th>workflow</th><th>mode</th><th>status</th><th>budget</th><th>updated</th></tr>
+{% for p in projects %}<tr><td><a href="/project/{{ p.id }}">{{ p.title }}</a></td><td>{{ p.workflow }}</td><td>{{ p.mode }}</td><td class="st-{{ p.status }}">{{ p.status }}</td><td>{{ p.budget_inr|money }}</td><td class="small">{{ p.updated_at }}</td></tr>{% endfor %}</table>
+<h2>Concepts compared by evidence</h2>
+<table><tr><th>concept</th><th>family</th><th>demand evidence</th><th>originality</th><th>base economics</th><th>contribution/unit (founder paid)</th><th>peak cash</th><th>decision</th></tr>
+{% for r in rows %}<tr><td><a href="/project/{{ r.c.project_id }}">{{ r.c.title }}</a><div class="small muted">{{ r.c.method }}</div></td><td class="small">{{ r.c.family_id or '' }}</td>
+<td>{{ r.level|level }}</td><td class="small">{{ r.orc.verdict if r.orc else 'not checked' }}</td>
+<td class="v-{{ r.econ.findings.verdict if r.econ else '' }}">{{ r.econ.findings.verdict if r.econ else 'not modelled' }}</td>
+<td>{{ r.econ.outputs.contribution_per_unit_founder_paid|money if r.econ else '' }}</td><td>{{ r.econ.outputs.peak_cash_need|money if r.econ else '' }}</td>
+<td class="v-{{ r.dec.verdict if r.dec else '' }}">{{ r.dec.verdict if r.dec else '' }}</td></tr>{% endfor %}</table>
+{% endblock %}

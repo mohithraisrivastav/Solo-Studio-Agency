@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block body %}
+<h1>Design Workshop</h1><p class="muted">Concept-stage technical plans. Generated CAD is concept geometry, not a validated drawing. Hazards come from a keyword scan and must be confirmed by a qualified reviewer.</p>
+{% for t in plans %}{% set pl = t.plan or {} %}<div class="card"><h3>{{ concept_title(t.concept_id) }} <span class="pill">maturity: {{ t.maturity }}</span></h3>
+{% for h in t.hazards or [] %}<div class="sev-major small">Possible {{ h.category }} hazard ({{ h.triggers|join(', ') }}): {{ h.mandatory_review }}</div>{% endfor %}
+<div class="grid">{% for k in ['functional_principles','technical_requirements','construction_sequence','failure_modes','tests','safety_requirements','tools_equipment'] %}{% if pl.get(k) %}<div><b class="small">{{ k.replace('_',' ') }}</b><ul class="small">{% for x in pl[k] %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}{% endfor %}</div>
+{% if pl.get('production_comparison') %}<table><tr><th>production method</th><th>fit</th><th>notes</th></tr>{% for r in pl.production_comparison %}<tr><td>{{ r.method }}</td><td>{{ r.fit }}</td><td class="small">{{ r.notes }}</td></tr>{% endfor %}</table>{% endif %}
+{% if pl.get('bom') %}<h3>BOM</h3><table><tr><th>item</th><th>qty</th><th>unit cost</th><th>source</th></tr>{% for b in pl.bom %}<tr><td>{{ b.item }}</td><td>{{ b.qty }} {{ b.unit }}</td><td>{{ b.unit_cost_inr|money }}</td><td class="small">{{ b.source }}</td></tr>{% endfor %}</table>{% endif %}
+{% if pl.get('low_cost_validation') %}<p><b>Low-cost validation:</b> {{ pl.low_cost_validation }}</p>{% endif %}
+<p class="small">{% for a in artifacts if a.concept_id == t.concept_id %}<a href="/artifact/{{ a.id }}">{{ a.kind }}</a> ({{ a.description }}) · {% endfor %}</p></div>{% else %}<p class="muted">No technical plans yet.</p>{% endfor %}
+{% endblock %}

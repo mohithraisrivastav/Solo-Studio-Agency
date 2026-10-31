@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block body %}
+<h1>Settings</h1>
+<div class="grid"><div class="card"><h3>Hardware (detected)</h3><table class="kv">{% for k, v in hw.items() %}<tr><td>{{ k }}</td><td>{{ v }}</td></tr>{% endfor %}</table></div>
+<div class="card"><h3>Model</h3><p>Active provider: <b>{{ provider.provider }}</b> {{ provider.model or '' }} · {{ provider.detail }}</p><p>Ollama: {{ ollama_why }}</p>
+<table><tr><th>installed model</th><th>size</th><th>params</th></tr>{% for m in models %}<tr><td>{{ m.name }}</td><td>{{ ((m.size or 0)/1e9)|round(1) }} GB</td><td>{{ (m.details or {}).get('parameter_size') }}</td></tr>{% endfor %}</table>
+<form method="post" action="/settings/benchmark"><button {{ '' if ollama_ok else 'disabled' }}>Benchmark installed models</button></form>
+<p class="small muted">Small local models can draft concepts and extract claims, but they make more reasoning and quoting errors. Every quote is checked against its source, and numbers come from the calculator, not the model. Current market facts need research access; no model can supply them from memory.</p></div></div>
+<h2>Benchmarks</h2><table><tr><th>model</th><th>tokens/s</th><th>latency s</th><th>valid JSON</th><th>correct</th><th>error</th><th>ran</th></tr>{% for b in benches %}<tr><td>{{ b.model }}</td><td>{{ b.tokens_per_sec|round(1) if b.tokens_per_sec else '' }}</td><td>{{ b.latency_s|round(1) if b.latency_s else '' }}</td><td>{{ b.json_valid }}</td><td>{{ b.correct }}</td><td class="small">{{ b.error or '' }}</td><td class="small">{{ b.ran_at }}</td></tr>{% else %}<tr><td colspan="7" class="muted">No benchmarks run.</td></tr>{% endfor %}</table>
+<h2>Research connectors</h2><table><tr><th>connector</th><th>configured</th><th>detail</th></tr>{% for n, c in connectors.items() %}<tr><td>{{ n }}</td><td>{{ 'yes' if c[0] else 'no' }}</td><td class="small">{{ c[1] }}</td></tr>{% endfor %}</table>
+<form method="post" action="/settings/probe"><button>Probe connectors now</button></form>
+<h2>Engine</h2><pre>{{ describe|j }}</pre><h2>Configuration</h2><pre>{{ s|j }}</pre>
+{% endblock %}

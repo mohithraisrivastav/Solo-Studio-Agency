@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<h1>Critical Review</h1><p class="muted">Rule objections are computed from stored numbers and evidence. Model objections citing sources that do not exist are downgraded to "reasoning".</p>
+{% for cid, items in by.items() %}<div class="card"><h3>{{ concept_title(cid) }}</h3><table><tr><th>severity</th><th>category</th><th>objection</th><th>basis</th><th>evidence</th></tr>
+{% for c in items %}<tr><td class="sev-{{ c.severity }}">{{ c.severity }}</td><td class="small">{{ c.category }}</td><td>{{ c.objection }}</td><td class="small">{{ c.basis }}{% if c.rule_id %}<div class="muted">{{ c.rule_id }}</div>{% endif %}</td><td class="small">{{ (c.source_ids or [])|join(', ') }} {{ (c.claim_ids or [])|join(', ') }}</td></tr>{% endfor %}</table></div>{% else %}<p class="muted">No reviews yet.</p>{% endfor %}
+<h2>Disagreements between specialists</h2><table><tr><th>topic</th><th>side A</th><th>side B</th><th>status</th></tr>
+{% for d in disagreements %}<tr><td>{{ d.topic }}</td><td class="small"><b>{{ d.role_a }}</b>: {{ d.position_a }}</td><td class="small"><b>{{ d.role_b }}</b>: {{ d.position_b }}</td><td>{{ d.status }}</td></tr>{% endfor %}</table>
+<h2>Rejected or sent back</h2>{% for d in rejected %}<div class="card"><b>{{ concept_title(d.concept_id) or 'Project' }}</b>: <span class="v-{{ d.verdict }}">{{ d.verdict }}</span> <span class="small">{{ d.rationale }}</span></div>{% endfor %}
+{% endblock %}

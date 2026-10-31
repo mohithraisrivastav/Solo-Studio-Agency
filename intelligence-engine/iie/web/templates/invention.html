@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block body %}
+<h1>Invention Lab</h1><p class="muted">Concepts grouped into solution families. Merged concepts overlapped in principle or differed only cosmetically.</p>
+{% for fam, cs in fams.items() %}<div class="card"><h3>Family {{ fam }} ({{ cs|length }})</h3>{% for c in cs %}
+<div style="margin:6px 0"><b>{{ c.title }}</b> <span class="pill">{{ c.method }}</span> <span class="pill st-{{ 'done' if c.status=='shortlisted' else '' }}">{{ c.status }}</span>{% if c.merged_into %}<span class="small muted"> merged into {{ c.merged_into }}</span>{% endif %}
+<div class="small">{{ c.principle }}</div><div class="small muted">{% for k, v in (c.axes or {}).items() %}{{ k }}={{ v }} {% endfor %}· by {{ c.created_by }} · {{ c.generation_mode }}</div></div>{% endfor %}</div>{% else %}<p class="muted">No concepts yet.</p>{% endfor %}
+<h2>Overlap checks</h2><table><tr><th>a</th><th>b</th><th>similarity</th><th>verdict</th><th>reason</th></tr>
+{% for o in overlaps %}<tr><td class="small">{{ concept_title(o.a_id) }}</td><td class="small">{{ concept_title(o.b_id) }}</td><td>{{ o.text_similarity }}</td><td>{{ o.verdict }}</td><td class="small">{{ o.reason }}</td></tr>{% endfor %}</table>
+{% if pid %}<h2>Add a concept by hand</h2><div class="card"><form method="post" action="/concepts"><input type="hidden" name="project_id" value="{{ pid }}">
+<p><input name="title" placeholder="title" size="40" required> <input name="business_model" placeholder="business model" size="30"></p>
+<p><textarea name="principle" rows="2" placeholder="core principle (the mechanism)" required></textarea></p><p><textarea name="how_it_works" rows="2" placeholder="how it works"></textarea></p>
+<p><input name="user_value" placeholder="user value" size="30"> <input name="target_buyer" placeholder="target buyer" size="30"></p>
+<p>{% for k, vals in axes.items() %}{{ k }} <select name="{{ k }}">{% for v in vals %}<option>{{ v }}</option>{% endfor %}</select> {% endfor %}</p><button>Add concept</button></form></div>{% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block body %}
+<h1>{{ p.title }}</h1><p class="muted">{{ p.question }}</p>
+<p>Workflow <b>{{ p.workflow }}</b> · mode <b>{{ p.mode }}</b> · status <b class="st-{{ p.status }}">{{ p.status }}</b> · budget {{ p.budget_inr|money }}
+<form class="inline" method="post" action="/project/{{ p.id }}/run"><button>Run / resume</button></form> <a href="/report/{{ p.id }}">full report</a></p>
+{% if ops %}<div class="card">Waiting for {{ ops|length }} operator answer(s). <a href="/operator">Open the operator queue</a>.</div>{% endif %}
+{% if aprs %}<div class="card">Waiting for {{ aprs|length }} approval(s). <a href="/approvals">Review approvals</a>.</div>{% endif %}
+<h2>Stages</h2><table><tr><th>stage</th><th>roles</th><th>evidence rule</th><th>completion check</th><th>job status</th><th>result</th></tr>
+{% for s in stages %}{% set js = jobs|selectattr('stage','equalto',s.key)|list %}<tr><td><b>{{ s.title }}</b><div class="small muted">{{ s.outputs }}</div></td>
+<td class="small">{{ s.roles|join(', ') }}</td><td class="small">{{ s.evidence }}</td><td class="small">{{ s.completion }}</td>
+<td>{% for j in js %}<div class="st-{{ j.status }}">{{ j.status }} <span class="small muted">c{{ j.cycle }} a{{ j.attempt }}</span></div>{% else %}<span class="muted">not started</span>{% endfor %}</td>
+<td class="small">{% for j in js %}<div>{{ (j.output or {}).get('_check', j.error or '')|clip(220) }}</div>{% endfor %}</td></tr>{% endfor %}</table>
+<h2>Decisions</h2>{% for d in decisions %}<div class="card"><b>{{ concept_title(d.concept_id) or 'Project' }}</b>: <span class="v-{{ d.verdict }}">{{ d.verdict }}</span><p>{{ d.rationale }}</p>
+<div>{% for g in d.gates %}<span class="pill">{{ g.gate }}: {{ g.status }}</span>{% endfor %}</div>
+<ul>{% for a in d.next_actions %}<li>{{ a.action }}{% if a.cost_inr is not none and a.cost_inr is defined %} ({{ a.cost_inr|money }}){% endif %}</li>{% endfor %}</ul>
+{% if d.unresolved %}<p class="small">Unresolved: {{ d.unresolved|join('; ') }}</p>{% endif %}</div>{% else %}<p class="muted">No decision yet.</p>{% endfor %}
+<p><a href="/research?project={{ p.id }}">Research</a> · <a href="/discovery?project={{ p.id }}">Opportunities</a> · <a href="/invention?project={{ p.id }}">Concepts</a> · <a href="/design?project={{ p.id }}">Design</a> · <a href="/commercial?project={{ p.id }}">Commercial</a> · <a href="/critique?project={{ p.id }}">Critique</a> · <a href="/prototype?project={{ p.id }}">Experiments</a> · <a href="/activity?project={{ p.id }}">Activity</a></p>
+{% endblock %}

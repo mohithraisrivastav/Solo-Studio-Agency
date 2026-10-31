@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% block body %}
+<h1>Research Desk</h1>
+<h2>Sources ({{ sources|length }})</h2><table><tr><th>id</th><th>title</th><th>publisher</th><th>type</th><th>published</th><th>retrieved</th><th>method</th></tr>
+{% for s in sources %}<tr><td class="small">{{ s.id }}</td><td><a href="{{ s.url }}" rel="noreferrer">{{ s.title|clip(90) }}</a>{% if (s.meta or {}).get('injection_suspect') %} <span class="sev-fatal">possible prompt injection; excluded from model input</span>{% endif %}</td>
+<td class="small">{{ s.publisher }}</td><td class="small">{{ s.source_type }}</td><td class="small">{{ s.published_at or 'unknown' }}</td><td class="small">{{ (s.retrieved_at or '')[:10] }}</td><td class="small">{{ s.connector }} / {{ s.retrieval_method }}</td></tr>{% endfor %}</table>
+<h2>Claims ({{ claims|length }})</h2><table><tr><th>id</th><th>type</th><th>claim</th><th>support</th><th>level</th><th>sources (verified)</th><th>freshness</th><th>by</th></tr>
+{% for c in claims %}<tr><td class="small">{{ c.id }}</td><td class="small">{{ c.claim_type }}</td><td>{{ c.text|clip(200) }}</td><td class="{{ 'st-done' if c.support=='verified_quote' else 'st-incomplete' }} small">{{ c.support }}</td>
+<td>L{{ c.evidence_level }}</td><td class="small">{% for s, v in cs.get(c.id, []) %}{{ s }}{{ ' ✓' if v else ' ✗' }} {% endfor %}</td><td class="small">{{ fresh[c.id] }}</td><td class="small">{{ c.created_by }}</td></tr>{% endfor %}</table>
+<h2>Contradictions</h2>{% for c in contradictions %}<div class="card small">{{ c.metric }}: {{ c.note }} ({{ c.claim_a }} vs {{ c.claim_b }}, ratio {{ c.ratio }})</div>{% else %}<p class="muted">None detected.</p>{% endfor %}
+<h2>Research gaps</h2><table><tr><th>connector</th><th>query</th><th>reason</th></tr>{% for g in gaps[:80] %}<tr><td class="small">{{ g.connector }}</td><td class="small">{{ g.query|clip(80) }}</td><td class="small">{{ g.reason|clip(140) }}</td></tr>{% endfor %}</table>
+{% if pid %}<div class="grid"><div class="card"><h3>Fetch a public page</h3><form method="post" action="/research/fetch"><input type="hidden" name="project_id" value="{{ pid }}">
+<input name="url" size="50" placeholder="https://..."> <select name="source_type"><option>web_page</option><option>product_listing</option><option>company_site</option><option>manufacturer_spec</option><option>news</option></select> <button>Fetch</button></form><p class="small muted">robots.txt is respected. Content is stored as untrusted data.</p></div>
+<div class="card"><h3>Import a source bundle</h3><form method="post" action="/research/bundle"><input type="hidden" name="project_id" value="{{ pid }}">
+<textarea name="bundle" rows="5">{"sources": [{"url": "", "title": "", "publisher": "", "source_type": "web_page", "published_at": "", "retrieved_at": "", "retrieval_method": "", "content": ""}]}</textarea>
+Imported by <input name="imported_by" required> <button>Import</button></form></div></div>{% endif %}
+{% endblock %}

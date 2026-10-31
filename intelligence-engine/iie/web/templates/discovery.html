@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<h1>Discovery Lab</h1><p class="muted">Opportunities found from evidence, without a starting idea. Start one from the Portfolio with workflow "discovery" or "full". Unsupported opportunities cite no verified claim.</p>
+<table><tr><th>opportunity</th><th>industry</th><th>who</th><th>why the gap exists</th><th>weakest assumption and test</th><th>claims</th><th>status</th></tr>
+{% for o in opps %}<tr><td><b>{{ o.title }}</b><div class="small">{{ o.problem }}</div></td><td class="small">{{ o.industry }}</td><td class="small">{{ o.who }}</td>
+<td class="small">{{ (o.detail or {}).get('why_gap_exists') }}<div class="muted">{{ (o.detail or {}).get('gap_explanation') }}</div></td>
+<td class="small">{{ (o.detail or {}).get('weakest_assumption') }}<div class="muted">{{ (o.detail or {}).get('test_for_weakest_assumption') }}</div></td>
+<td class="small">{{ (o.claim_ids or [])|join(', ') }}</td><td class="st-{{ 'failed' if o.status=='unsupported' else 'done' }}">{{ o.status }}</td></tr>{% else %}<tr><td colspan="7" class="muted">No opportunities yet.</td></tr>{% endfor %}</table>
+{% endblock %}

@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><title>{% block title %}Intelligence Engine{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/static/style.css"></head><body>
+<header><b>Independent Intelligence Engine</b>
+{% for href, label in nav %}<a href="{{ href }}{% if pid and href != '/' and href not in ('/settings','/approvals','/operator') %}?project={{ pid }}{% endif %}" class="{{ 'on' if path == href else '' }}">{{ label }}{% if label == 'Approvals' and pending_apr %}<span class="badge">{{ pending_apr }}</span>{% endif %}{% if label == 'Operator Queue' and pending_ops %}<span class="badge">{{ pending_ops }}</span>{% endif %}</a>{% endfor %}
+<span class="small" style="margin-left:auto;color:#9fb0bf">model: {{ provider.provider }}{% if provider.model %}:{{ provider.model }}{% endif %} {{ '' if provider.available else '(unavailable)' }}</span>
+</header><main>
+{% if path not in ('/', '/settings', '/approvals', '/operator') and not path.startswith('/project') %}
+<form class="filter" method="get">Project: <select name="project" onchange="this.form.submit()"><option value="">all projects</option>
+{% for p in projects %}<option value="{{ p.id }}" {{ 'selected' if p.id == pid else '' }}>{{ p.title|clip(70) }} ({{ p.status }})</option>{% endfor %}</select></form>{% endif %}
+{% block body %}{% endblock %}</main></body></html>

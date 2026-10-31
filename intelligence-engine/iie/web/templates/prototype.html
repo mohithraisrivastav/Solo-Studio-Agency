@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<h1>Prototype Planner</h1><p class="muted">Tests ordered by cost. Actions marked as needing approval cannot run until you approve them.</p>
+<table><tr><th>concept</th><th>assumption and hypothesis</th><th>method</th><th>cost</th><th>days</th><th>success / failure</th><th>target</th><th>needs approval</th><th>status</th><th>record result</th></tr>
+{% for e in exps %}<tr><td class="small">{{ concept_title(e.concept_id) }}</td><td class="small"><b>{{ e.assumption }}</b><div>{{ e.hypothesis }}</div></td><td class="small">{{ e.method }}</td><td>{{ e.cost_inr|money }}</td><td>{{ e.duration_days }}</td>
+<td class="small">✓ {{ e.success_criteria }}<br>✗ {{ e.failure_criteria }}</td><td>L{{ e.evidence_level_target }}</td><td class="small">{{ (e.gated_actions or [])|join(', ') }}</td><td class="st-{{ e.status }}">{{ e.status }}{% if e.result %}<div class="small muted">{{ e.result.notes }}</div>{% endif %}</td>
+<td><form method="post" action="/experiments/{{ e.id }}/result"><select name="status"><option>running</option><option>passed</option><option>failed</option><option>inconclusive</option></select><input name="notes" size="14" placeholder="what happened" required><input name="actual_cost_inr" size="6" placeholder="₹"><button>Save</button></form></td></tr>{% else %}<tr><td colspan="10" class="muted">No experiments yet.</td></tr>{% endfor %}</table>
+<h2>Recorded outcomes</h2>{% for o in outcomes %}<div class="card small">{{ o.created_at }}: {{ o.text }}</div>{% else %}<p class="muted">None yet. Outcomes are the only measure of real progress.</p>{% endfor %}
+{% endblock %}
