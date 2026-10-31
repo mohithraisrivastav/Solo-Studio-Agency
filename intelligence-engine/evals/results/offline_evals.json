@@ -1,0 +1,53 @@
+{
+  "t3_premium_object (partial, no research)": {
+    "verdict": "revise",
+    "economics": "weak",
+    "codes": [
+      "THIN_MARGIN",
+      "NO_BREAK_EVEN_IN_HORIZON",
+      "CAPITAL_EXCEEDS_BUDGET",
+      "SLOW_TO_REVENUE",
+      "PRICE_MATERIAL_ILLUSION",
+      "MOSTLY_ASSUMPTIONS",
+      "FEW_COMPARABLES_AT_PRICE",
+      "NO_QUALIFIED_INTEREST_AT_PRICE"
+    ],
+    "rationale": "Revise before validation: capital need exceeds budget; base-case economics are weak."
+  },
+  "t5_commercial_rejection": {
+    "verdict": "reject",
+    "rationale": "Base-case economics fail: Each sale loses INR 992 before fixed costs, even with the founder working free.",
+    "stronger_direction": "Commercially stronger direction: a 25% contribution margin needs one of: price of at least ₹28,788. If none is credible with evidence, change the business model (for example licensing the design, commissioned work, or a lower-labour production method)."
+  },
+  "t7_evidence_integrity": {
+    "sources": 0,
+    "verified_claims": 0,
+    "claims_above_L0": 0,
+    "fabricated_claims_kept_at_L0": 0,
+    "unsupported_opportunities": 0,
+    "direct_buyer_evidence": 0,
+    "research_gaps_recorded": 13,
+    "decisions": [
+      "revise",
+      "revise",
+      "revise",
+      "revise",
+      "revise",
+      "revise"
+    ]
+  },
+  "t10_business_reality": {
+    "price_to_material_ratio": 22.5,
+    "material_share_of_unit_cost_pct": 6.55,
+    "contribution_founder_paid_inr": 42304.14,
+    "founder_hourly_inr": 747.97,
+    "peak_cash_need_inr": 126111.11,
+    "verdict": "marginal",
+    "findings": [
+      "THIN_MARGIN",
+      "PRICE_MATERIAL_ILLUSION",
+      "PRICE_UNSUPPORTED",
+      "MOSTLY_ASSUMPTIONS"
+    ]
+  }
+}
