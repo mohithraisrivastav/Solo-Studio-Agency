@@ -79,7 +79,7 @@ Constraints: founder capital ₹5,00,000 [A] and founder time at ₹750 per hour
 6. Elapsed time from failure to contract: not found; likely 2-6 months [A] (basis: Faridabad's six-month outage [S14]; test with three district hospitals).
 
 **Triggers that move a buyer.**
-- A death or near miss. After Jalandhar, the Punjab Human Rights Commission sought reports on non-functional plants [S8]; Ajnala and Ludhiana plants were found down [S12, S13].
+- A death or near miss. After Jalandhar, the state Human Rights Commission took suo motu notice and sought reports [S8]; Ajnala and Ludhiana plants were then reported down [S12, S13].
 - A COVID or HMPV advisory and mock drills [S15, S16].
 - A state-wide revival scheme, such as Maharashtra's PPP [S1].
 - For private hospitals: a breakdown, an OEM renewal quote, or a licence inspection [A] (basis: 2021 mandates tied to recognition [S37]; test by asking 10 private hospitals).
@@ -128,7 +128,7 @@ Constraints: founder capital ₹5,00,000 [A] and founder time at ₹750 per hour
 | OEM service arms | Airox Technologies | After-sales service for its own systems | [S46] |
 | OEM | MVS Engineering | Installed 40 PSA plants; struggled to source zeolite in 2021 | [S35] |
 | OEMs named in tenders | Inmatec, L&T Defence, AirSep, Atmos Power | Makes of plants under CAMC tenders in J&K and Gujarat | [S21, S19] |
-| PM CARES makers | Tata Advanced Systems (332 plants), Trident Pneumatics (48) | DRDO-tech plants; after-warranty service terms not found | [S50] [I] |
+| PM CARES makers | Tata Advanced Systems (332 plants), Trident Pneumatics (48) | DRDO-tech plants; after-warranty service terms not found | [S62] [I] |
 | Gas majors | Praxair (Linde) India | Remotely monitored PSA plants with backup integration | [S47] |
 | LMO and cylinder suppliers | Industrial gas firms; local refillers | The status quo; over 95% of major producers' output went back to industry after COVID | [S7] |
 | Small multi-brand servicers | DBS Engineering Services; Shelves Tech | Self-claimed AMC for Indian and imported plants | [S44, S45] |
@@ -154,7 +154,7 @@ Constraints: founder capital ₹5,00,000 [A] and founder time at ₹750 per hour
 
 **Against.**
 - Capacity is many times demand [S3, S6], so many plants are not worth repairing for the hospital [I].
-- Budgets are not released. Faridabad lacked an AMC [S14]; Nurpur-type requests sit with directorates [S14] [I].
+- Budgets are not released. Faridabad ran for months without an AMC estimated at about ₹5 lakh a year [S14].
 - Low wages drive technicians out [S9]; the payer economises on exactly the labour this service sells [I].
 - Maharashtra chose no-profit, no-loss terms [S1], which signals thin margins [I].
 - Private payment: no signal found. Unknown.
@@ -181,7 +181,7 @@ All terms tagged. The base is rough.
 - Price: ₹1.5-3 lakh a year [A] (anchored on [S24, S25]).
 - Total: about ₹2-36 crore a year [I] (150 × ₹1.5 lakh to 1,200 × ₹3 lakh). This is an L0 number.
 
-**Reachable for a solo founder in years 1-2.**
+**Reachable for a solo founder in the first two years.**
 - One state cluster. 10-20 plants under contract [A] (basis: founder time; test against the section 10 result).
 - Revenue: ₹20-80 lakh a year [I] (10 × ₹2 lakh to 20 × ₹4 lakh).
 - Founder time: about 80 hours per plant a year [A] (four preventive visits, two breakdowns, travel; test with one OEM engineer). For 20 plants, 1,600 hours, worth ₹12 lakh at ₹750 an hour [I]. That is close to full time, so growth needs hired technicians [I].
@@ -193,7 +193,7 @@ All terms tagged. The base is rough.
 
 - They do not need the plant. LMO or cylinders already work [S3, S6, S15].
 - Liability. After Jalandhar, staff were dismissed and doctors suspended [S10]. A buyer will prefer the OEM or a known contractor [I].
-- OEM relationship and parts. Imported spares are hard to get [S6, S35]. Some tender specs abroad demand manufacturer authorisation [S53] [I].
+- OEM relationship and parts. Imported spares are hard to get [S6, S35]. Buyers may ask for OEM authorisation, though one PSU accepts any credible agency [S22] [I].
 - Tender rules. Experience, turnover, and EMD of ₹44,520 to ₹3 lakh [S19, S20, S18] block a new firm until it has track record [I].
 - Bundling. Medical colleges buy PSA, LMO, pipelines and staff as one contract [S18]; a PSA-only specialist cannot bid alone [I].
 - Price-led awards. Lowest bid usually wins [A] (test with bid results).
@@ -226,13 +226,13 @@ The user runs this. I contact no one.
 **Success.**
 - At least 12 of 40 hospitals confirm a plant they want running (L2).
 - At least 3 pay for a health check (L4 for the check).
-- At least 1 signs a letter of intent for a CMC at ₹1.5 lakh or more a year (L3).
+- At least 1 signs a letter of intent for a CMC at ₹1.5 lakh or more a year (L3) [A] (threshold set at the low end of the price anchors [S24, S25]).
 - Public side: at least 30 PSA CAMC tenders a year across the four portals, with 3 or fewer bidders on average.
 
 **Failure.**
 - Fewer than 5 of 40 have a plant they want to run, or most are on OEM contracts they are happy with.
-- No one pays ₹15,000 for a check.
-- Public bid results show L1 prices under ₹1.5 lakh a plant, or payment terms beyond 180 days.
+- No one pays ₹15,000 for a check [A] (threshold chosen by me; test is the offer itself).
+- Public bid results show L1 prices under ₹1.5 lakh a plant, or payment terms beyond 180 days [A] (basis: below these, founder time and spares exceed contract value, section 7 [I]).
 
 **Cost and time.**
 - Cash: ₹65,000-1,20,000 [I] (analyser ₹40,000-80,000; technician 5 days at ₹3,000-5,000; travel ₹10,000-15,000) [A].
@@ -294,7 +294,7 @@ The user runs this. I contact no one.
 | 47 | PSA on-site oxygen for healthcare | Praxair India (Linde) | https://www.praxair.co.in/industries/healthcare/medical-gases-supply/psa | not shown | 2026-10-31 | Remote monitoring offered | search summary |
 | 48 | Indian Navy team repairs two major oxygen plants in Andhra Pradesh | The Statesman | https://www.thestatesman.com/india/indian-navy-team-repairs-two-major-oxygen-plants-andhra-pradesh-1502967745.html | 2021 | 2026-10-31 | Free state repair capacity | search summary |
 | 49 | Indian Army restores defunct oxygen plant in Srinagar | WION | https://www.wionews.com/india-news/covid-19-indian-army-restores-defunct-oxygen-plant-in-srinagar-386233 | 2021-05 | 2026-10-31 | Free military repair | search summary |
-| 50 | Indian Navy conducts skill development training on maintenance of PSA oxygen plants | Indian Navy | https://indiannavy.nic.in/node/28546 | 2021-05 | 2026-10-31 | Training programme origin; DRDO supply orders 332 Tata and 48 Trident (from a merged summary that also cited DRDO's 5 May 2021 note) | search summary |
+| 50 | Indian Navy conducts skill development training on maintenance of PSA oxygen plants | Indian Navy | https://indiannavy.nic.in/node/28546 | 2021-05 | 2026-10-31 | Training programme origin | search summary |
 | 51 | Webinar 3 presentation (oxygen O&M training figures) | World Bank-hosted document | https://thedocs.worldbank.org/en/doc/9a6c2d201d655b884f76d1499cff9525-0310022021/related/Webinar-3-Presentation.pdf | 2021 | 2026-10-31 | 8,000 target; 2,215 trained (attribution to this document inferred from a merged summary) | search summary |
 | 52 | PSA oxygen plant sustainability overview | The Global Fund | https://resources.theglobalfund.org/media/bwrp43cm/cr_c19rm-psa-oxygen-plant-sustainability_overview_en.pdf | not shown | 2026-10-31 | Backup plan and maintenance budget guidance | search summary |
 | 53 | Oxygen plant warranty contract overview | The Global Fund | https://resources.theglobalfund.org/media/cidcja1l/cr_c19rm-oxygen-plant-warranty-contract_overview_en.pdf | not shown | 2026-10-31 | 5-year warranty plus maintenance advised | search summary |
@@ -306,3 +306,4 @@ The user runs this. I contact no one.
 | 59 | Oxygen cylinders, Murshidabad | Dial4Trade (marketplace) | https://www.dial4trade.com/murshidabad/oxygen-cylinders.htm | not shown | 2026-10-31 | B-type refill ₹51 | search summary |
 | 60 | Karnataka govt makes it mandatory for private hospitals to have own oxygen plants | WebJosh | https://webjosh.com/article/karnataka-govt-makes-it-mandatory-for-private-hospitals-to-have-own-oxygen-plants-1623175058-168317 | 2021-06 | 2026-10-31 | Karnataka mandate (weak outlet) | search summary |
 | 61 | Why India must keep Covid-era oxygen plants running | IndiaSpend | https://indiaspend.com/health/why-india-must-keep-covid-era-oxygen-plants-running-932840 | 2024-12 | 2026-10-31 | 53% of 3,005 working; mock drills not public; 4,135 monitored (also in Hunter file; found independently) | search summary |
+| 62 | DRDO news and press clippings, 5 May 2021 (supply orders for medical oxygen plants) | DRDO | https://drdo.gov.in/drdo/sites/default/files/drdo-news-documents/NPC_05_May_2021.pdf | 2021-05-05 | 2026-10-31 | Supply orders: 332 plants to Tata Advanced Systems, 48 to Trident Pneumatics | search summary |
