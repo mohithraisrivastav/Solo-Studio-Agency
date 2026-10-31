@@ -1,0 +1,138 @@
+{
+  "assembly": "Not applicable.",
+  "bom": [
+    {
+      "item": "moisture meter",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "per inspector",
+      "unit_cost_inr": 2500
+    },
+    {
+      "item": "digital caliper",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "per inspector",
+      "unit_cost_inr": 900
+    },
+    {
+      "item": "torch",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "per inspector",
+      "unit_cost_inr": 300
+    },
+    {
+      "item": "travel per visit",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "visit",
+      "unit_cost_inr": 300
+    }
+  ],
+  "construction_sequence": [
+    "Homeowner books through designer or society",
+    "Inspector attends delivery",
+    "Runs checklist and photographs stamps",
+    "Sends report",
+    "Re-inspects if a mismatch is found"
+  ],
+  "failure_modes": [
+    "Delivery time unpredictable, wasting inspector time",
+    "Boards swapped after inspection",
+    "Inspector conflict of interest",
+    "A visual check cannot confirm chemical treatment"
+  ],
+  "functional_principles": [
+    "Check materials on site before cutting starts",
+    "Record evidence the homeowner can see remotely",
+    "Stay independent of the supplier and carpenter"
+  ],
+  "low_cost_validation": "Founder runs the first 10 visits through 2 interior designers before hiring anyone.",
+  "maintenance": "Recalibrate moisture meters yearly.",
+  "material_options": [
+    {
+      "cons": "Leaves marks",
+      "material": "Pin moisture meter",
+      "pros": "Cheap"
+    },
+    {
+      "cons": "Costs more",
+      "material": "Pinless moisture meter",
+      "pros": "No marks"
+    }
+  ],
+  "maturity": "rough_concept",
+  "processes": [
+    {
+      "equipment": "moisture meter, caliper, torch, phone",
+      "equipment_cost_inr": 4000,
+      "in_house": true,
+      "notes": "Per inspector kit (assumption)",
+      "process": "Field inspection visit"
+    }
+  ],
+  "production_comparison": [
+    {
+      "fit": "good",
+      "method": "manual",
+      "notes": "the service is manual"
+    },
+    {
+      "fit": "poor",
+      "method": "3D printing",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "poor",
+      "method": "CNC",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "poor",
+      "method": "casting/moulding",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "poor",
+      "method": "traditional craft",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "possible",
+      "method": "hybrid",
+      "notes": "founder inspects, freelancers later"
+    },
+    {
+      "fit": "good",
+      "method": "outsourced components",
+      "notes": "use freelance inspectors"
+    },
+    {
+      "fit": "possible",
+      "method": "fully outsourced",
+      "notes": "partner with an existing inspection agency"
+    }
+  ],
+  "safety_requirements": [
+    "Site safety for inspectors (footwear, no work at height)"
+  ],
+  "technical_requirements": [
+    "Checklist: ISI mark, CM/L lookup in the BIS Care app, grade (MR/BWR/BWP), thickness by caliper, core-gap check on an offcut, moisture reading, batch photos",
+    "Report sent within 2 hours",
+    "Inspector paid by the homeowner only"
+  ],
+  "tests": [
+    "Pilot 10 visits; record minutes per visit, travel cost, and how often a mismatch is found"
+  ],
+  "tools_equipment": [
+    "moisture meter",
+    "digital caliper",
+    "torch",
+    "phone with BIS Care app"
+  ]
+}

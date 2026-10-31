@@ -20,8 +20,9 @@ HAZARDS: dict[str, dict] = {
                   "Check which Indian (BIS) or export standards apply before any sale.",
     },
     "structural": {
-        "words": r"\b(load[- ]bearing|structural|cantilever|shelf|shelving|chair|seat|stool|bench|ladder|hanging|"
-                 r"suspended|ceiling|wall[- ]mounted|bracket|beam|column|table|bed|crib|railing|scaffold)\b",
+        "words": r"\b(load[- ]bearing|structural|cantilever(ed)?|shel(f|ves)|shelving|chairs?|seats?|stools?|benches|bench|"
+                 r"ladders?|hanging|suspended|ceilings?|wall[- ]mounted|brackets?|standoffs?|beams?|columns?|tables?|beds?|"
+                 r"cribs?|railings?|scaffold|wardrobes?|tall units?|overhead)\b",
         "review": "Load calculation and physical load testing with a safety factor; structural engineer sign-off "
                   "for anything carrying people or mounted overhead.",
     },
@@ -30,13 +31,15 @@ HAZARDS: dict[str, dict] = {
         "review": "Pressure vessel rules and burst testing; specialist review mandatory.",
     },
     "chemical": {
-        "words": r"\b(resin|epoxy|solvent|acid|alkali|lye|glaze|lead|cadmium|formaldehyde|isocyanate|pigment|"
-                 r"chemical|varnish|lacquer|etchant|bleach|dye|mordant)\b",
+        "words": r"\b(resins?|epoxy|solvents?|acids?|alkali|lye|glazes?|lead paint|lead-based|cadmium|formaldehyde|isocyanates?|"
+                 r"preservatives?|termiticides?|pesticides?|insecticides?|borates?|varnish|lacquer|etchant|bleach|"
+                 r"reagents?|mordant|bait)\b",
         "review": "Safety data sheets for every chemical, ventilation and PPE, waste disposal, and residue testing "
                   "of the finished product.",
     },
     "food_contact": {
-        "words": r"\b(food|drink|beverage|cup|mug|plate|bowl|kitchen|cooking|edible|water bottle|tableware)\b",
+        "words": r"\b(food[- ]contact|food[- ]grade|drinks?|beverages?|cups?|mugs?|bowls?|edible|water bottles?|"
+                 r"tableware|cutlery|cooking surface|batter|curd)\b",
         "review": "Food-contact material compliance and migration testing (glazes, coatings, plastics).",
     },
     "medical": {
@@ -48,14 +51,23 @@ HAZARDS: dict[str, dict] = {
         "review": "Toy and child-product safety rules (small parts, toxicity, sharp edges); third-party testing.",
     },
     "fire_heat": {
-        "words": r"\b(fire|flame|candle|burn|burner|kiln|furnace|hot surface|incandescent|torch|welding)\b",
+        "words": r"\b(fire|flames?|candles?|burns?|burners?|kilns?|furnaces?|hot surfaces?|incandescent|blow ?torch|welding|"
+                 r"flammable)\b",
         "review": "Fire and heat risk assessment; surface temperature and flammability tests.",
     },
     "uv_optical": {
-        "words": r"\b(uv|ultraviolet|laser|infrared|high[- ]intensity light)\b",
+        "words": r"\b(uv|ultraviolet|laser (pointer|diode|module)|infrared emitter|high[- ]intensity light)\b",
         "review": "Optical radiation safety (eye and skin exposure limits); specialist review.",
     },
 }
+
+
+def hazard_text(concept: dict) -> str:
+    """Descriptive fields only; risk notes and comparisons mention hazards without having them."""
+    d = concept.get("detail") or {}
+    parts = [concept.get("title"), concept.get("principle"), d.get("how_it_works"), d.get("process"),
+             " ".join(d.get("materials") or []), concept.get("business_model")]
+    return " ".join(str(p) for p in parts if p)
 
 
 def detect_hazards(text: str) -> list[dict]:

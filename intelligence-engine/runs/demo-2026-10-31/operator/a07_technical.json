@@ -1,0 +1,573 @@
+{
+ "technical:cpt_5af7828f45": {
+  "functional_principles": [
+   "Seal every cut edge and drilled hole after fabrication, where factory surface treatment is lost",
+   "Carry a fluorescent tracer so coverage shows under a 365 nm UV torch",
+   "Stay compatible with laminate and edge-band adhesives"
+  ],
+  "technical_requirements": [
+   "Preservative of a type permitted for wood in India; termiticides likely need registration under the Insecticides Act (verify with a regulatory consultant)",
+   "Tracer visible at 1 m with a 365 nm torch, invisible under normal light, no bleed through 1 mm laminate",
+   "Touch dry within 2 hours at 25-35°C",
+   "No loss of adhesive bond strength versus untreated edges"
+  ],
+  "material_options": [
+   {
+    "material": "Borate preservative (e.g. disodium octaborate) in water",
+    "pros": "Low toxicity, cheap, widely used for wood",
+    "cons": "Leaches in wet areas; weak for kitchens and bathrooms"
+   },
+   {
+    "material": "Synthetic pyrethroid in solvent carrier",
+    "pros": "Longer residual effect",
+    "cons": "Registration, handling and VOC issues"
+   },
+   {
+    "material": "Primer or bitumen edge sealer only",
+    "pros": "Cheap, blocks moisture",
+    "cons": "No termite action; moisture control only"
+   }
+  ],
+  "processes": [
+   {
+    "process": "Formulation by a contract formulator",
+    "in_house": false,
+    "equipment": "none in-house",
+    "equipment_cost_inr": 0,
+    "notes": "Needs a partner with wood-preservative experience"
+   },
+   {
+    "process": "Kit assembly and packing",
+    "in_house": true,
+    "equipment": "bench and labels",
+    "equipment_cost_inr": 5000,
+    "notes": "Manual"
+   }
+  ],
+  "production_comparison": [
+   {
+    "method": "manual",
+    "fit": "good",
+    "notes": "kit assembly by hand"
+   },
+   {
+    "method": "3D printing",
+    "fit": "poor",
+    "notes": "nothing to print"
+   },
+   {
+    "method": "CNC",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "casting/moulding",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "traditional craft",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "hybrid",
+    "fit": "possible",
+    "notes": "in-house assembly, outsourced chemistry"
+   },
+   {
+    "method": "outsourced components",
+    "fit": "good",
+    "notes": "tins, brushes, torches bought in"
+   },
+   {
+    "method": "fully outsourced",
+    "fit": "good",
+    "notes": "contract formulator can fill and pack"
+   }
+  ],
+  "prototype_dimensions": "250 ml tin with brush; 365 nm UV torch; enough for one 2.1 m wardrobe (estimate, to be measured)",
+  "tolerances": "Not applicable. Acceptance target: at least 95% of cut edge length fluoresces in the UV check.",
+  "bom": [
+   {
+    "item": "borate preservative concentrate",
+    "qty": 1,
+    "unit": "dose",
+    "unit_cost_inr": 180,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "fluorescent tracer",
+    "qty": 1,
+    "unit": "dose",
+    "unit_cost_inr": 40,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "250 ml tin and label",
+    "qty": 1,
+    "unit": "each",
+    "unit_cost_inr": 45,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "brush",
+    "qty": 1,
+    "unit": "each",
+    "unit_cost_inr": 25,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "365 nm UV torch",
+    "qty": 1,
+    "unit": "each",
+    "unit_cost_inr": 180,
+    "source": "assumption",
+    "note": "could be lent, not sold, per contractor"
+   },
+   {
+    "item": "carton and leaflet",
+    "qty": 1,
+    "unit": "each",
+    "unit_cost_inr": 25,
+    "source": "assumption",
+    "note": ""
+   }
+  ],
+  "tools_equipment": [
+   "brush",
+   "UV torch",
+   "gloves"
+  ],
+  "construction_sequence": [
+   "Carpenter cuts and drills all panels",
+   "Apply sealant to every cut edge and hole",
+   "Dry 1-2 hours",
+   "Homeowner or designer checks edges with the UV torch and marks gaps",
+   "Touch up, then apply laminate and edge band"
+  ],
+  "assembly": "No assembly; applied on site before laminate.",
+  "safety_requirements": [
+   "Gloves and ventilation during application",
+   "Safety data sheet and labels as required for the chosen chemistry",
+   "Do not shine the UV torch into eyes",
+   "Keep away from food preparation surfaces"
+  ],
+  "failure_modes": [
+   "Tracer fades before inspection",
+   "Sealant does not penetrate dense edges",
+   "Borate leaches in wet kitchens",
+   "Carpenter skips hidden edges",
+   "Adhesive bond weakens"
+  ],
+  "maintenance": "None after installation.",
+  "tests": [
+   "UV coverage check on 20 treated offcuts",
+   "Adhesive pull test against untreated controls",
+   "Field exposure of treated and untreated edge samples at a termite-active site for 3-6 months, ideally with a wood research lab"
+  ],
+  "low_cost_validation": "Buy an off-the-shelf borate wood preservative and a fluorescent additive, treat 20 plywood offcuts, check UV visibility and adhesive bond, and run a 3-6 month side-by-side exposure test before any formulation work.",
+  "maturity": "rough_concept"
+ },
+ "technical:cpt_a38a414885": {
+  "functional_principles": [
+   "Break hidden contact between wall or floor and the furniture carcass",
+   "Make any termite mud tube cross visible metal so it can be seen early",
+   "Allow inspection behind the plinth",
+   "Carry the unit's load and prevent tipping"
+  ],
+  "technical_requirements": [
+   "Hold a loaded 2.1 m wardrobe (estimate 150 kg, to be checked) with a safety factor of at least 3",
+   "Anti-tip restraint on every tall unit",
+   "Gap 25-40 mm, kept clear of trims and fillers",
+   "Galvanised or stainless parts for humid interiors",
+   "Floor feet with a metal shield lip so termites cannot climb hidden"
+  ],
+  "material_options": [
+   {
+    "material": "Galvanised mild steel 2 mm",
+    "pros": "Cheap, strong, local fabricators can make it",
+    "cons": "Zinc coating damaged at cut edges"
+   },
+   {
+    "material": "Stainless steel 304",
+    "pros": "Best corrosion resistance",
+    "cons": "About 3-4x the material cost (assumption)"
+   },
+   {
+    "material": "Aluminium extrusion",
+    "pros": "Light, neat",
+    "cons": "Lower stiffness; needs larger sections"
+   }
+  ],
+  "processes": [
+   {
+    "process": "Laser cutting and press-brake bending",
+    "in_house": false,
+    "equipment": "job shop",
+    "equipment_cost_inr": 0,
+    "notes": "Order small batches"
+   },
+   {
+    "process": "Hot-dip or electro galvanising",
+    "in_house": false,
+    "equipment": "galvaniser",
+    "equipment_cost_inr": 0,
+    "notes": "Batch minimums may apply"
+   },
+   {
+    "process": "Packing in sets",
+    "in_house": true,
+    "equipment": "none",
+    "equipment_cost_inr": 0,
+    "notes": "Manual"
+   }
+  ],
+  "production_comparison": [
+   {
+    "method": "manual",
+    "fit": "possible",
+    "notes": "hacksaw, drill and vice for the first prototypes"
+   },
+   {
+    "method": "3D printing",
+    "fit": "poor",
+    "notes": "not strong enough for loads"
+   },
+   {
+    "method": "CNC",
+    "fit": "possible",
+    "notes": "laser or punch press at a job shop"
+   },
+   {
+    "method": "casting/moulding",
+    "fit": "poor",
+    "notes": "not needed for sheet parts"
+   },
+   {
+    "method": "traditional craft",
+    "fit": "possible",
+    "notes": "local fabricators can bend and drill"
+   },
+   {
+    "method": "hybrid",
+    "fit": "good",
+    "notes": "job-shop parts, in-house kitting"
+   },
+   {
+    "method": "outsourced components",
+    "fit": "good",
+    "notes": "levelling feet and anchors bought in"
+   },
+   {
+    "method": "fully outsourced",
+    "fit": "good",
+    "notes": "fabricator can supply finished sets"
+   }
+  ],
+  "prototype_dimensions": "Wall bracket: 2 mm GI, 60 x 60 mm legs, 40 mm wide, 30 mm standoff. Floor foot: 40 mm diameter, 30 mm high, M10 leveller, 60 mm shield lip.",
+  "tolerances": "Hole positions +/-0.5 mm; bend angle +/-1 degree; standoff gap 30 +/-3 mm.",
+  "parts": [
+   {
+    "name": "wall_bracket",
+    "shape": "box",
+    "dims_mm": [
+     60,
+     40,
+     2
+    ],
+    "position_mm": [
+     0,
+     0,
+     1800
+    ],
+    "material": "galvanised steel"
+   },
+   {
+    "name": "wall_bracket_leg",
+    "shape": "box",
+    "dims_mm": [
+     2,
+     40,
+     60
+    ],
+    "position_mm": [
+     0,
+     0,
+     1740
+    ],
+    "material": "galvanised steel"
+   },
+   {
+    "name": "floor_foot",
+    "shape": "cylinder",
+    "dims_mm": [
+     40,
+     30
+    ],
+    "position_mm": [
+     100,
+     300,
+     0
+    ],
+    "material": "steel leveller"
+   },
+   {
+    "name": "shield_lip",
+    "shape": "cylinder",
+    "dims_mm": [
+     60,
+     1
+    ],
+    "position_mm": [
+     100,
+     300,
+     30
+    ],
+    "material": "galvanised steel"
+   },
+   {
+    "name": "clip_plinth",
+    "shape": "box",
+    "dims_mm": [
+     1800,
+     12,
+     100
+    ],
+    "position_mm": [
+     0,
+     -12,
+     0
+    ],
+    "material": "plywood or aluminium"
+   }
+  ],
+  "bom": [
+   {
+    "item": "wall bracket (GI, fabricated)",
+    "qty": 6,
+    "unit": "each",
+    "unit_cost_inr": 45,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "adjustable floor foot with shield lip",
+    "qty": 4,
+    "unit": "each",
+    "unit_cost_inr": 90,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "anchors and screws",
+    "qty": 1,
+    "unit": "set",
+    "unit_cost_inr": 120,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "plinth clips",
+    "qty": 1,
+    "unit": "set",
+    "unit_cost_inr": 150,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "anti-tip strap",
+    "qty": 1,
+    "unit": "each",
+    "unit_cost_inr": 80,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "packing",
+    "qty": 1,
+    "unit": "set",
+    "unit_cost_inr": 40,
+    "source": "assumption",
+    "note": ""
+   }
+  ],
+  "tools_equipment": [
+   "drill",
+   "spirit level",
+   "wall anchor bits"
+  ],
+  "construction_sequence": [
+   "Build carcass as usual",
+   "Fit floor feet and level",
+   "Set unit with a 30 mm wall gap",
+   "Fix wall brackets with anchors suited to the wall",
+   "Fit anti-tip strap",
+   "Clip on the removable plinth"
+  ],
+  "assembly": "Carpenter fits on site with a printed guide; about 45 minutes per wardrobe (assumption).",
+  "safety_requirements": [
+   "Anti-tip restraint is mandatory",
+   "Anchor type matched to brick, block or AAC wall",
+   "Static load test before sale",
+   "Structural review for tall or overhead units"
+  ],
+  "failure_modes": [
+   "Bracket bends under load",
+   "Anchors pull out of weak walls",
+   "Carpenter bridges the gap with trims or filler",
+   "Termites climb hidden inside feet if the shield lip is missing",
+   "Dust collects in the gap"
+  ],
+  "maintenance": "Remove the plinth every 6 months and look for mud tubes on metal.",
+  "tests": [
+   "Static load at 3x expected load for 24 hours",
+   "Anchor pull-out tests in brick and AAC",
+   "Observation in 2 homes with past termite activity for 6 months"
+  ],
+  "low_cost_validation": "Have a local fabricator make 2 sets for about ₹3,000 (assumption), load test with sandbags, and install in 2 volunteer homes with a termite history.",
+  "maturity": "concept_with_dimensions"
+ },
+ "technical:cpt_53d7f7d4b8": {
+  "functional_principles": [
+   "Check materials on site before cutting starts",
+   "Record evidence the homeowner can see remotely",
+   "Stay independent of the supplier and carpenter"
+  ],
+  "technical_requirements": [
+   "Checklist: ISI mark, CM/L lookup in the BIS Care app, grade (MR/BWR/BWP), thickness by caliper, core-gap check on an offcut, moisture reading, batch photos",
+   "Report sent within 2 hours",
+   "Inspector paid by the homeowner only"
+  ],
+  "material_options": [
+   {
+    "material": "Pin moisture meter",
+    "pros": "Cheap",
+    "cons": "Leaves marks"
+   },
+   {
+    "material": "Pinless moisture meter",
+    "pros": "No marks",
+    "cons": "Costs more"
+   }
+  ],
+  "processes": [
+   {
+    "process": "Field inspection visit",
+    "in_house": true,
+    "equipment": "moisture meter, caliper, torch, phone",
+    "equipment_cost_inr": 4000,
+    "notes": "Per inspector kit (assumption)"
+   }
+  ],
+  "production_comparison": [
+   {
+    "method": "manual",
+    "fit": "good",
+    "notes": "the service is manual"
+   },
+   {
+    "method": "3D printing",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "CNC",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "casting/moulding",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "traditional craft",
+    "fit": "poor",
+    "notes": "not relevant"
+   },
+   {
+    "method": "hybrid",
+    "fit": "possible",
+    "notes": "founder inspects, freelancers later"
+   },
+   {
+    "method": "outsourced components",
+    "fit": "good",
+    "notes": "use freelance inspectors"
+   },
+   {
+    "method": "fully outsourced",
+    "fit": "possible",
+    "notes": "partner with an existing inspection agency"
+   }
+  ],
+  "bom": [
+   {
+    "item": "moisture meter",
+    "qty": 1,
+    "unit": "per inspector",
+    "unit_cost_inr": 2500,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "digital caliper",
+    "qty": 1,
+    "unit": "per inspector",
+    "unit_cost_inr": 900,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "torch",
+    "qty": 1,
+    "unit": "per inspector",
+    "unit_cost_inr": 300,
+    "source": "assumption",
+    "note": ""
+   },
+   {
+    "item": "travel per visit",
+    "qty": 1,
+    "unit": "visit",
+    "unit_cost_inr": 300,
+    "source": "assumption",
+    "note": ""
+   }
+  ],
+  "tools_equipment": [
+   "moisture meter",
+   "digital caliper",
+   "torch",
+   "phone with BIS Care app"
+  ],
+  "construction_sequence": [
+   "Homeowner books through designer or society",
+   "Inspector attends delivery",
+   "Runs checklist and photographs stamps",
+   "Sends report",
+   "Re-inspects if a mismatch is found"
+  ],
+  "assembly": "Not applicable.",
+  "safety_requirements": [
+   "Site safety for inspectors (footwear, no work at height)"
+  ],
+  "failure_modes": [
+   "Delivery time unpredictable, wasting inspector time",
+   "Boards swapped after inspection",
+   "Inspector conflict of interest",
+   "A visual check cannot confirm chemical treatment"
+  ],
+  "maintenance": "Recalibrate moisture meters yearly.",
+  "tests": [
+   "Pilot 10 visits; record minutes per visit, travel cost, and how often a mismatch is found"
+  ],
+  "low_cost_validation": "Founder runs the first 10 visits through 2 interior designers before hiring anyone.",
+  "maturity": "rough_concept"
+ }
+}

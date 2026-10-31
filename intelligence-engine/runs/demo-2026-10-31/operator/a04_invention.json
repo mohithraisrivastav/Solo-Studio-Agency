@@ -1,0 +1,256 @@
+{
+ "invent:first_principles:c0": {
+  "concepts": [
+   {
+    "title": "Traceable edge-seal treatment applied after cutting",
+    "core_principle": "Protection fails at fresh cuts and drill holes, so treat every exposed edge after fabrication and add a fluorescent tracer so coverage can be checked with a UV torch.",
+    "how_it_works": "The carpenter brushes a preservative sealant onto every cut edge and hole once the carcass is built. The sealant carries a fluorescent tracer. The homeowner shines a UV torch on edges to see any untreated spots before laminate goes on.",
+    "assumption_challenged": "That termite resistance is a property you buy with the board; in practice it is lost wherever the board is cut.",
+    "user_value": "Proof that the weakest points of the furniture were protected, visible to a non-expert in minutes.",
+    "target_buyer": "Homeowners commissioning built-in wardrobes and kitchens, through interior designers and contractors.",
+    "materials": [
+     "preservative sealant (chemistry to be specified with a formulator)",
+     "fluorescent tracer",
+     "UV torch"
+    ],
+    "process": "Contract-filled sealant in 250 ml tins plus a UV torch; carpenters apply on site.",
+    "business_model": "Per-project kit sold to carpenters and contractors; repeat purchase per project.",
+    "why_different": "Existing grades treat the board at the factory; this treats the cut edges where surface treatment is lost, and makes coverage visible.",
+    "key_risks": [
+     "Preservative chemistry needs regulatory and safety checks",
+     "Carpenters may skip it unless the homeowner asks",
+     "Tracer must not show through finish"
+    ],
+    "evidence_claim_ids": [
+     "clm_c2bc910396",
+     "clm_d42b783ffd",
+     "clm_4bc2d9c1cc"
+    ],
+    "axes": {
+     "principle_class": "chemical",
+     "value_type": "risk_reduction",
+     "material_class": "polymer",
+     "business_model_class": "recurring_supply",
+     "interaction_mode": "consumable"
+    }
+   }
+  ]
+ },
+ "invent:cross_domain:c0": {
+  "concepts": [
+   {
+    "title": "Colour-change swab kit for board treatment",
+    "core_principle": "Borrow wood-preservation lab spot tests (colour reagents that react with specific preservative chemicals) and package them as a swab kit a homeowner can use on a fresh cut.",
+    "how_it_works": "The homeowner or designer swabs a fresh offcut from each batch; a reagent changes colour if the target preservative is present. The kit covers only the preservative families that have a known colour reaction; it cannot confirm all treatments.",
+    "assumption_challenged": "That only manufacturers and labs can check treatment.",
+    "user_value": "A yes/no check on the boards actually delivered, before they are built in.",
+    "target_buyer": "Homeowners and interior designers buying plywood for a project; consumer groups.",
+    "materials": [
+     "reagent solutions in dropper vials",
+     "swabs",
+     "colour card"
+    ],
+    "process": "Reagents bought in bulk, filled and labelled by a contract packer; sold online and via designers.",
+    "business_model": "Product sale of kits (₹ price to be tested); possible bulk sales to designers.",
+    "why_different": "Moves a lab method to the point of delivery; brand QR codes prove the sheet's origin, not the treatment of the actual board.",
+    "key_risks": [
+     "Many treatments may have no simple colour test",
+     "False negatives would destroy trust",
+     "Reagent safety and shelf life"
+    ],
+    "evidence_claim_ids": [
+     "clm_c2bc910396",
+     "clm_d42b783ffd",
+     "clm_7817f35136"
+    ],
+    "axes": {
+     "principle_class": "chemical",
+     "value_type": "risk_reduction",
+     "material_class": "mixed",
+     "business_model_class": "product_sale",
+     "interaction_mode": "consumable"
+    },
+    "source_field": "analytical chemistry and wood-preservation testing"
+   }
+  ]
+ },
+ "invent:inversion:c0": {
+  "concepts": [
+   {
+    "title": "Five-year termite and board warranty for carpenter-built furniture",
+    "core_principle": "Invert who carries the risk: instead of the buyer verifying materials, a third party warrants the finished furniture and only accepts jobs built with materials it has checked.",
+    "how_it_works": "Homeowner pays a fee at project start. An inspector checks boards on delivery and the build at handover. If termites or board failure appear within five years, the warrantor pays for repair. Claims data then rewards good carpenters.",
+    "assumption_challenged": "That the buyer must judge materials they cannot see.",
+    "user_value": "A buyer gets a promise backed by money, not a sticker.",
+    "target_buyer": "Homeowners spending on full-home interiors; housing developers offering fit-outs.",
+    "materials": [
+     "none (service)"
+    ],
+    "process": "Inspections by trained staff; claims handled by partner carpenters.",
+    "business_model": "Warranty fee per project; needs a legal structure that does not count as unlicensed insurance.",
+    "why_different": "Existing brand guarantees cover the board only; this covers the finished furniture and the workmanship.",
+    "key_risks": [
+     "May be regulated as insurance",
+     "Claim costs unknown without loss data",
+     "Fraud and disputes"
+    ],
+    "evidence_claim_ids": [
+     "clm_4bc2d9c1cc",
+     "clm_d42b783ffd",
+     "clm_17b1634b5b"
+    ],
+    "axes": {
+     "principle_class": "business_model",
+     "value_type": "risk_reduction",
+     "material_class": "none_digital",
+     "business_model_class": "service",
+     "interaction_mode": "service_delivered"
+    }
+   }
+  ]
+ },
+ "invent:constraint_transformation:c0": {
+  "concepts": [
+   {
+    "title": "Termite-break standoff mounting for built-in furniture",
+    "core_principle": "Change the installation constraint: subterranean termites usually reach built-ins through walls and floors, so mount carcasses on metal standoffs that leave an open, visible gap.",
+    "how_it_works": "Galvanised steel brackets hold wardrobes and kitchen units 25-40 mm off the wall and floor. The gap breaks hidden contact, so any termite mud tube must cross open, visible metal. A plinth panel clips off for inspection.",
+    "assumption_challenged": "That built-ins must be fixed flush to walls and floors.",
+    "user_value": "Physical protection that does not depend on board chemistry, with easy inspection.",
+    "target_buyer": "Carpenters and interior contractors fitting wardrobes, kitchens and beds; homeowners in termite-prone ground floors.",
+    "materials": [
+     "galvanised steel brackets",
+     "fixings",
+     "clip-on plinth panel"
+    ],
+    "process": "Brackets laser-cut and bent by a job shop; sold in packs per wardrobe.",
+    "business_model": "Product sale to carpenters and contractors, plus a fitting guide.",
+    "why_different": "Works on any board and any carpenter's build; borrowed from termite shields used on house stumps.",
+    "key_risks": [
+     "Load and fixing safety for tall units",
+     "Loses a little interior depth",
+     "Termites can still come through other routes"
+    ],
+    "evidence_claim_ids": [
+     "clm_17b1634b5b",
+     "clm_4bc2d9c1cc",
+     "clm_eb9d5f3379"
+    ],
+    "axes": {
+     "principle_class": "material_structural",
+     "value_type": "risk_reduction",
+     "material_class": "metal",
+     "business_model_class": "product_sale",
+     "interaction_mode": "installed_system"
+    }
+   }
+  ]
+ },
+ "invent:unmet_need:c0": {
+  "concepts": [
+   {
+    "title": "Delivery-day material inspection visit",
+    "core_principle": "The buyer is rarely present when boards arrive; an independent inspector attends delivery and checks what is actually on site.",
+    "how_it_works": "An inspector visits on the day boards arrive: checks ISI marks and licence numbers, photographs batch stamps, checks core voids and edges, and sends a short report to the homeowner before cutting starts.",
+    "assumption_challenged": "That checking needs to happen after something goes wrong.",
+    "user_value": "Catch substitution before the material is built in, without the homeowner taking leave.",
+    "target_buyer": "Homeowners with renovations above about ₹3 lakh who are not on site; NRI owners.",
+    "materials": [
+     "none (service)",
+     "inspection checklist",
+     "moisture meter"
+    ],
+    "process": "Field inspectors booked through interior designers and housing societies.",
+    "business_model": "Per-visit fee paid by homeowner.",
+    "why_different": "Existing advice tells buyers what to check; this does the check for them at the right moment.",
+    "key_risks": [
+     "Inspector cost per visit vs price buyers pay",
+     "Carpenters may resist",
+     "Cannot confirm chemical treatment by eye"
+    ],
+    "evidence_claim_ids": [
+     "clm_7817f35136",
+     "clm_d42b783ffd",
+     "clm_eb9d5f3379"
+    ],
+    "axes": {
+     "principle_class": "informational",
+     "value_type": "risk_reduction",
+     "material_class": "none_digital",
+     "business_model_class": "service",
+     "interaction_mode": "service_delivered"
+    }
+   }
+  ]
+ },
+ "invent:combination:c0": {
+  "concepts": [
+   {
+    "title": "Board passport: licence lookup plus photo trail",
+    "core_principle": "Combine the carpenter's existing phone photos with a lookup of the board's ISI licence number, timestamps, and a shared record for the homeowner.",
+    "how_it_works": "The carpenter photographs each sheet's ISI mark and licence number at purchase and at cutting. The app reads the number, checks it against the public licence record where available, and builds a time-stamped passport the homeowner can see. Carpenters with complete passports get a profile badge.",
+    "assumption_challenged": "That trust between carpenter and homeowner has to be personal.",
+    "user_value": "A record of what went into the furniture, created as part of normal work.",
+    "target_buyer": "Carpenters who want to stand out; homeowners hiring them.",
+    "materials": [
+     "smartphone app",
+     "cloud storage"
+    ],
+    "process": "Software built by a small team; onboarding through carpenter networks.",
+    "business_model": "Free for carpenters; subscription for interior firms; lead fees later.",
+    "why_different": "Brand QR codes verify one brand; this works across brands and records where each board went.",
+    "key_risks": [
+     "Licence lookup may not be available by API",
+     "Photos prove a mark, not the treatment",
+     "Carpenter adoption"
+    ],
+    "evidence_claim_ids": [
+     "clm_7817f35136",
+     "clm_eb9d5f3379"
+    ],
+    "axes": {
+     "principle_class": "software",
+     "value_type": "access",
+     "material_class": "none_digital",
+     "business_model_class": "software_subscription",
+     "interaction_mode": "software"
+    }
+   }
+  ]
+ },
+ "invent:radical:c0": {
+  "concepts": [
+   {
+    "title": "Bait-cartridge plinth that intercepts termites",
+    "core_principle": "Use termite baiting, an established pest-control method, inside the furniture plinth so foraging termites find bait before they find the board.",
+    "how_it_works": "The plinth has a slot for a monitored bait cartridge. A pest-control partner checks and swaps cartridges each quarter. If termites take the bait, the colony is suppressed before damage spreads.",
+    "assumption_challenged": "That furniture protection must be inside the board.",
+    "user_value": "Active protection and early warning, independent of what board was used.",
+    "target_buyer": "Homeowners in termite-prone areas, via pest-control companies and builders.",
+    "materials": [
+     "moulded plinth slot",
+     "bait cartridges from a licensed supplier"
+    ],
+    "process": "Plinth inserts made by a moulder; cartridges supplied and serviced by licensed pest controllers.",
+    "business_model": "Insert sale plus a service subscription shared with pest-control partners.",
+    "why_different": "Bait stations are used around buildings, not inside furniture; this puts the defence where the asset is.",
+    "key_risks": [
+     "Pesticide rules and licensed handling",
+     "Bait may not attract termites indoors",
+     "Needs a pest-control partner"
+    ],
+    "evidence_claim_ids": [
+     "clm_17b1634b5b",
+     "clm_4bc2d9c1cc"
+    ],
+    "axes": {
+     "principle_class": "biological",
+     "value_type": "risk_reduction",
+     "material_class": "polymer",
+     "business_model_class": "recurring_supply",
+     "interaction_mode": "installed_system"
+    }
+   }
+  ]
+ }
+}

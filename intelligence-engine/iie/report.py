@@ -14,6 +14,14 @@ def _tbl(headers: list[str], rows: list[list]) -> list[str]:
     return out
 
 
+def _latest(rows: list[dict], key: str = "concept_id") -> list[dict]:
+    """Keep the newest row per concept (rows must be ordered by created_at)."""
+    out: dict = {}
+    for r in rows:
+        out[r.get(key) or r["id"]] = r
+    return list(out.values())
+
+
 def project_report(db: DB, pid: str) -> str:
     p = db.get("projects", pid)
     L: list[str] = [f"# {p['title']}", "", f"Question: {p['question']}", "",
@@ -25,7 +33,13 @@ def project_report(db: DB, pid: str) -> str:
     models = db.query("events", "project_id=? AND kind='model_request'", (pid,))
     L += ["## How this was produced", ""]
     provs = sorted({m["summary"].split(" via ")[-1] for m in models})
-    L.append(f"- Model requests: {len(models)} via {', '.join(provs) or 'none'}")
+    distinct = len({m["summary"].split(" via ")[0] for m in models})
+    L.append(f"- Distinct structured requests: {distinct} via {', '.join(provs) or 'none'} "
+             f"({len(models)} request events; repeats after reruns were served from stored answers)")
+    sup = db.query("jobs", "project_id=? AND status='superseded'", (pid,), "created_at")
+    if sup:
+        L.append(f"- {len(sup)} stage runs were superseded and rerun: " +
+                 "; ".join(sorted({f"{j['stage']}: {clip(j['error'] or '', 120)}" for j in sup})))
     if ops:
         who = sorted({o['answered_by'] for o in ops})
         L.append(f"- {len(ops)} structured requests were answered through the operator queue by: {', '.join(who)}")
@@ -108,7 +122,7 @@ def project_report(db: DB, pid: str) -> str:
                     L.append(f"  - {pa['similarity']}: {clip(s['title'], 100)} ({s['url']})")
             L.append("")
 
-    plans = db.query("technical_plans", "project_id=?", (pid,))
+    plans = _latest(db.query("technical_plans", "project_id=?", (pid,), "created_at"))
     if plans:
         L += ["## Technical analysis", ""]
         for t in plans:
@@ -200,7 +214,7 @@ def project_report(db: DB, pid: str) -> str:
                   [[clip((db.get("concepts", e["concept_id"]) or {}).get("title", ""), 30), clip(e["assumption"], 60), clip(e["method"], 120),
                     money(e["cost_inr"]), e["duration_days"], clip(e["success_criteria"], 60), clip(e["failure_criteria"], 60),
                     f"L{e['evidence_level_target']}", ", ".join(e["gated_actions"] or []) or "-"] for e in exps]) + [""]
-    decs = db.query("decisions", "project_id=?", (pid,), "created_at")
+    decs = _latest(db.query("decisions", "project_id=?", (pid,), "created_at"))
     if decs:
         L += ["## Decision", ""]
         for d in decs:

@@ -1,0 +1,127 @@
+{
+ "experiments:cpt_5af7828f45": {
+  "experiments": [
+   {
+    "assumption": "Registration for a termiticide edge sealant is affordable or avoidable",
+    "hypothesis": "A registered wood preservative can be used as-is, or registration costs under ₹3 lakh and 12 months.",
+    "method": "One paid consultation with an agrochemical regulatory consultant, plus a check of registered wood-preservative products.",
+    "cost_inr": 5000,
+    "duration_days": 7,
+    "success_criteria": "clear path under ₹3 lakh and 12 months",
+    "failure_criteria": "path over 12 months or unknown cost",
+    "evidence_level_target": 1,
+    "gated_actions": [
+     "send_message",
+     "spend_money"
+    ]
+   },
+   {
+    "assumption": "Carpenters will apply it to every edge without supervision",
+    "hypothesis": "At least 4 of 5 carpenters reach 95% UV-visible edge coverage on a real job.",
+    "method": "Give 5 carpenters a hand-mixed kit (borate product plus tracer) and inspect their next job with a UV torch.",
+    "cost_inr": 3000,
+    "duration_days": 21,
+    "success_criteria": "4 or more of 5 reach 95% coverage",
+    "failure_criteria": "2 or fewer reach it",
+    "evidence_level_target": 2,
+    "gated_actions": [
+     "purchase"
+    ]
+   },
+   {
+    "assumption": "A board maker would license the tracer idea",
+    "hypothesis": "At least one board maker's product team asks for a trial.",
+    "method": "Send a one-page proposal to two board makers' product teams.",
+    "cost_inr": 0,
+    "duration_days": 30,
+    "success_criteria": "a trial request",
+    "failure_criteria": "no reply after one follow-up",
+    "evidence_level_target": 2,
+    "gated_actions": [
+     "send_message"
+    ]
+   }
+  ]
+ },
+ "experiments:cpt_a38a414885": {
+  "experiments": [
+   {
+    "assumption": "Brackets and anchors hold a loaded tall wardrobe safely",
+    "hypothesis": "No bracket deforms more than 2 mm and no anchor pulls out at 3x expected load.",
+    "method": "Sandbag load test on brick and AAC walls for 24 hours with two prototype sets.",
+    "cost_inr": 4000,
+    "duration_days": 7,
+    "success_criteria": "no pull-out, deflection under 2 mm",
+    "failure_criteria": "any pull-out",
+    "evidence_level_target": 1,
+    "gated_actions": [
+     "purchase"
+    ]
+   },
+   {
+    "assumption": "Carpenters will pay a price that covers cost",
+    "hypothesis": "At least 4 of 10 carpenters say they would pay ₹3,500 or more per set and quote it to clients.",
+    "method": "Show the prototype to 10 carpenters; ask what they would pay and whether clients would accept it.",
+    "cost_inr": 1000,
+    "duration_days": 10,
+    "success_criteria": "4 or more at ₹3,500+",
+    "failure_criteria": "median answer under ₹1,500",
+    "evidence_level_target": 2,
+    "gated_actions": []
+   },
+   {
+    "assumption": "Termites reach built-ins mainly through walls and floors",
+    "hypothesis": "Most pest-control technicians report wall or floor contact as the usual entry route in apartments.",
+    "method": "Interview 5 pest-control technicians about entry routes they find in built-in furniture.",
+    "cost_inr": 0,
+    "duration_days": 7,
+    "success_criteria": "most cite wall or floor contact",
+    "failure_criteria": "most cite infested boards or other routes",
+    "evidence_level_target": 1,
+    "gated_actions": []
+   }
+  ]
+ },
+ "experiments:cpt_53d7f7d4b8": {
+  "experiments": [
+   {
+    "assumption": "Homeowners will pay for remote verification",
+    "hypothesis": "At least 5 of 20 homeowners pay ₹499 for a 30-minute video check of delivered boards.",
+    "method": "Offer the paid video check through two interior designers; messages and any booking page need user approval.",
+    "cost_inr": 2000,
+    "duration_days": 21,
+    "success_criteria": "5 or more paid",
+    "failure_criteria": "0 or 1 paid",
+    "evidence_level_target": 4,
+    "gated_actions": [
+     "send_message",
+     "publish"
+    ]
+   },
+   {
+    "assumption": "Designers will refer clients",
+    "hypothesis": "At least 2 of 5 designers agree to refer clients.",
+    "method": "Ask 5 interior designers directly.",
+    "cost_inr": 0,
+    "duration_days": 7,
+    "success_criteria": "2 or more agree",
+    "failure_criteria": "none agree",
+    "evidence_level_target": 2,
+    "gated_actions": [
+     "send_message"
+    ]
+   },
+   {
+    "assumption": "Inspections find problems homeowners care about",
+    "hypothesis": "At least 2 of the first 10 checks find a mismatch the homeowner acts on.",
+    "method": "Record every mismatch found in the first 10 checks and whether the homeowner acted.",
+    "cost_inr": 3000,
+    "duration_days": 30,
+    "success_criteria": "2 or more acted-on mismatches",
+    "failure_criteria": "no mismatches found",
+    "evidence_level_target": 1,
+    "gated_actions": []
+   }
+  ]
+ }
+}

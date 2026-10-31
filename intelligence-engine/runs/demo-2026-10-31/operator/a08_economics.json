@@ -1,0 +1,319 @@
+{
+ "economics:cpt_5af7828f45": {
+  "price": 1499,
+  "price_source": "assumption",
+  "price_includes_tax": true,
+  "tax_rate": 0.18,
+  "materials": [
+   {
+    "name": "borate preservative concentrate",
+    "amount": 180,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "fluorescent tracer",
+    "amount": 40,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "tin and label",
+    "amount": 45,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "brush",
+    "amount": 25,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "365 nm UV torch",
+    "amount": 180,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "carton and leaflet",
+    "amount": 25,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "hired_labour_hours": 0,
+  "hired_labour_rate": 0,
+  "founder_hours_per_unit": 0.25,
+  "reject_rate": 0.03,
+  "packaging": 30,
+  "shipping": 90,
+  "installation": 0,
+  "aftercare_reserve": 20,
+  "channel": "interior designers and contractors, plus online",
+  "channel_commission_rate": 0.2,
+  "payment_fee_rate": 0.02,
+  "returns_rate": 0.03,
+  "cac": 600,
+  "units_per_customer": 2,
+  "one_time": [
+   {
+    "name": "formulation with a contract formulator",
+    "amount": 150000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "regulatory advice and possible registration",
+    "amount": 250000,
+    "source": "assumption",
+    "capex": false,
+    "note": "cost and time highly uncertain"
+   },
+   {
+    "name": "termite exposure testing with a lab",
+    "amount": 80000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "brand and packaging design",
+    "amount": 30000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "monthly_fixed": [
+   {
+    "name": "storage and office share",
+    "amount": 5000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "product liability insurance",
+    "amount": 2000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "units_per_month": 60,
+  "dev_weeks": 26,
+  "lead_time_days": 21,
+  "sales_cycle_days": 30,
+  "batch_units": 300,
+  "receivable_days": 15,
+  "payable_days": 0,
+  "inventory_days": 60,
+  "rationale": "Kit priced near a premium sealant tin. Registration and testing dominate setup cost and time; volume assumes designer partnerships that do not exist yet."
+ },
+ "economics:cpt_a38a414885": {
+  "price": 2499,
+  "price_source": "assumption",
+  "price_includes_tax": true,
+  "tax_rate": 0.18,
+  "materials": [
+   {
+    "name": "wall brackets x6 (GI, job shop)",
+    "amount": 270,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "floor feet with shield lip x4",
+    "amount": 360,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "anchors and screws",
+    "amount": 120,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "plinth clips",
+    "amount": 150,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "anti-tip strap",
+    "amount": 80,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "hired_labour_hours": 0,
+  "hired_labour_rate": 0,
+  "founder_hours_per_unit": 0.3,
+  "reject_rate": 0.03,
+  "packaging": 40,
+  "shipping": 150,
+  "installation": 0,
+  "aftercare_reserve": 50,
+  "channel": "hardware dealers and carpenter networks",
+  "channel_commission_rate": 0.25,
+  "payment_fee_rate": 0.02,
+  "returns_rate": 0.03,
+  "cac": 800,
+  "units_per_customer": 3,
+  "one_time": [
+   {
+    "name": "design and prototypes",
+    "amount": 40000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "load testing at a lab",
+    "amount": 50000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "fabrication jigs and dies",
+    "amount": 60000,
+    "source": "assumption",
+    "capex": true,
+    "note": ""
+   },
+   {
+    "name": "fitting guide and video",
+    "amount": 20000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "monthly_fixed": [
+   {
+    "name": "storage",
+    "amount": 4000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "product liability insurance",
+    "amount": 2500,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "units_per_month": 50,
+  "dev_weeks": 10,
+  "lead_time_days": 21,
+  "sales_cycle_days": 21,
+  "batch_units": 200,
+  "receivable_days": 30,
+  "payable_days": 0,
+  "inventory_days": 45,
+  "founder_overhead_hours_per_month": 50,
+  "rationale": "Set price is about 5-10% of a typical carpenter-built wardrobe (assumption). Dealers need margin; carpenters reorder if it saves callbacks."
+ },
+ "economics:cpt_53d7f7d4b8": {
+  "price": 2500,
+  "price_source": "assumption",
+  "price_includes_tax": true,
+  "tax_rate": 0.18,
+  "materials": [
+   {
+    "name": "travel per visit",
+    "amount": 300,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "report and consumables",
+    "amount": 50,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "hired_labour_hours": 0,
+  "hired_labour_rate": 0,
+  "founder_hours_per_unit": 3,
+  "reject_rate": 0.1,
+  "packaging": 0,
+  "shipping": 0,
+  "installation": 0,
+  "aftercare_reserve": 0,
+  "channel": "interior designers and housing societies",
+  "channel_commission_rate": 0.2,
+  "payment_fee_rate": 0.02,
+  "returns_rate": 0.02,
+  "cac": 400,
+  "units_per_customer": 1.2,
+  "one_time": [
+   {
+    "name": "inspection kit (meter, caliper, torch)",
+    "amount": 4000,
+    "source": "assumption",
+    "capex": true,
+    "note": ""
+   },
+   {
+    "name": "checklist and report template",
+    "amount": 15000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "terms and liability advice",
+    "amount": 20000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "monthly_fixed": [
+   {
+    "name": "phone and software",
+    "amount": 1500,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   },
+   {
+    "name": "professional indemnity insurance",
+    "amount": 2000,
+    "source": "assumption",
+    "capex": false,
+    "note": ""
+   }
+  ],
+  "units_per_month": 30,
+  "dev_weeks": 2,
+  "lead_time_days": 0,
+  "sales_cycle_days": 10,
+  "batch_units": 0,
+  "receivable_days": 0,
+  "payable_days": 0,
+  "inventory_days": 0,
+  "founder_overhead_hours_per_month": 40,
+  "rationale": "Three hours per visit including travel; 10% of visits wasted by late deliveries (modelled as rejects). Price is a guess near a plumber or electrician site visit plus a report."
+ }
+}

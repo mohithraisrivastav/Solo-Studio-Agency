@@ -1,0 +1,8 @@
+item,qty,unit,unit_cost_inr,line_cost_inr,source,ref,note
+borate preservative concentrate,1,dose,180,180.0,assumption,,
+fluorescent tracer,1,dose,40,40.0,assumption,,
+250 ml tin and label,1,each,45,45.0,assumption,,
+brush,1,each,25,25.0,assumption,,
+365 nm UV torch,1,each,180,180.0,assumption,,"could be lent, not sold, per contractor"
+carton and leaflet,1,each,25,25.0,assumption,,
+TOTAL,,,,495.0,,,currency INR

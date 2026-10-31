@@ -1,0 +1,8 @@
+item,qty,unit,unit_cost_inr,line_cost_inr,source,ref,note
+"wall bracket (GI, fabricated)",6,each,45,270.0,assumption,,
+adjustable floor foot with shield lip,4,each,90,360.0,assumption,,
+anchors and screws,1,set,120,120.0,assumption,,
+plinth clips,1,set,150,150.0,assumption,,
+anti-tip strap,1,each,80,80.0,assumption,,
+packing,1,set,40,40.0,assumption,,
+TOTAL,,,,1020.0,,,currency INR

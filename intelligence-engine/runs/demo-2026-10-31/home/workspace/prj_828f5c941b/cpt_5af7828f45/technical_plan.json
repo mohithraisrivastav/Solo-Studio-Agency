@@ -1,0 +1,174 @@
+{
+  "assembly": "No assembly; applied on site before laminate.",
+  "bom": [
+    {
+      "item": "borate preservative concentrate",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "dose",
+      "unit_cost_inr": 180
+    },
+    {
+      "item": "fluorescent tracer",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "dose",
+      "unit_cost_inr": 40
+    },
+    {
+      "item": "250 ml tin and label",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 45
+    },
+    {
+      "item": "brush",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 25
+    },
+    {
+      "item": "365 nm UV torch",
+      "note": "could be lent, not sold, per contractor",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 180
+    },
+    {
+      "item": "carton and leaflet",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 25
+    }
+  ],
+  "construction_sequence": [
+    "Carpenter cuts and drills all panels",
+    "Apply sealant to every cut edge and hole",
+    "Dry 1-2 hours",
+    "Homeowner or designer checks edges with the UV torch and marks gaps",
+    "Touch up, then apply laminate and edge band"
+  ],
+  "failure_modes": [
+    "Tracer fades before inspection",
+    "Sealant does not penetrate dense edges",
+    "Borate leaches in wet kitchens",
+    "Carpenter skips hidden edges",
+    "Adhesive bond weakens"
+  ],
+  "functional_principles": [
+    "Seal every cut edge and drilled hole after fabrication, where factory surface treatment is lost",
+    "Carry a fluorescent tracer so coverage shows under a 365 nm UV torch",
+    "Stay compatible with laminate and edge-band adhesives"
+  ],
+  "low_cost_validation": "Buy an off-the-shelf borate wood preservative and a fluorescent additive, treat 20 plywood offcuts, check UV visibility and adhesive bond, and run a 3-6 month side-by-side exposure test before any formulation work.",
+  "maintenance": "None after installation.",
+  "material_options": [
+    {
+      "cons": "Leaches in wet areas; weak for kitchens and bathrooms",
+      "material": "Borate preservative (e.g. disodium octaborate) in water",
+      "pros": "Low toxicity, cheap, widely used for wood"
+    },
+    {
+      "cons": "Registration, handling and VOC issues",
+      "material": "Synthetic pyrethroid in solvent carrier",
+      "pros": "Longer residual effect"
+    },
+    {
+      "cons": "No termite action; moisture control only",
+      "material": "Primer or bitumen edge sealer only",
+      "pros": "Cheap, blocks moisture"
+    }
+  ],
+  "maturity": "rough_concept",
+  "processes": [
+    {
+      "equipment": "none in-house",
+      "equipment_cost_inr": 0,
+      "in_house": false,
+      "notes": "Needs a partner with wood-preservative experience",
+      "process": "Formulation by a contract formulator"
+    },
+    {
+      "equipment": "bench and labels",
+      "equipment_cost_inr": 5000,
+      "in_house": true,
+      "notes": "Manual",
+      "process": "Kit assembly and packing"
+    }
+  ],
+  "production_comparison": [
+    {
+      "fit": "good",
+      "method": "manual",
+      "notes": "kit assembly by hand"
+    },
+    {
+      "fit": "poor",
+      "method": "3D printing",
+      "notes": "nothing to print"
+    },
+    {
+      "fit": "poor",
+      "method": "CNC",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "poor",
+      "method": "casting/moulding",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "poor",
+      "method": "traditional craft",
+      "notes": "not relevant"
+    },
+    {
+      "fit": "possible",
+      "method": "hybrid",
+      "notes": "in-house assembly, outsourced chemistry"
+    },
+    {
+      "fit": "good",
+      "method": "outsourced components",
+      "notes": "tins, brushes, torches bought in"
+    },
+    {
+      "fit": "good",
+      "method": "fully outsourced",
+      "notes": "contract formulator can fill and pack"
+    }
+  ],
+  "prototype_dimensions": "250 ml tin with brush; 365 nm UV torch; enough for one 2.1 m wardrobe (estimate, to be measured)",
+  "safety_requirements": [
+    "Gloves and ventilation during application",
+    "Safety data sheet and labels as required for the chosen chemistry",
+    "Do not shine the UV torch into eyes",
+    "Keep away from food preparation surfaces"
+  ],
+  "technical_requirements": [
+    "Preservative of a type permitted for wood in India; termiticides likely need registration under the Insecticides Act (verify with a regulatory consultant)",
+    "Tracer visible at 1 m with a 365 nm torch, invisible under normal light, no bleed through 1 mm laminate",
+    "Touch dry within 2 hours at 25-35°C",
+    "No loss of adhesive bond strength versus untreated edges"
+  ],
+  "tests": [
+    "UV coverage check on 20 treated offcuts",
+    "Adhesive pull test against untreated controls",
+    "Field exposure of treated and untreated edge samples at a termite-active site for 3-6 months, ideally with a wood research lab"
+  ],
+  "tolerances": "Not applicable. Acceptance target: at least 95% of cut edge length fluoresces in the UV check.",
+  "tools_equipment": [
+    "brush",
+    "UV torch",
+    "gloves"
+  ]
+}

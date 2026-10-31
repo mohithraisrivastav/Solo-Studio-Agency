@@ -110,7 +110,7 @@ class Settings:
 
 
 def load_settings(home: Path | None = None) -> Settings:
-    s = Settings(home=(home or default_home()))
+    s = Settings(home=Path(home).expanduser().resolve() if home else default_home())
     if s.config_path.exists():
         data = json.loads(s.config_path.read_text(encoding="utf-8"))
         for k, v in data.items():

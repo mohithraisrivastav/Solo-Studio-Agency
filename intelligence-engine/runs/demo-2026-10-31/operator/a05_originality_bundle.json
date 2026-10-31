@@ -1,0 +1,239 @@
+{
+ "originality:research_bundle": {
+  "sources": [
+   {
+    "url": "https://www.services.bis.gov.in/php/BIS_2.0/BISBlog/bis-care-app/",
+    "title": "BIS Care App",
+    "publisher": "Bureau of Indian Standards",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "The BIS Care app's \"Verify Licence Details\" section looks up a licence by its CM/L number. BIS describes the app as a consumer tool that allows users to check the authenticity of products using the \"Verify Licence Details\" feature.",
+    "query": "Board passport: licence lookup plus photo trail"
+   },
+   {
+    "url": "https://tribuneindia.com/news/bis-officials-raid-shop-selling-plywood-with-fake-isi-mark-375007",
+    "title": "BIS officials raid shop selling plywood with fake ISI mark",
+    "publisher": "The Tribune",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "In one Delhi raid, plywood with a BIS standard mark with CM/L-9897728 was found expired (verified through BIS care app). In another, the plywood carried invalid licence numbers.",
+    "query": "Board passport: licence lookup plus photo trail"
+   },
+   {
+    "url": "https://www.rprealtyplus.com/allied/duroplys-lifetime-guarantee-against-termitedamage-117936.html",
+    "title": "Duroply's lifetime guarantee against termite damage",
+    "publisher": "Realty+",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Its lifetime guarantee covers termite and borer infestation across plywood, veneers, doors, and blockboards. Duroply was the first Company to introduce this industry unique value proposition way back in 2016. If the guarantee is triggered, Duroply offers to compensate the customer the value of the furniture or 3 times the cost of the defective goods, whichever is lower.",
+    "query": "Five-year termite and board warranty for carpenter-built furniture"
+   },
+   {
+    "url": "https://www.centuryply.com/clubprime",
+    "title": "CenturyPly Club Prime",
+    "publisher": "CenturyPly (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Club Prime specifically comes with a 25 year warranty against borer & termite attacks.",
+    "query": "Five-year termite and board warranty for carpenter-built furniture"
+   },
+   {
+    "url": "https://www.centuryply.com/blog/what-is-centuryply-total-cover-warranty-everything-you-need-to-know",
+    "title": "What is CenturyPly Total Cover warranty",
+    "publisher": "CenturyPly (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Its separate Total Cover program provides 10 years of Total Cover protection, subject to the applicable policy terms. That program covers manufacturing defects, not just termites, and is currently available on selected premium CenturyPly products.",
+    "query": "Five-year termite and board warranty for carpenter-built furniture"
+   },
+   {
+    "url": "https://law.resource.org/pub/us/cfr/ibr/003/awpa.a3.1991.pdf",
+    "title": "AWPA A3-91 Standard methods for determining penetration of preservatives",
+    "publisher": "American Wood Preservers' Association (via law.resource.org)",
+    "source_type": "standard",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "One method has the reagent sprayed onto split borings or freshly cut surfaces. A deep blue color indicates copper. The reagent is made by dissolving Chrome Azurol S and sodium acetate in water.",
+    "query": "Colour-change swab kit for board treatment",
+    "published_at": "1991"
+   },
+   {
+    "url": "https://store.standards.org.au/product/as-nzs-1605-2-2018",
+    "title": "AS/NZS 1605.2:2018 Methods for sampling and analysing timber preservatives",
+    "publisher": "Standards Australia",
+    "source_type": "standard",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "The AS/NZS 1605 series includes a boron method using turmeric acid, plus a pyrocatechol violet alternative. In the presence of boron, the turmeric solution turns red.",
+    "query": "Colour-change swab kit for board treatment",
+    "published_at": "2018"
+   },
+   {
+    "url": "https://patents.justia.com/patent/20180095042",
+    "title": "Method For Detecting Treated Wood (US 2018/0095042)",
+    "publisher": "Justia Patents",
+    "source_type": "patent",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A patent describes a kit with a compartment containing a solution with a color change agent and an antioxidant, plus an applicator for applying the solution to the wood.",
+    "query": "Colour-change swab kit for board treatment",
+    "published_at": "2018"
+   },
+   {
+    "url": "https://www.wrap.ngo/resources/tool/tools-wood-reprocessors-identify-contaminated-wood",
+    "title": "Tools for wood reprocessors to identify contaminated wood",
+    "publisher": "WRAP",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A WRAP tool describes a colour indicator, based on chromazurol, for detecting copper-based preservative in wood waste streams.",
+    "query": "Colour-change swab kit for board treatment",
+    "published_at": "2016-12-07"
+   },
+   {
+    "url": "https://www.greenply.com/blogs/greenply-termivax-indias-first-vaccinated-anti-termite-plywood-explained",
+    "title": "Greenply TermiVax: India's first vaccinated anti-termite plywood explained",
+    "publisher": "Greenply (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Greenply says surface-applied anti-termite coatings can fail once the board has been cut, drilled, or shaped. Its TermiVax product instead builds treatment into the board during manufacturing.",
+    "query": "Traceable edge-seal treatment applied after cutting",
+    "published_at": "2026-09-02"
+   },
+   {
+    "url": "https://www.duroply.in/blog/?p=5145",
+    "title": "Duroply blog on treating plywood edges",
+    "publisher": "Duroply (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Duroply, a plywood maker, recommends applying borate-based preservatives or termiticides to all surfaces, especially edges and joints, even on treated plywood. Duroply suggests checking a board's anti-borer claim at the freshly cut edge, where a genuinely treated board should give a noticeable phenolic smell.",
+    "query": "Traceable edge-seal treatment applied after cutting"
+   },
+   {
+    "url": "https://sheetmaterialswholesale.co.uk/sheet-materials/sheet-material-accessories/edge-sealers/",
+    "title": "Edge Sealers",
+    "publisher": "Sheet Materials Wholesale (UK)",
+    "source_type": "product_listing",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Sheet-material suppliers describe edge sealers as liquid sealants for freshly cut plywood edges, which absorb moisture far more readily than the factory face. These are mainly aimed at moisture and swelling, not termites.",
+    "query": "Traceable edge-seal treatment applied after cutting"
+   },
+   {
+    "url": "https://www.orkin.com/termites/real-estate/termite-shields/",
+    "title": "Termite Shields",
+    "publisher": "Orkin",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "the primary benefit of termite shields is making it more likely that a pest control expert will be able to identify a termite infestation, not preventing an infestation in the first place.",
+    "query": "Termite-break standoff mounting for built-in furniture"
+   },
+   {
+    "url": "https://thetermitetrackers.squarespace.com/blog/2015/1/15/when-ant-capping-isnt",
+    "title": "When ant capping isn't",
+    "publisher": "The Termite Trackers (blog)",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "the primary function of an ant cap is not to stop termites, but to force them to build their mud tunnels (shelter tubes) around the edge of the metal cap. installing timber fixtures over your ant caps allows termites to circumvent the ant cap.",
+    "query": "Termite-break standoff mounting for built-in furniture",
+    "published_at": "2015-01-15"
+   },
+   {
+    "url": "https://www.mitre10.com.au/wilmaplex-ant-caps-no-holes-100-x-100-x-25mm-2407526",
+    "title": "Wilmaplex Ant Caps No Holes 100 x 100 x 25mm",
+    "publisher": "Mitre 10 (Australia)",
+    "source_type": "product_listing",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Ant caps are usually made from galvanised sheet metal and are inserted between the lower floor framing timber and the supporting stumps, piers or masonry bases.",
+    "query": "Termite-break standoff mounting for built-in furniture"
+   },
+   {
+    "url": "https://patents.google.com/patent/US5678362",
+    "title": "US5678362A - Termite control device and method",
+    "publisher": "Google Patents",
+    "source_type": "patent",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "US5678362A - Termite control device and method. Title only: the search result gave no abstract, so the content of this patent was not reviewed.",
+    "query": "Termite-break standoff mounting for built-in furniture"
+   },
+   {
+    "url": "https://housing.com/news/ways-in-which-home-buyers-can-determine-the-construction-quality-of-a-project",
+    "title": "Ways in which home buyers can determine the construction quality of a project",
+    "publisher": "Housing.com",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "third-party inspection agencies charge on the basis of the sq ft area of the house.",
+    "query": "Delivery-day material inspection visit"
+   },
+   {
+    "url": "https://www.duroply.in/blog/how-to-choose-the-right-plywood-for-your-home-in-india/",
+    "title": "How to choose the right plywood for your home in India",
+    "publisher": "Duroply (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "A Duroply article puts premium plywood at roughly ₹80 to ₹180 per square foot, depending on grade and thickness.",
+    "query": "Delivery-day material inspection visit"
+   },
+   {
+    "url": "https://www.studiomatrx.org/utilities/material-quality-checklist",
+    "title": "Material quality checklist",
+    "publisher": "Studio Matrx",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A Studio Matrx checklist advises approving materials from physical samples rather than photos, and building a small mock-up panel before full production.",
+    "query": "Delivery-day material inspection visit",
+    "published_at": "2026-07"
+   },
+   {
+    "url": "https://www.rentokil-pestcontrolindia.com/blog/termites/the-power-of-termite-baiting",
+    "title": "The power of termite baiting",
+    "publisher": "Rentokil PCI (India)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Rentokil India presents baiting as a first-of-its-kind termite control solution in the country, branded as Anti-Termite Fortress.",
+    "query": "Bait-cartridge plinth that intercepts termites"
+   },
+   {
+    "url": "https://ja-roy.com/what-is-sentricon-and-how-does-it-work/",
+    "title": "What is Sentricon and how does it work",
+    "publisher": "J.A. Roy (pest control)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Sentricon is sold exclusively to licensed and certified professionals and is not available for sale to unlicensed homeowners.",
+    "query": "Bait-cartridge plinth that intercepts termites"
+   },
+   {
+    "url": "https://www.comaron.com/blog/termite-treatment-new-construction-india-2026-complete-prevention-guide",
+    "title": "Termite treatment for new construction in India 2026",
+    "publisher": "Comaron (pest control)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Termise (UPL) is a cost-effective option from one of India's largest agrochemical companies. It offers a range of products including liquid termiticides, dust formulations, and bait systems.",
+    "query": "Bait-cartridge plinth that intercepts termites",
+    "published_at": "2026"
+   }
+  ],
+  "notes": "Originality search run 2026-10-31 by the Claude Code session operator with WebSearch (page fetches are blocked in this session). No commercial colour-test kit for plywood preservatives in India was found in one search; Indian prices for Sentricon and for inspection services were not found. General statements in the search tool's output that could not be tied to a source were left out.",
+  "unfulfilled": [
+   "Indian patent office and Indian design registry searches (no access)",
+   "PatentsView/USPTO search (no API key; host blocked)"
+  ]
+ }
+}

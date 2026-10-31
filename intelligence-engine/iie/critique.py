@@ -127,7 +127,10 @@ def model_critique(ctx: Ctx, concept: dict, briefing: str) -> dict | None:
                                 prompt=prompt, schema=CRITIC_SCHEMA, temperature=0.3, max_tokens=2500)])
     if not res:
         return None
-    out = res[0]
+    return record_model_critique(ctx, concept, res[0])
+
+
+def record_model_critique(ctx: Ctx, concept: dict, out: dict) -> dict:
     valid_src = {r["id"] for r in ctx.db.query("sources", "project_id=?", (ctx.project_id,))}
     valid_clm = {r["id"]: r for r in ctx.db.query("claims", "project_id=?", (ctx.project_id,))}
     for o in out["objections"]:

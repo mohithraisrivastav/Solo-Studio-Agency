@@ -29,29 +29,32 @@ ANSWERS_SCHEMA = obj(
 )
 
 
-def _claim_lines(ctx: Ctx, limit: int = 60) -> list[str]:
-    rows = ctx.db.query("claims", "project_id=? AND support='verified_quote'", (ctx.project_id,),
-                        "evidence_level DESC, created_at")
-    return [f"{r['id']} [{r['claim_type']}]: {r['text'][:220]}" for r in rows[:limit]]
+def _claim_lines(ctx: Ctx, concept: dict | None = None, limit: int = 45) -> list[str]:
+    from ..stages import relevant_claims
+    rows = relevant_claims(ctx, concept, limit=limit)
+    return [f"{r['id']} [{r['claim_type']}]: {r['text'][:220]}" for r in rows]
 
 
-def assess_demand(ctx: Ctx, concept: dict, econ_summary: str = "") -> list[dict]:
-    db = ctx.db
-    lvl, why = demand_level(db, ctx.project_id, concept["id"])
-    claims_txt = _claim_lines(ctx)
+def build_demand_task(ctx: Ctx, concept: dict, econ_summary: str = "") -> GenTask:
+    lvl, why = demand_level(ctx.db, ctx.project_id, concept["id"])
     prompt = (
         f"CONCEPT: {concept['title']}\nPrinciple: {concept.get('principle')}\nBuyer: {(concept.get('detail') or {}).get('target_buyer')}\n"
         f"Business model: {concept.get('business_model')}\n\nDirect buyer evidence on file: {why} (level {lvl}).\n"
         + (f"\nECONOMICS SUMMARY:\n{econ_summary}\n" if econ_summary else "")
-        + "\nVERIFIED CLAIMS:\n" + "\n".join(claims_txt)
+        + "\nVERIFIED CLAIMS (most relevant first):\n" + "\n".join(_claim_lines(ctx, concept))
         + "\n\nAnswer each of the twelve questions. Cite claim ids that support each answer. If no claim supports it, "
           "set status 'assumption' or 'unknown' and say what evidence is missing.\n"
         + "\n".join(f"- {k}: {q}" for k, q in QUESTIONS)
     )
-    res = ctx.generate([GenTask(role="buyer_researcher", purpose=f"demand:{concept['id']}",
-                                system="You are the Buyer Researcher working with the Commercial Analyst.",
-                                prompt=prompt, schema=ANSWERS_SCHEMA, temperature=0.2, max_tokens=3000)])
-    answers = {a["key"]: a for a in (res[0]["answers"] if res else [])}
+    return GenTask(role="buyer_researcher", purpose=f"demand:{concept['id']}",
+                   system="You are the Buyer Researcher working with the Commercial Analyst.",
+                   prompt=prompt, schema=ANSWERS_SCHEMA, temperature=0.2, max_tokens=3000)
+
+
+def store_demand(ctx: Ctx, concept: dict, result: dict | None) -> list[dict]:
+    db = ctx.db
+    lvl, _ = demand_level(db, ctx.project_id, concept["id"])
+    answers = {a["key"]: a for a in (result["answers"] if result else [])}
     valid = {r["id"]: r for r in db.query("claims", "project_id=?", (ctx.project_id,))}
     rows = []
     with db.tx():
@@ -59,7 +62,7 @@ def assess_demand(ctx: Ctx, concept: dict, econ_summary: str = "") -> list[dict]
         for key, q in QUESTIONS:
             a = answers.get(key)
             if a is None:
-                text = "Not assessed: no model available." if res is None else "Not answered."
+                text = "Not assessed: no model available." if result is None else "Not answered."
                 cids: list[str] = []
             else:
                 text = a["answer"]
@@ -73,3 +76,8 @@ def assess_demand(ctx: Ctx, concept: dict, econ_summary: str = "") -> list[dict]
                                          "answer": text, "evidence_level": level, "claim_ids": cids,
                                          "created_by": "buyer_researcher" if a else "system"})
     return rows
+
+
+def assess_demand(ctx: Ctx, concept: dict, econ_summary: str = "") -> list[dict]:
+    res = ctx.generate([build_demand_task(ctx, concept, econ_summary)])
+    return store_demand(ctx, concept, res[0] if res else None)

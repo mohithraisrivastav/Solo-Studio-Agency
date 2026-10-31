@@ -1,0 +1,159 @@
+{
+ "discover:parenting and childcare": {
+  "opportunities": [
+   {
+    "title": "Shared crèche capacity for mid-size employers under the new labour code",
+    "problem": "Establishments with 50+ employees must now provide a crèche, but most mid-size firms cannot run one, and compliance is unclear.",
+    "who": "HR and admin heads at 50-500 employee firms in Indian metros; working parents with children under six.",
+    "claim_ids": [
+     "clm_456c208104",
+     "clm_8eea04515c",
+     "clm_2d978254ae",
+     "clm_d8b338876d",
+     "clm_351a4d0a95",
+     "clm_ecd2471ae6",
+     "clm_4b361f9cdc",
+     "clm_2cbc569bf9"
+    ],
+    "frequency_intensity": "Daily need for parents; legal obligation for each qualifying establishment since November 2025.",
+    "current_alternatives": "Own crèche (large firms), crèche allowance with employee agreement, private daycare, nannies at ₹6,000 to ₹15,000 a month.",
+    "current_spend": "Employers already fund more than half of daycare costs at about three-fourths of organisations (ProEves); per-seat prices not found.",
+    "why_gap_exists": "new_enabler",
+    "gap_explanation": "The law allows shared or outsourced crèches, which creates a buyer (the employer) for pooled seats. Childcare benefit providers already exist (ProEves runs the cited study), so this is not empty ground. The allowance option may let many firms avoid buying seats at all.",
+    "weakest_assumption": "Mid-size employers will buy crèche seats instead of choosing the allowance or ignoring weak enforcement.",
+    "test_for_weakest_assumption": "Call 15 HR heads at 50-300 employee firms: how they plan to comply, budget per child per month, and whether they would sign a seat agreement."
+   },
+   {
+    "title": "Independent crèche safety verification for employers and parents",
+    "problem": "After the July 2025 Bengaluru crèche abuse allegations, parents distrust daycare, and outsourced crèches must meet prescribed standards.",
+    "who": "Employers outsourcing crèche duties; parents choosing a daycare.",
+    "claim_ids": [
+     "clm_f62d4da8d2",
+     "clm_8eea04515c",
+     "clm_d8b338876d"
+    ],
+    "frequency_intensity": "Each placement decision; trust shocks recur after incidents.",
+    "current_alternatives": "Word of mouth, CCTV promises from operators, no known independent rating found in this research.",
+    "current_spend": "Unknown.",
+    "why_gap_exists": "overlooked_segment",
+    "gap_explanation": "No independent verifier appeared in the searched sources, but searches did not target this. The gap could be weak willingness to pay rather than neglect.",
+    "weakest_assumption": "Employers or parents will pay for third-party verification rather than rely on the operator's word.",
+    "test_for_weakest_assumption": "Ask 10 HR heads and 10 parents what proof of safety they need and whether they would pay for an audit report."
+   },
+   {
+    "title": "Lower-cost logistics for baby gear rental and resale",
+    "problem": "Baby products are bulky and used briefly; resale operators report high RTO rates, damage, and costly volumetric shipping.",
+    "who": "Urban parents of children under three; rental and resale operators.",
+    "claim_ids": [
+     "clm_652c2dfb2f",
+     "clm_603bad834c",
+     "clm_33c392d827",
+     "clm_6ec73dde18",
+     "clm_f46d27e569"
+    ],
+    "frequency_intensity": "Each child outgrows gear within months.",
+    "current_alternatives": "Coodle rental (150+ products), LittleBird, PyaraBaby resale (23,800+ parents), buying new.",
+    "current_spend": "Market sized at $1.6 billion in 2020 (dated).",
+    "why_gap_exists": "distribution_barrier",
+    "gap_explanation": "Several operators already exist; the barrier is the cost of moving bulky items, not lack of supply.",
+    "weakest_assumption": "Neighbourhood-level pickup and refurbishment can cut logistics cost below what parents will pay.",
+    "test_for_weakest_assumption": "Measure actual per-order logistics cost for 20 rentals in one city cluster against rental fees."
+   }
+  ]
+ },
+ "discover:homebrewing and fermentation": {
+  "opportunities": [
+   {
+    "title": "Climate-stable fermentation for idli/dosa batter and curd",
+    "problem": "Batter takes 6-8 hours in warm weather but up to 24 hours in winter, sometimes fails and is discarded; curd fails to set in cold rooms; in warm months batter sours.",
+    "who": "Households that ferment batter and curd at home, especially in North and East India and hill towns; small batter makers who need consistent batches.",
+    "claim_ids": [
+     "clm_38769052f4",
+     "clm_43c2bf9793",
+     "clm_8f1b214403",
+     "clm_3c83ba659d",
+     "clm_3af52f0fd2",
+     "clm_ca7cf9b2c1",
+     "clm_b8b5e361d7",
+     "clm_b89ad96c91",
+     "clm_e5683bcdd5",
+     "clm_e927427dd1"
+    ],
+    "frequency_intensity": "Several times a week in households that make batter; seasonal failures in winter and summer.",
+    "current_alternatives": "Oven light, casserole or insulated box, Instant Pot yogurt mode, electric curd makers, packaged batter (iD Fresh).",
+    "current_spend": "Batter market about ₹4,000 crore (one analysis); household spend on fixes not found.",
+    "why_gap_exists": "overlooked_segment",
+    "gap_explanation": "Warming is partly solved by existing appliances (curd makers, Instant Pot). Holding a target temperature in 35-45°C summers needs cooling, which those appliances do not do. Free workarounds may be good enough for most households, so demand may be weak.",
+    "weakest_assumption": "People who ferment at home will pay for a device when free workarounds exist.",
+    "test_for_weakest_assumption": "Interview 10 households and 5 small batter sellers about failed batches in the last month, the cost of waste, and what they already use."
+   },
+   {
+    "title": "Hot-climate fermentation temperature control for brewers and kombucha makers",
+    "problem": "Ambient 30-45°C makes beer and kombucha ferment too hot; the usual fix is a mini fridge or chest freezer plus an imported controller.",
+    "who": "Home brewers and small kombucha makers in Indian cities.",
+    "claim_ids": [
+     "clm_3d84ddda89",
+     "clm_882baa2a71",
+     "clm_c1637f73fd",
+     "clm_8cf0d490a8",
+     "clm_daa1b0e8d7",
+     "clm_b3eecebab9",
+     "clm_56a11328e7",
+     "clm_33d58c67ae",
+     "clm_5b4dd06e2a",
+     "clm_d59113ea29"
+    ],
+    "frequency_intensity": "Every batch in summer; lagers year-round.",
+    "current_alternatives": "Mini fridge or chest freezer plus controller (imported controller ₹7,200 listed), evaporative cooling, warm-tolerant yeast.",
+    "current_spend": "Controller ₹7,200 imported; fridge cost not researched.",
+    "why_gap_exists": "weak_demand",
+    "gap_explanation": "Homebrewing is legal for personal use in most states but sale is illegal and rules are vague, which keeps the hobby small. Market estimates for kombucha disagree 2.6x.",
+    "weakest_assumption": "Enough hobbyists and kombucha micro-producers exist in India to support a product.",
+    "test_for_weakest_assumption": "Count members in Indian homebrew communities and survey 20 about current cooling setups and spend."
+   }
+  ]
+ },
+ "discover:woodworking and furniture making": {
+  "opportunities": [
+   {
+    "title": "Verifiable plywood and termite treatment for carpenter-made furniture",
+    "problem": "Most furniture is made by local carpenters; counterfeit plywood exists, boards sold as termite proof fail, and no reliable home test confirms treatment.",
+    "who": "Homeowners commissioning carpenter-built wardrobes, kitchens and beds in Indian cities; interior contractors who want proof of quality.",
+    "claim_ids": [
+     "clm_7817f35136",
+     "clm_d42b783ffd",
+     "clm_4bc2d9c1cc",
+     "clm_c2bc910396",
+     "clm_de298d8aca",
+     "clm_eb9d5f3379",
+     "clm_17b1634b5b",
+     "clm_eb461bba3a",
+     "clm_a562a4cca7"
+    ],
+    "frequency_intensity": "Once per renovation, but high stakes: failures appear within two years and damage furniture.",
+    "current_alternatives": "Branded plywood with ISI/CML marks and ATBS treatment, brand guarantee programmes, consumer court complaints after failure.",
+    "current_spend": "Not found; renovation budgets not researched.",
+    "why_gap_exists": "technical_barrier",
+    "gap_explanation": "Manufacturers market termite-proof grades, but the buyer cannot confirm what the carpenter used. A reliable, cheap verification method was not found; that barrier may be why the gap exists.",
+    "weakest_assumption": "A low-cost test or verification method can reliably confirm board grade and treatment, and homeowners will pay for it.",
+    "test_for_weakest_assumption": "Ask a materials lab what tests detect common anti-termite treatments and their cost; interview 10 homeowners mid-renovation about worries and willingness to pay."
+   },
+   {
+    "title": "Damage-resistant packing for online solid-wood furniture",
+    "problem": "Buyers report damage from poor packing on online wooden furniture.",
+    "who": "Online furniture buyers and small furniture sellers shipping across India.",
+    "claim_ids": [
+     "clm_c3e1d689ef",
+     "clm_652c2dfb2f"
+    ],
+    "frequency_intensity": "Per shipment.",
+    "current_alternatives": "Seller packing, marketplace logistics.",
+    "current_spend": "Unknown.",
+    "why_gap_exists": "unknown",
+    "gap_explanation": "Only one forum source and one analogous resale source; evidence is thin.",
+    "weakest_assumption": "Damage rates are high enough that sellers will pay for better packing.",
+    "test_for_weakest_assumption": "Get damage and return rates from 5 small furniture sellers."
+   }
+  ]
+ }
+}

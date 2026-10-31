@@ -10,7 +10,7 @@ from typing import Callable
 
 from ..context import Ctx
 from ..evidence import demand_level
-from ..engineering import detect_hazards
+from ..engineering import detect_hazards, hazard_text
 from ..invention.diversity import full_text
 
 
@@ -54,12 +54,48 @@ def latest_econ(ctx: Ctx, concept_id: str, scenario: str = "base") -> dict | Non
     return ctx.db.one("economics", "concept_id=? AND scenario=? ORDER BY created_at DESC", (concept_id, scenario))
 
 
+def relevant_claims(ctx: Ctx, concept: dict | None = None, opportunity: dict | None = None,
+                    types: tuple[str, ...] | None = None, limit: int = 40) -> list[dict]:
+    """Verified claims ranked by relevance: cited by the concept, cited by its opportunity, same industry, rest.
+
+    Duplicate texts are dropped so repeated extractor claims do not crowd the list.
+    """
+    db = ctx.db
+    if opportunity is None and concept and concept.get("opportunity_id"):
+        opportunity = db.get("opportunities", concept["opportunity_id"])
+    rows = db.query("claims", "project_id=? AND support='verified_quote'", (ctx.project_id,), "created_at")
+    if types:
+        rows = [r for r in rows if r["claim_type"] in types]
+    first = set(((concept or {}).get("detail") or {}).get("evidence_claim_ids") or [])
+    second = set((opportunity or {}).get("claim_ids") or [])
+    industry = (opportunity or {}).get("industry")
+    ind_claims: set[str] = set()
+    if industry:
+        src_ind = {s["id"]: (s.get("meta") or {}).get("industry") for s in
+                   db.query("sources", "project_id=?", (ctx.project_id,))}
+        for cid, sid in db.conn.execute("SELECT claim_id, source_id FROM claim_sources WHERE verified=1").fetchall():
+            if src_ind.get(sid) == industry:
+                ind_claims.add(cid)
+
+    def rank(r: dict) -> int:
+        return 0 if r["id"] in first else 1 if r["id"] in second else 2 if r["id"] in ind_claims else 3
+
+    out, seen = [], set()
+    for r in sorted(rows, key=rank):
+        key = r["text"].strip().lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+    return out[:limit]
+
+
 def concept_state(ctx: Ctx, concept: dict) -> dict:
     db = ctx.db
     lvl, why = demand_level(db, ctx.project_id, concept["id"])
     plan_row = db.one("technical_plans", "concept_id=? ORDER BY created_at DESC", (concept["id"],))
     plan = (plan_row or {}).get("plan") or {}
-    hazards = (plan_row or {}).get("hazards") if plan_row else detect_hazards(full_text(concept))
+    hazards = (plan_row or {}).get("hazards") if plan_row else detect_hazards(hazard_text(concept))
     return {
         "demand_level": lvl,
         "demand_why": why,

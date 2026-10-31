@@ -20,7 +20,7 @@ from ..llm import answer_operator_task
 from ..llm.hardware import benchmark_ollama, choose_default, detect_hardware
 from ..memory import progress_metrics
 from ..orchestrator import Engine
-from ..report import project_report
+from ..report import _latest, project_report
 from ..research.connectors import fetch_page
 from ..research.engine import import_bundle, store_doc
 from ..roles import ROLES
@@ -99,7 +99,7 @@ def create_app(settings: Settings | None = None, engine: Engine | None = None) -
         jobs = db.query("jobs", "project_id=?", (pid,), "created_at")
         stages = [STAGES[k] for k in WORKFLOWS[p["workflow"]]]
         return render(request, "project.html", p=p, jobs=jobs, stages=stages,
-                      decisions=db.query("decisions", "project_id=?", (pid,), "created_at"),
+                      decisions=_latest(db.query("decisions", "project_id=?", (pid,), "created_at")),
                       ops=db.query("operator_tasks", "project_id=? AND status='pending'", (pid,)),
                       aprs=db.query("approvals", "project_id=? AND status='pending'", (pid,)), concept_title=concept_title)
 
@@ -188,7 +188,7 @@ def create_app(settings: Settings | None = None, engine: Engine | None = None) -
     @app.get("/design", response_class=HTMLResponse)
     def design(request: Request):
         w, a = pfilter(request)
-        return render(request, "design.html", plans=db.query("technical_plans", w, a, "created_at DESC"),
+        return render(request, "design.html", plans=_latest(db.query("technical_plans", w, a, "created_at")),
                       artifacts=db.query("artifacts", w, a), concept_title=concept_title)
 
     @app.get("/artifact/{aid}")

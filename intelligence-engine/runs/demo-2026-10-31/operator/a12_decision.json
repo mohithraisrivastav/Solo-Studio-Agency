@@ -1,0 +1,12 @@
+{"decision:c0": {
+ "summary": "No concept is worth building yet. The edge-seal kit is rejected because its peak cash need of about ₹9.5 lakh exceeds the ₹3 lakh budget. The standoff mounting set is rejected because each sale loses money even with the founder working free. The delivery-day inspection visit is the leading option only in the sense that it is not rejected; its base-case economics are weak and it must be revised before any validation spend.",
+ "reasons_against": [
+  "Base-case economics for the inspection visit are weak, so the service as modelled does not justify the founder's time.",
+  "The leading option survives on lower losses, not on demonstrated strength.",
+  "All three verdicts rest on assumed prices and volumes; none is backed by buyer commitments."
+ ],
+ "what_would_change_the_decision": [
+  "A revised inspection format (for example a remote check) whose base case clears the economics gate.",
+  "Paid or committed buyers at a stated price, which would move demand evidence to level 3 or 4.",
+  "Real supplier and channel terms that replace the assumed costs."
+ ]}}

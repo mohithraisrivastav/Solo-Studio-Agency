@@ -1,0 +1,6 @@
+item,qty,unit,unit_cost_inr,line_cost_inr,source,ref,note
+moisture meter,1,per inspector,2500,2500.0,assumption,,
+digital caliper,1,per inspector,900,900.0,assumption,,
+torch,1,per inspector,300,300.0,assumption,,
+travel per visit,1,visit,300,300.0,assumption,,
+TOTAL,,,,4000.0,,,currency INR

@@ -98,6 +98,8 @@ class Engine:
             key = stages[i]
             stage = STAGES[key]
             job = self._job(pid, key, cycle)
+            if job and job["status"] == "superseded":
+                job = None
             if job and job["status"] in ("done", "incomplete"):
                 if stop_after == key:
                     break
@@ -164,6 +166,30 @@ class Engine:
 
     def _set_project(self, pid: str, status: str) -> None:
         self.db.execute("UPDATE projects SET status=?, updated_at=? WHERE id=?", (status, now_iso(), pid))
+
+    def rerun_from(self, pid: str, stage: str, reason: str, actor: str = "user") -> list[str]:
+        """Supersede a stage and every later stage in the current cycle so they run again.
+
+        Earlier outputs stay in the store with status 'superseded'; nothing is deleted.
+        """
+        p = self.db.get("projects", pid)
+        stages = WORKFLOWS[p["workflow"]]
+        if stage not in stages:
+            raise ValueError(f"{stage} is not in workflow {p['workflow']}")
+        cycle = int((p.get("settings") or {}).get("cycle", 0))
+        later = stages[stages.index(stage):]
+        changed = []
+        with self.db.tx():
+            for k in later:
+                for j in self.db.query("jobs", "project_id=? AND stage=? AND cycle=? AND status!='superseded'",
+                                       (pid, k, cycle)):
+                    self.db.execute("UPDATE jobs SET status='superseded', error=? WHERE id=?", (reason, j["id"]))
+                    self.db.execute("UPDATE operator_tasks SET status='withdrawn' WHERE job_id=? AND status='pending'",
+                                    (j["id"],))
+                    changed.append(j["id"])
+            self.db.log(pid, None, actor, "rerun_from", f"rerun from {stage}: {reason}", detail={"jobs": changed})
+        self._set_project(pid, "paused")
+        return changed
 
     def status(self, pid: str) -> dict:
         p = self.db.get("projects", pid)

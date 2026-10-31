@@ -1,0 +1,142 @@
+{
+ "critique:cpt_5af7828f45": {
+  "objections": [
+   {
+    "question": "Does the business work financially?",
+    "objection": "Base case loses ₹138 per kit once founder time is paid, and peak cash of about ₹9.5 lakh is over three times the ₹3 lakh budget.",
+    "severity": "fatal",
+    "basis": "calculation",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "What could make this fail?",
+    "objection": "A termiticide sealant is likely a regulated pesticide product; registration time and cost could exceed the ₹2.5 lakh assumed and push first revenue well past 233 days. This is reasoning, not a verified rule.",
+    "severity": "major",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "Does something similar already exist?",
+    "objection": "Board makers already tell carpenters to treat cut edges with borate, and Greenply moves treatment into the board core to avoid the cut-edge problem. Leaders are solving it at the board level.",
+    "severity": "major",
+    "basis": "source",
+    "source_ids": [
+     "src_b64378503f",
+     "src_223c73d1cb"
+    ],
+    "claim_ids": []
+   },
+   {
+    "question": "Which assumption is least reliable?",
+    "objection": "That carpenters will brush every edge and homeowners will check with a torch. Both add effort for people who did not ask for it.",
+    "severity": "major",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "Would anyone pay for this?",
+    "objection": "No buyer has confirmed the problem or a price; demand is level 1.",
+    "severity": "major",
+    "basis": "calculation",
+    "source_ids": [],
+    "claim_ids": []
+   }
+  ],
+  "strongest_point": "It targets the real weak point, cut edges, which board makers themselves acknowledge.",
+  "simpler_alternative": "Skip the product. Offer the tracer idea to a board maker as a licensed add-on to their own edge-treatment advice, or publish a free edge-treatment checklist that names an existing borate product."
+ },
+ "critique:cpt_a38a414885": {
+  "objections": [
+   {
+    "question": "Does the business work financially?",
+    "objection": "Each set loses money before fixed costs once the 25% dealer margin, ₹267 acquisition per set and ₹150 courier are paid.",
+    "severity": "fatal",
+    "basis": "calculation",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "What could make this fail?",
+    "objection": "Termite shields mainly make infestations visible; they do not prevent them. Selling this as protection would overstate it.",
+    "severity": "major",
+    "basis": "source",
+    "source_ids": [
+     "src_118a072cc0"
+    ],
+    "claim_ids": [],
+    "disputes_role": "inventor"
+   },
+   {
+    "question": "What could make this fail?",
+    "objection": "Ant caps fail when timber fixtures bridge them. Carpenters routinely add trims and fillers that would close the gap.",
+    "severity": "major",
+    "basis": "source",
+    "source_ids": [
+     "src_0ee056dd39"
+    ],
+    "claim_ids": []
+   },
+   {
+    "question": "Can it be manufactured or delivered?",
+    "objection": "Tall wardrobes held 30 mm off the wall on brackets raise tipping and anchor pull-out risks; this needs load testing and a structural review before any sale.",
+    "severity": "major",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "Can customers be reached?",
+    "objection": "Carpenters are price sensitive and the buyer (homeowner) rarely chooses fittings. A ₹2,499 add-on per wardrobe is untested.",
+    "severity": "major",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   }
+  ],
+  "strongest_point": "It works whatever board was used and needs no chemistry or registration.",
+  "simpler_alternative": "Use adjustable cabinet legs already sold for modular kitchens to keep units off the floor, and publish a fitting guide that leaves an inspection gap. No new product is needed to test whether anyone cares."
+ },
+ "critique:cpt_53d7f7d4b8": {
+  "objections": [
+   {
+    "question": "Does the business work financially?",
+    "objection": "The founder earns about ₹168 an hour against a ₹600 opportunity cost, and capacity caps at about 30 visits a month. It is a job, not a business, at this price.",
+    "severity": "major",
+    "basis": "calculation",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "Does something similar already exist?",
+    "objection": "Third-party home inspection agencies already operate and charge by area, so the visit itself is not new.",
+    "severity": "major",
+    "basis": "source",
+    "source_ids": [
+     "src_479c15e423"
+    ],
+    "claim_ids": []
+   },
+   {
+    "question": "What could make this fail?",
+    "objection": "Boards can be swapped after the inspector leaves, and a visual check cannot confirm chemical treatment, so the report proves less than it seems.",
+    "severity": "major",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   },
+   {
+    "question": "Is there a much simpler or more effective approach?",
+    "objection": "Much of the check (licence lookup) is free in the government's BIS Care app; the paid value must come from something the homeowner cannot do alone.",
+    "severity": "minor",
+    "basis": "reasoning",
+    "source_ids": [],
+    "claim_ids": []
+   }
+  ],
+  "strongest_point": "Lowest capital (about ₹39,000 peak) and first revenue in about 24 days, so demand can be tested cheaply.",
+  "simpler_alternative": "Test willingness to pay with a ₹499 30-minute video verification call where the carpenter shows the boards, before any site visits."
+ }
+}

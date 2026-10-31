@@ -293,6 +293,10 @@ def find_money(text: str) -> list[tuple[float, str, str]]:
             continue
         mult = _MULT.get((m.group("mult") or "").lower(), 1.0)
         cur = _CUR.get(m.group("cur").lower().rstrip(), _CUR.get(m.group("cur").lower(), "UNKNOWN"))
+        after = (text[m.end(): m.end() + 6] or "").upper()
+        code = re.match(r"\s*(AUD|CAD|SGD|NZD|HKD|USD|LKR|INR|EUR|GBP)\b", after)
+        if code and m.group("cur") in ("$", "US$"):
+            cur = code.group(1)
         out.append((num * mult, cur, m.group(0)))
     return out
 

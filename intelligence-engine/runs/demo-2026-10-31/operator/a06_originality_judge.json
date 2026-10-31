@@ -1,0 +1,58 @@
+{
+ "originality:cpt_5af7828f45": {
+  "closest_source_id": "src_b64378503f",
+  "match_level": "related",
+  "overlap": "A plywood maker already advises treating every cut edge and joint with borate preservatives; Greenply instead builds treatment into the core because surface coatings fail after cutting.",
+  "meaningful_difference": true,
+  "difference": "The tracer that lets a homeowner see untreated edges with a UV torch was not found in searched sources. The treatment itself is not new.",
+  "quote": "recommends applying borate-based preservatives or termiticides to all surfaces, especially edges and joints"
+ },
+ "originality:cpt_b58a7644c8": {
+  "closest_source_id": "src_2d462c1174",
+  "match_level": "close",
+  "overlap": "A published patent application describes a colour-change kit with an applicator for detecting treated wood, and standards already define the boron and copper spot tests.",
+  "meaningful_difference": false,
+  "difference": "Only the target market (Indian homeowners) differs. The mechanism and kit form exist and may be covered by the patent.",
+  "quote": "a kit with a compartment containing a solution with a color change agent and an antioxidant"
+ },
+ "originality:cpt_4519b271dd": {
+  "closest_source_id": "src_df576db12b",
+  "match_level": "close",
+  "overlap": "Board makers already sell long termite guarantees: Duroply lifetime since 2016, CenturyPly Club Prime 25 years and Total Cover 10 years.",
+  "meaningful_difference": false,
+  "difference": "Covering workmanship and any brand sounds different, but a buyer can get similar protection by choosing a guaranteed brand at no extra fee. Unbranded boards, the main risk, are the ones a warrantor would refuse.",
+  "quote": "Duroply offers to compensate the customer the value of the furniture or 3 times the cost of the defective goods, whichever is lower"
+ },
+ "originality:cpt_a38a414885": {
+  "closest_source_id": "src_118a072cc0",
+  "match_level": "related",
+  "overlap": "Termite shields and ant caps are a known building practice. Their main job is to make termite tubes visible, not to stop termites.",
+  "meaningful_difference": true,
+  "difference": "Using standoffs on built-in furniture was not found. The value claim must change from protection to early detection, which weakens it.",
+  "quote": "the primary benefit of termite shields is making it more likely that a pest control expert will be able to identify a termite infestation, not preventing an infestation in the first place"
+ },
+ "originality:cpt_53d7f7d4b8": {
+  "closest_source_id": "src_479c15e423",
+  "match_level": "related",
+  "overlap": "Third-party home inspection agencies already exist and charge by area. Checklists already tell owners to approve material samples.",
+  "meaningful_difference": true,
+  "difference": "A visit timed to board delivery, before cutting, was not found as a named service; existing agencies may offer it on request.",
+  "quote": "third-party inspection agencies charge on the basis of the sq ft area of the house"
+ },
+ "originality:cpt_05bdb39295": {
+  "closest_source_id": "src_8eebc06ae9",
+  "match_level": "close",
+  "overlap": "The government's free BIS Care app already verifies a licence from its CM/L number, and officials use it to catch fake plywood marks.",
+  "meaningful_difference": false,
+  "difference": "The photo trail and badge add record keeping only. A photo does not prove the board in the furniture is the board photographed.",
+  "quote": "allows users to check the authenticity of products using the \"Verify Licence Details\" feature"
+ },
+ "originality:cpt_79ee1405e9": {
+  "closest_source_id": "src_fb47ad4185",
+  "match_level": "related",
+  "overlap": "Termite baiting is sold in India (Rentokil, UPL) and is normally placed around buildings. Leading bait systems are restricted to licensed professionals.",
+  "meaningful_difference": true,
+  "difference": "Putting bait inside furniture was not found, but indoor efficacy is unproven and licensing rules would force a pest-control partner.",
+  "quote": "Sentricon is sold exclusively to licensed and certified professionals and is not available for sale to unlicensed homeowners"
+ }
+}

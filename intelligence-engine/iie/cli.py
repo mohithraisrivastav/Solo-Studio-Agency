@@ -57,6 +57,10 @@ def main(argv: list[str] | None = None) -> int:
     r = sub.add_parser("run")
     r.add_argument("project")
     r.add_argument("--stop-after")
+    rr = sub.add_parser("rerun", help="supersede a stage and later stages, then run again")
+    rr.add_argument("project")
+    rr.add_argument("stage")
+    rr.add_argument("--reason", required=True)
     sub.add_parser("resume")
     st = sub.add_parser("status")
     st.add_argument("project", nargs="?")
@@ -140,6 +144,8 @@ def main(argv: list[str] | None = None) -> int:
     elif args.cmd == "run":
         e.recover()
         _print(e.run(args.project, args.stop_after))
+    elif args.cmd == "rerun":
+        _print({"superseded": e.rerun_from(args.project, args.stage, args.reason), "run": e.run(args.project)})
     elif args.cmd == "resume":
         ids = e.recover()
         rows = e.db.query("projects", "status IN ('interrupted','waiting_operator','waiting_approval','paused','running')")

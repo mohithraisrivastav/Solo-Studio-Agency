@@ -1,0 +1,259 @@
+{
+  "assembly": "Carpenter fits on site with a printed guide; about 45 minutes per wardrobe (assumption).",
+  "bom": [
+    {
+      "item": "wall bracket (GI, fabricated)",
+      "note": "",
+      "qty": 6,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 45
+    },
+    {
+      "item": "adjustable floor foot with shield lip",
+      "note": "",
+      "qty": 4,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 90
+    },
+    {
+      "item": "anchors and screws",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "set",
+      "unit_cost_inr": 120
+    },
+    {
+      "item": "plinth clips",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "set",
+      "unit_cost_inr": 150
+    },
+    {
+      "item": "anti-tip strap",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "each",
+      "unit_cost_inr": 80
+    },
+    {
+      "item": "packing",
+      "note": "",
+      "qty": 1,
+      "source": "assumption",
+      "unit": "set",
+      "unit_cost_inr": 40
+    }
+  ],
+  "construction_sequence": [
+    "Build carcass as usual",
+    "Fit floor feet and level",
+    "Set unit with a 30 mm wall gap",
+    "Fix wall brackets with anchors suited to the wall",
+    "Fit anti-tip strap",
+    "Clip on the removable plinth"
+  ],
+  "failure_modes": [
+    "Bracket bends under load",
+    "Anchors pull out of weak walls",
+    "Carpenter bridges the gap with trims or filler",
+    "Termites climb hidden inside feet if the shield lip is missing",
+    "Dust collects in the gap"
+  ],
+  "functional_principles": [
+    "Break hidden contact between wall or floor and the furniture carcass",
+    "Make any termite mud tube cross visible metal so it can be seen early",
+    "Allow inspection behind the plinth",
+    "Carry the unit's load and prevent tipping"
+  ],
+  "low_cost_validation": "Have a local fabricator make 2 sets for about ₹3,000 (assumption), load test with sandbags, and install in 2 volunteer homes with a termite history.",
+  "maintenance": "Remove the plinth every 6 months and look for mud tubes on metal.",
+  "material_options": [
+    {
+      "cons": "Zinc coating damaged at cut edges",
+      "material": "Galvanised mild steel 2 mm",
+      "pros": "Cheap, strong, local fabricators can make it"
+    },
+    {
+      "cons": "About 3-4x the material cost (assumption)",
+      "material": "Stainless steel 304",
+      "pros": "Best corrosion resistance"
+    },
+    {
+      "cons": "Lower stiffness; needs larger sections",
+      "material": "Aluminium extrusion",
+      "pros": "Light, neat"
+    }
+  ],
+  "maturity": "concept_with_dimensions",
+  "parts": [
+    {
+      "dims_mm": [
+        60,
+        40,
+        2
+      ],
+      "material": "galvanised steel",
+      "name": "wall_bracket",
+      "position_mm": [
+        0,
+        0,
+        1800
+      ],
+      "shape": "box"
+    },
+    {
+      "dims_mm": [
+        2,
+        40,
+        60
+      ],
+      "material": "galvanised steel",
+      "name": "wall_bracket_leg",
+      "position_mm": [
+        0,
+        0,
+        1740
+      ],
+      "shape": "box"
+    },
+    {
+      "dims_mm": [
+        40,
+        30
+      ],
+      "material": "steel leveller",
+      "name": "floor_foot",
+      "position_mm": [
+        100,
+        300,
+        0
+      ],
+      "shape": "cylinder"
+    },
+    {
+      "dims_mm": [
+        60,
+        1
+      ],
+      "material": "galvanised steel",
+      "name": "shield_lip",
+      "position_mm": [
+        100,
+        300,
+        30
+      ],
+      "shape": "cylinder"
+    },
+    {
+      "dims_mm": [
+        1800,
+        12,
+        100
+      ],
+      "material": "plywood or aluminium",
+      "name": "clip_plinth",
+      "position_mm": [
+        0,
+        -12,
+        0
+      ],
+      "shape": "box"
+    }
+  ],
+  "processes": [
+    {
+      "equipment": "job shop",
+      "equipment_cost_inr": 0,
+      "in_house": false,
+      "notes": "Order small batches",
+      "process": "Laser cutting and press-brake bending"
+    },
+    {
+      "equipment": "galvaniser",
+      "equipment_cost_inr": 0,
+      "in_house": false,
+      "notes": "Batch minimums may apply",
+      "process": "Hot-dip or electro galvanising"
+    },
+    {
+      "equipment": "none",
+      "equipment_cost_inr": 0,
+      "in_house": true,
+      "notes": "Manual",
+      "process": "Packing in sets"
+    }
+  ],
+  "production_comparison": [
+    {
+      "fit": "possible",
+      "method": "manual",
+      "notes": "hacksaw, drill and vice for the first prototypes"
+    },
+    {
+      "fit": "poor",
+      "method": "3D printing",
+      "notes": "not strong enough for loads"
+    },
+    {
+      "fit": "possible",
+      "method": "CNC",
+      "notes": "laser or punch press at a job shop"
+    },
+    {
+      "fit": "poor",
+      "method": "casting/moulding",
+      "notes": "not needed for sheet parts"
+    },
+    {
+      "fit": "possible",
+      "method": "traditional craft",
+      "notes": "local fabricators can bend and drill"
+    },
+    {
+      "fit": "good",
+      "method": "hybrid",
+      "notes": "job-shop parts, in-house kitting"
+    },
+    {
+      "fit": "good",
+      "method": "outsourced components",
+      "notes": "levelling feet and anchors bought in"
+    },
+    {
+      "fit": "good",
+      "method": "fully outsourced",
+      "notes": "fabricator can supply finished sets"
+    }
+  ],
+  "prototype_dimensions": "Wall bracket: 2 mm GI, 60 x 60 mm legs, 40 mm wide, 30 mm standoff. Floor foot: 40 mm diameter, 30 mm high, M10 leveller, 60 mm shield lip.",
+  "safety_requirements": [
+    "Anti-tip restraint is mandatory",
+    "Anchor type matched to brick, block or AAC wall",
+    "Static load test before sale",
+    "Structural review for tall or overhead units"
+  ],
+  "technical_requirements": [
+    "Hold a loaded 2.1 m wardrobe (estimate 150 kg, to be checked) with a safety factor of at least 3",
+    "Anti-tip restraint on every tall unit",
+    "Gap 25-40 mm, kept clear of trims and fillers",
+    "Galvanised or stainless parts for humid interiors",
+    "Floor feet with a metal shield lip so termites cannot climb hidden"
+  ],
+  "tests": [
+    "Static load at 3x expected load for 24 hours",
+    "Anchor pull-out tests in brick and AAC",
+    "Observation in 2 homes with past termite activity for 6 months"
+  ],
+  "tolerances": "Hole positions +/-0.5 mm; bend angle +/-1 degree; standoff gap 30 +/-3 mm.",
+  "tools_equipment": [
+    "drill",
+    "spirit level",
+    "wall anchor bits"
+  ]
+}

@@ -1,0 +1,384 @@
+{
+ "research:research_bundle": {
+  "sources": [
+   {
+    "url": "https://www.newsbytesapp.com/news/business/struggling-with-childcare-these-practical-hacks-can-help/story",
+    "title": "Struggling with childcare? These practical hacks can help",
+    "publisher": "NewsBytes",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A February 2025 NewsBytes piece describes childcare costs as rising, with private daycare fees straining household budgets. It suggests in-home nannies as a cheaper option, citing a range of ₹6,000 to ₹15,000 a month.",
+    "query": "parenting and childcare costly frustration customers",
+    "published_at": "2025-02"
+   },
+   {
+    "url": "https://www.policycircle.org/policy/childcare-infrastructure-women-jobs/",
+    "title": "Childcare infrastructure needed to lift women's employment",
+    "publisher": "Policy Circle",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Policy Circle says a woman weighing a job has to compare her expected wages against daycare, domestic help and travel costs. Policy Circle warns that requiring employers to cover the full cost could make firms reluctant to hire women, especially where enforcement is weak. The labour-code regime that took effect in November 2025 includes a crèche provision, but Policy Circle says it is unclear whether employers are complying. Progress under the government's Palna scheme, which extends daycare through Anganwadi-cum-crèche centres, has been slow.",
+    "query": "parenting and childcare problem"
+   },
+   {
+    "url": "https://www.whalesbook.com/news/English/Economy/India-Inc-Doubles-Childcare-Budgets-as-Social-Security-Code-Looms/695af1309a9d263a3e69bc92",
+    "title": "India Inc. Doubles Childcare Budgets as Social Security Code Looms",
+    "publisher": "Whalesbook",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Childcare has become a leading HR benefit, and ProEves reports that companies have roughly doubled childcare budgets since 2022 in anticipation of the Social Security Code's crèche mandate.",
+    "query": "parenting and childcare"
+   },
+   {
+    "url": "https://www.thepeoplesboard.com/?p=13997",
+    "title": "Majority Of The Indian Employers Fund Over 50% Of Child Daycare For Working Parents",
+    "publisher": "The People's Board",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A ProEves study reported that about three-fourths of organisations fund more than half of employees' daycare costs.",
+    "query": "parenting and childcare"
+   },
+   {
+    "url": "https://easemyprep.in/news/2768-bengaluru-creche-ordeal-points-to-a-crisis-of-care",
+    "title": "Bengaluru creche ordeal points to a crisis of care",
+    "publisher": "Ease My Prep",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Serious abuse allegations at a Capgemini on-campus crèche in Bengaluru in July 2025 have shaken parents' trust in daycare.",
+    "query": "parenting and childcare problem"
+   },
+   {
+    "url": "https://ksandk.com/labour-employment/india-maternity-benefit-rules-2026/",
+    "title": "Maternity Benefits and Crèche Obligations Under India's Labour Codes: An Employer Compliance Guide for 2026",
+    "publisher": "KS&K (law firm commentary)",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Under Section 67 of the SS Code, any establishment with fifty or more employees must provide a creche within a distance the Central Government prescribes, separately or as part of common facilities. The requirement to provide crèche facilities for establishments employing fifty (50) or more employees is retained, with operational flexibility permitting shared or outsourced arrangements subject to prescribed standards. The Social Security (Central) Rules, 2026 let an employer pay a creche allowance instead of running a facility. That option requires an agreement with the negotiating union or council, or with a majority of employees where no such body exists.",
+    "query": "parenting and childcare"
+   },
+   {
+    "url": "https://startup.siliconindia.com/vendor/startups-of-the-year-2024-coodle-cid-25349.html",
+    "title": "Startups of the Year 2024: Coodle",
+    "publisher": "siliconindia",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Coodle offers over 150 meticulously maintained products spanning six categories, including strollers, cribs, car seats, and feeding chairs. Its flexible rental and subscription options let parents test premium products before purchasing.",
+    "query": "parenting and childcare costly frustration customers",
+    "published_at": "2024"
+   },
+   {
+    "url": "https://yourstory.com/smbstory/sustainable-parenthood-pyarababy-marketplace-pre-loved-baby-products",
+    "title": "Sustainable parenthood: How PyaraBaby is giving baby products a second life",
+    "publisher": "YourStory",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "PyaraBaby is a resale marketplace rather than a rental service. Founded in 2022, it connects over 23,800 parents across India to buy and sell pre-loved and new baby products. Its operators report that managing shipments across India, high RTO rates, damaged products, and costly volumetric shipping added to the operational complexity. One Data Bridge estimate cited by YourStory put the market size for baby products in India at $1.6 billion in 2020, expected to grow at a CAGR of 16.9 percent.",
+    "query": "parenting and childcare costly frustration customers"
+   },
+   {
+    "url": "https://lr.in.psf.lt/r/NewParents/comments/1i891n6/is_everyone_on_babyparenting_subs_rich",
+    "title": "r/NewParents: Is everyone on baby/parenting subs rich?",
+    "publisher": "Reddit (mirror)",
+    "source_type": "forum",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Anytime I see people asking for recommendations on strollers, car seats, baby gear - all of the responses are links to the most expensive, top tier items. I also hated our graco highchair, but i opted for the $30 ikea one instead and it worked as needed.",
+    "query": "expensive (parenting)",
+    "published_at": "2025-01-23"
+   },
+   {
+    "url": "https://blog.ipleaders.in/brew-beer-or-wine",
+    "title": "Can you brew beer or wine at home in India?",
+    "publisher": "iPleaders (law blog)",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Law blogs say home brewing is generally permitted for personal, non-commercial use, though a few states ban it outright. The sources list Bihar, Gujarat, Lakshadweep, Manipur, and Nagaland as states where it is banned. Selling or distributing alcohol without a license is illegal in India. Commercial microbreweries need a separate excise licence, and only some states issue one, such as Delhi, Haryana, Karnataka and Maharashtra.",
+    "query": "homebrewing and fermentation"
+   },
+   {
+    "url": "https://www.vice.com/en/article/inside-indias-secret-movement-of-homebrewers",
+    "title": "Inside India's Secret Movement of Homebrewers",
+    "publisher": "VICE",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A VICE report quotes a homebrewer saying there is no specific law on homebrewing in India, and says excise rules can be vague and open to official interpretation.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://zbotic.in/fermenter-temperature-controller-beer-brewing-automation/",
+    "title": "Fermenter temperature controller for beer brewing automation",
+    "publisher": "Zbotic (Indian electronics vendor)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "One Indian electronics vendor's guide puts ambient temperatures at 30–45°C and says that without cooling most beer styles ferment too hot. It also says lager yeast needs active cooling in India year-round. The same guide suggests a mini fridge with a controller to hold ale at 18–22°C even when the room is 40°C+.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://instacuppastore.com/blogs/main-page/kombucha-in-summer-why-indian-heat-makes-it-ferment-too-fast",
+    "title": "Kombucha in Summer: Why Indian Heat Makes It Ferment Too Fast",
+    "publisher": "InstaCuppa (vendor blog)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A kombucha vendor notes that some North Indian days exceed 40°C and that summer kombucha can over-ferment within days, so it needs earlier tasting.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://forum.homebrewersassociation.org/t/warm-humid-climate/27782",
+    "title": "Warm humid climate",
+    "publisher": "American Homebrewers Association forum",
+    "source_type": "forum",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A brewer in a warm, humid climate reported that a chest freezer with a temperature controller was the only thing that kept fermentation under control. Kveik yeasts were reported to produce little fusel alcohol even when fermented warm.",
+    "query": "better way (homebrew)"
+   },
+   {
+    "url": "https://forum.northernbrewer.com/t/temperature-control/2354",
+    "title": "Temperature control",
+    "publisher": "Northern Brewer forum",
+    "source_type": "forum",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Evaporative cooling is a common low-cost option. One brewer used a swamp cooler with frozen water bottles year-round.",
+    "query": "better way (homebrew)"
+   },
+   {
+    "url": "https://www.marketsandmarkets.com/Market-Reports/geography/kombucha-market/India",
+    "title": "India Kombucha Market analysis",
+    "publisher": "MarketsandMarkets",
+    "source_type": "industry_report",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "MarketsandMarkets puts India's kombucha market at about $39.3 million in 2024, projected to reach $94 million by 2029, a 19% CAGR.",
+    "query": "homebrewing and fermentation"
+   },
+   {
+    "url": "https://www.imarcgroup.com/india-kombucha-market",
+    "title": "India Kombucha Market Size, Share, Trends and Forecast 2025-2033",
+    "publisher": "IMARC Group",
+    "source_type": "industry_report",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "IMARC gives $102.6 million for 2024, forecasting about $460 million by 2033 at a 16.2% growth rate.",
+    "query": "homebrewing and fermentation"
+   },
+   {
+    "url": "https://www.slurrp.com/article/idli-batter-not-rising-in-winter-simple-tips-that-help-1768306041068",
+    "title": "Idli Batter Not Rising In Winter? Simple Tips That Help",
+    "publisher": "Slurrp",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Cold slows fermentation, and the batter can take far longer. In warm weather, the same process takes 6-8 hours, but in winter it can take up to 24 hours. If nothing happens in 24 hours, it is time to start over again. Warmth is the main fix. Suggested spots include an oven with only the light on, a box or cooler, or a spot near a warm appliance.",
+    "query": "homebrewing and fermentation low cost innovation"
+   },
+   {
+    "url": "https://simpleindianmeals.com/instant-pot-idli/comment-page-1/",
+    "title": "Instant Pot idli (reader comments)",
+    "publisher": "Simple Indian Meals",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "The recent trend is fermenting the batter in an Instant Pot. So you don't have to bother about the weather.",
+    "query": "homebrewing and fermentation low cost innovation"
+   },
+   {
+    "url": "https://purelypedestrian.blogspot.com/2014/01/fermentation-of-foods-in-winter.html?m=1",
+    "title": "Fermentation of foods in winter",
+    "publisher": "Purely Pedestrian (blog)",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "sometimes I would have to worry about the batter not just fermenting rather souring.",
+    "query": "homebrewing and fermentation problem",
+    "published_at": "2014-01"
+   },
+   {
+    "url": "https://instacuppastore.com/blogs/main-page/how-to-set-curd-in-winter-foolproof-methods",
+    "title": "How to Set Curd in Winter: 8 Foolproof Methods That Work",
+    "publisher": "InstaCuppa (sells curd makers)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "If the surrounding temperature is too cold, milk will have trouble setting. One guide says that toned or double-toned milk often produces thin, runny curd in cold weather. Some of these sites sell curd makers (InstaCuppa, for example).",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://buildd.co/product/id-fresh-food-success-story",
+    "title": "How a school dropout built India's biggest idli-dosa batter business to INR 2000 Cr",
+    "publisher": "buildd",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "One analysis puts the idli-dosa batter market at about ₹4,000 crore, based on Indians consume 7.3 billion idlis in a year. iD fresh foods started with a small 50 sq ft kitchen and INR 50,000 investment.",
+    "query": "homebrewing and fermentation"
+   },
+   {
+    "url": "https://yourstory.com/2015/11/id-fresh",
+    "title": "How iD Fresh manages to supply packaged batter for a million idlis every day",
+    "publisher": "YourStory",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Two decades ago, this market was dominated by thousands of local, small-scale businesses, mostly run by women, who'd sell their homemade idli-dosa batter in plastic bags. Today it manufactures 55,000 kgs of idli and dosa batter per day besides other products to more than 18,000 retail outlets in 17 cities in India and abroad.",
+    "query": "homebrewing and fermentation",
+    "published_at": "2015-11"
+   },
+   {
+    "url": "https://cart2india.com/aquarium-heaters/inkbird-aquarium-dual-stage-temperature-controller-ntc-sensor-ac-100v-ac-240v-itc308s-197-ntc-probe/00000000004334822573",
+    "title": "Inkbird Dual Stage Temperature Controller + NTC Sensor (ITC-308S + 1.97\" NTC Probe)",
+    "publisher": "Cart2India",
+    "source_type": "product_listing",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Cart2India lists the ITC-308S with a 1.97\" NTC probe at ₹7,200, inclusive of custom duties, GST, freight forwarding and other charges, and it ships free across India. It is an imported item that ships in 10 working days.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://au.inkbird.com/products/temperature-controller-itc-308",
+    "title": "Temperature Controller ITC-308",
+    "publisher": "Inkbird (Australia store)",
+    "source_type": "product_listing",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Australia (Inkbird's own store): Current price $37.11 AUD, down from $49.99.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://www.ebay.com/itm/156733754786",
+    "title": "Inkbird ITC-308 Thermostat Temperature Controller",
+    "publisher": "eBay (US)",
+    "source_type": "product_listing",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "US eBay listing: $27.29, with free shipping.",
+    "query": "homebrewing and fermentation problem"
+   },
+   {
+    "url": "https://future.indiankanoon.org/doc/144156960/",
+    "title": "Consumer complaint: substandard plywood (Indian Kanoon record)",
+    "publisher": "Indian Kanoon",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "It is the contention of the Complainant that the plywood is of substandard quality and within a period of two years from its purchase he noticed the defects in the plywood which damaged his furniture.",
+    "query": "woodworking and furniture making costly frustration customers"
+   },
+   {
+    "url": "https://future.indiankanoon.org/doc/102026632/",
+    "title": "Consumer complaint: block board sold as termite proof (Indian Kanoon record)",
+    "publisher": "Indian Kanoon",
+    "source_type": "web_page",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "In another, the buyer says the seller assured the block boards and plywood were of superior quality and termite proof.",
+    "query": "woodworking and furniture making costly frustration customers"
+   },
+   {
+    "url": "https://techenclave.com/goto/post?id=2398235",
+    "title": "Wooden furniture from online stores, yes or no?",
+    "publisher": "TechEnclave forum",
+    "source_type": "forum",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "A discussion thread reports negative feedback about the quality and damage due to improper packing for online wooden furniture. One poster also says they saw lot of complaints about termites infestation on Flipkart for wooden furniture.",
+    "query": "woodworking and furniture making problem"
+   },
+   {
+    "url": "https://www.duroply.in/blog/?p=1614",
+    "title": "Duroply blog on plywood buying",
+    "publisher": "Duroply (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "One article says eighty percent of the plywood sales in India are made in the unorganized sector, which the Duroply blog uses to argue buyers have little recourse.",
+    "query": "woodworking and furniture making"
+   },
+   {
+    "url": "https://react.magzter.com/stories/business/Business-Today-India/TURNING-THE-TABLES",
+    "title": "Turning the tables",
+    "publisher": "Business Today (via Magzter)",
+    "source_type": "news",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "Business Today reports that the organised sector currently accounts for just 21% (around $4 billion) of the market.",
+    "query": "woodworking and furniture making"
+   },
+   {
+    "url": "https://www.mordorintelligence.com/industry-reports/india-furniture-market",
+    "title": "India Furniture Market (market research summaries)",
+    "publisher": "Mordor Intelligence and others",
+    "source_type": "industry_report",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Market size (2025): Estimates range from about $25.2 billion to $29.3 billion. One report says local carpenters and small workshops account for 80–85% of total production volume.",
+    "query": "woodworking and furniture making",
+    "published_at": "2025"
+   },
+   {
+    "url": "https://www.centuryply.com/blog/three-ways-to-catch-counterfeit-sellers",
+    "title": "Three Ways To Catch Counterfeit Sellers",
+    "publisher": "CenturyPly (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Verify the ISI mark and the CML number, and buy from trusted retailers, since counterfeit plywood is a known problem.",
+    "query": "woodworking and furniture making problem"
+   },
+   {
+    "url": "https://www.greenply.com/blogs/protect-your-wardrobes-with-termite-resistant-plywood-ideal-for-bedroom-furniture",
+    "title": "Protect your wardrobes with termite resistant plywood",
+    "publisher": "Greenply (manufacturer)",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary_multi (summary across several results; per-page attribution not confirmed; verify at URL)",
+    "content": "Surface treatment can weaken. Greenply notes it can be affected by moisture, cutting, drilling, and general wear. Look for the ATBS (Anti-Termite Borer and Silverfish) mark, which indicates termite treatment.",
+    "query": "woodworking and furniture making problem",
+    "published_at": "2025-11-22"
+   },
+   {
+    "url": "https://www.ukworkshop.co.uk/threads/how-can-i-order-wood-which-wont-warp.141110/page-2",
+    "title": "How can I order wood which won't warp?",
+    "publisher": "UKworkshop forum",
+    "source_type": "forum",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "quarter sawn will move the least but will be quite a bit more expensive as the amount of material produced is much less and the work to produce is greater.",
+    "query": "expensive (woodworking)"
+   },
+   {
+    "url": "https://jeffmacksupply.com/pages/wood-movement-guide",
+    "title": "Wood movement guide",
+    "publisher": "Jeff Mack Supply",
+    "source_type": "company_site",
+    "retrieved_at": "2026-10-31",
+    "retrieval_method": "web_search_tool_summary (Claude Code WebSearch result text about this page; not verbatim page text; verify at URL)",
+    "content": "the problem is when a project is built in a way that gives the wood nowhere to move.",
+    "query": "better way (woodworking)"
+   }
+  ],
+  "notes": "Collected 2026-10-31 by the Claude Code session operator with the WebSearch tool, because this cloud session's network policy blocks the engine's own connectors and also blocked page fetches (WebFetch failed with ENOTFOUND for yourstory.com, zbotic.in, instacuppastore.com, cart2india.com, slurrp.com, lkslaw.com). Content fields are the search tool's text about each page, not verbatim page text. Sources marked _multi summarise several results and their per-page attribution is not confirmed. No Stack Exchange threads were found for the site-specific queries.",
+  "unfulfilled": [
+   "expensive (site: parenting.stackexchange)",
+   "better way (site: parenting.stackexchange)",
+   "expensive (site: homebrew.stackexchange)",
+   "better way (site: homebrew.stackexchange)",
+   "expensive (site: woodworking.stackexchange)",
+   "better way (site: woodworking.stackexchange)",
+   "parenting and childcare low cost innovation (academic, from 2022)",
+   "woodworking and furniture making low cost innovation (academic, from 2022)"
+  ]
+ }
+}

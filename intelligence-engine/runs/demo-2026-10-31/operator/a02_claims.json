@@ -1,0 +1,423 @@
+{
+ "opt_d085f932d0": {
+  "claims": [
+   {
+    "source_id": "src_a126dcc749",
+    "claim_type": "problem_signal",
+    "text": "Private daycare fees are rising and straining Indian household budgets.",
+    "quote": "private daycare fees straining household budgets",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_a126dcc749",
+    "claim_type": "price_observation",
+    "text": "In-home nannies are cited at ₹6,000 to ₹15,000 a month as a cheaper option than private daycare.",
+    "quote": "citing a range of ₹6,000 to ₹15,000 a month",
+    "stance": "supports",
+    "metric": "monthly_cost_inr_low:in_home_nanny",
+    "value": 6000,
+    "unit": "INR per month",
+    "currency": "INR"
+   },
+   {
+    "source_id": "src_f9f80afb50",
+    "claim_type": "buyer_behaviour",
+    "text": "Women deciding whether to take a job weigh wages against daycare, domestic help and travel costs.",
+    "quote": "compare her expected wages against daycare, domestic help and travel costs",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_f9f80afb50",
+    "claim_type": "regulation",
+    "text": "The labour-code crèche provision took effect in November 2025, and employer compliance is unclear.",
+    "quote": "The labour-code regime that took effect in November 2025 includes a crèche provision, but Policy Circle says it is unclear whether employers are complying",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_1d69d5c026",
+    "claim_type": "demand_signal",
+    "text": "Indian companies have roughly doubled childcare budgets since 2022 ahead of the crèche mandate (ProEves).",
+    "quote": "companies have roughly doubled childcare budgets since 2022 in anticipation of the Social Security Code's crèche mandate",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_76f7e05a14",
+    "claim_type": "demand_signal",
+    "text": "About three-fourths of organisations fund more than half of employees' daycare costs (ProEves study).",
+    "quote": "about three-fourths of organisations fund more than half of employees' daycare costs",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_a68d57190f",
+    "claim_type": "problem_signal",
+    "text": "Abuse allegations at a corporate crèche in Bengaluru in July 2025 damaged parents' trust in daycare.",
+    "quote": "have shaken parents' trust in daycare",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_91598d85f0",
+    "claim_type": "regulation",
+    "text": "Establishments with 50 or more employees must provide a crèche under Section 67 of the Social Security Code.",
+    "quote": "any establishment with fifty or more employees must provide a creche",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_91598d85f0",
+    "claim_type": "regulation",
+    "text": "Crèches can be shared or outsourced, subject to prescribed standards.",
+    "quote": "operational flexibility permitting shared or outsourced arrangements subject to prescribed standards",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_91598d85f0",
+    "claim_type": "regulation",
+    "text": "The 2026 Central Rules let employers pay a crèche allowance instead of running a facility, with employee agreement.",
+    "quote": "let an employer pay a creche allowance instead of running a facility",
+    "stance": "supports"
+   }
+  ]
+ },
+ "opt_e5ea6486f8": {
+  "claims": [
+   {
+    "source_id": "src_0b0058d333",
+    "claim_type": "competitor",
+    "text": "Coodle rents over 150 baby products (strollers, cribs, car seats, feeding chairs) with rental and subscription options.",
+    "quote": "Coodle offers over 150 meticulously maintained products spanning six categories",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_765dd2e2b1",
+    "claim_type": "competitor",
+    "text": "PyaraBaby, a resale marketplace founded in 2022, connects over 23,800 parents in India.",
+    "quote": "it connects over 23,800 parents across India to buy and sell pre-loved and new baby products",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_765dd2e2b1",
+    "claim_type": "supply_signal",
+    "text": "Baby-product resale in India faces high RTO rates, damaged products, and costly volumetric shipping.",
+    "quote": "high RTO rates, damaged products, and costly volumetric shipping added to the operational complexity",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_765dd2e2b1",
+    "claim_type": "market_size",
+    "text": "India's baby products market was estimated at $1.6 billion in 2020 (Data Bridge, cited by YourStory).",
+    "quote": "put the market size for baby products in India at $1.6 billion in 2020",
+    "stance": "supports",
+    "metric": "market_size_usd:india_baby_products_2020",
+    "value": 1600000000.0,
+    "unit": "USD",
+    "currency": "USD"
+   },
+   {
+    "source_id": "src_9196c5e040",
+    "claim_type": "buyer_behaviour",
+    "text": "New parents online notice that gear recommendations default to the most expensive items; some find cheap options work fine.",
+    "quote": "all of the responses are links to the most expensive, top tier items",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_7cf4537198",
+    "claim_type": "regulation",
+    "text": "Home brewing is generally allowed for personal use in India, but some states ban it.",
+    "quote": "home brewing is generally permitted for personal, non-commercial use, though a few states ban it outright",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_7cf4537198",
+    "claim_type": "regulation",
+    "text": "Selling alcohol without a licence is illegal in India.",
+    "quote": "Selling or distributing alcohol without a license is illegal in India",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_70f0f3b1f7",
+    "claim_type": "regulation",
+    "text": "Excise rules on homebrewing are vague and open to interpretation.",
+    "quote": "excise rules can be vague and open to official interpretation",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_237febfd5d",
+    "claim_type": "problem_signal",
+    "text": "Indian ambient temperatures of 30–45°C make most beer ferment too hot without cooling.",
+    "quote": "puts ambient temperatures at 30–45°C and says that without cooling most beer styles ferment too hot",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_237febfd5d",
+    "claim_type": "competitor",
+    "text": "The common fix sold in India is a mini fridge plus a temperature controller.",
+    "quote": "suggests a mini fridge with a controller to hold ale at 18–22°C even when the room is 40°C+",
+    "stance": "supports"
+   }
+  ]
+ },
+ "opt_fa815e9ebd": {
+  "claims": [
+   {
+    "source_id": "src_f04afb693a",
+    "claim_type": "problem_signal",
+    "text": "Kombucha over-ferments within days in Indian summer heat above 40°C.",
+    "quote": "summer kombucha can over-ferment within days, so it needs earlier tasting",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_d79b2ba2d8",
+    "claim_type": "competitor",
+    "text": "Warm-climate brewers rely on a chest freezer with a controller to control fermentation.",
+    "quote": "a chest freezer with a temperature controller was the only thing that kept fermentation under control",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_c3644bdb98",
+    "claim_type": "competitor",
+    "text": "Evaporative cooling is a common low-cost way to cool ferments.",
+    "quote": "Evaporative cooling is a common low-cost option",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_adb76387e0",
+    "claim_type": "market_size",
+    "text": "MarketsandMarkets puts India's 2024 kombucha market at about $39.3 million.",
+    "quote": "India's kombucha market at about $39.3 million in 2024",
+    "stance": "supports",
+    "metric": "market_size_usd:india_kombucha_2024",
+    "value": 39300000.0,
+    "unit": "USD",
+    "currency": "USD"
+   },
+   {
+    "source_id": "src_7d9fdae50a",
+    "claim_type": "market_size",
+    "text": "IMARC puts India's 2024 kombucha market at $102.6 million.",
+    "quote": "IMARC gives $102.6 million for 2024",
+    "stance": "supports",
+    "metric": "market_size_usd:india_kombucha_2024",
+    "value": 102600000.0,
+    "unit": "USD",
+    "currency": "USD"
+   },
+   {
+    "source_id": "src_97167c0b21",
+    "claim_type": "problem_signal",
+    "text": "Idli and dosa batter takes 6-8 hours to ferment in warm weather but up to 24 hours in winter, and sometimes fails.",
+    "quote": "In warm weather, the same process takes 6-8 hours, but in winter it can take up to 24 hours",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_97167c0b21",
+    "claim_type": "problem_signal",
+    "text": "Batter that does not ferment within 24 hours is discarded and remade.",
+    "quote": "If nothing happens in 24 hours, it is time to start over again",
+    "stance": "supports"
+   }
+  ]
+ },
+ "opt_a30117a81e": {
+  "claims": [
+   {
+    "source_id": "src_a233160260",
+    "claim_type": "competitor",
+    "text": "Some households now ferment batter in an Instant Pot to avoid weather dependence.",
+    "quote": "The recent trend is fermenting the batter in an Instant Pot",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_dcad61bfaf",
+    "claim_type": "problem_signal",
+    "text": "In warm months batter can sour instead of fermenting well (2014 blog).",
+    "quote": "worry about the batter not just fermenting rather souring",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_cb383c9506",
+    "claim_type": "problem_signal",
+    "text": "Curd fails to set when the room is too cold.",
+    "quote": "If the surrounding temperature is too cold, milk will have trouble setting",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_cb383c9506",
+    "claim_type": "competitor",
+    "text": "Electric curd makers are already sold to Indian households (e.g. by InstaCuppa).",
+    "quote": "Some of these sites sell curd makers",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_df5fa216a4",
+    "claim_type": "market_size",
+    "text": "One analysis puts the idli-dosa batter market at about ₹4,000 crore.",
+    "quote": "puts the idli-dosa batter market at about ₹4,000 crore",
+    "stance": "supports",
+    "metric": "market_size_inr:idli_dosa_batter",
+    "value": 40000000000.0,
+    "unit": "INR",
+    "currency": "INR"
+   },
+   {
+    "source_id": "src_df5fa216a4",
+    "claim_type": "buyer_behaviour",
+    "text": "Indians are estimated to eat 7.3 billion idlis a year.",
+    "quote": "Indians consume 7.3 billion idlis in a year",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_df5fa216a4",
+    "claim_type": "competitor",
+    "text": "iD Fresh started with a 50 sq ft kitchen and ₹50,000.",
+    "quote": "started with a small 50 sq ft kitchen and INR 50,000 investment",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_ba963d11e8",
+    "claim_type": "supply_signal",
+    "text": "The batter market was historically served by thousands of small, mostly women-run sellers.",
+    "quote": "thousands of local, small-scale businesses, mostly run by women, who'd sell their homemade idli-dosa batter in plastic bags",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_ba963d11e8",
+    "claim_type": "competitor",
+    "text": "iD Fresh makes 55,000 kg of batter a day for more than 18,000 outlets.",
+    "quote": "manufactures 55,000 kgs of idli and dosa batter per day",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_6056ecd096",
+    "claim_type": "price_observation",
+    "text": "An imported Inkbird ITC-308S temperature controller is listed in India at ₹7,200 including duties and GST.",
+    "quote": "lists the ITC-308S with a 1.97\" NTC probe at ₹7,200, inclusive of custom duties, GST",
+    "stance": "supports",
+    "metric": "retail_price_inr:temperature_controller_itc308s",
+    "value": 7200,
+    "unit": "INR",
+    "currency": "INR"
+   }
+  ]
+ },
+ "opt_c43874393f": {
+  "claims": [
+   {
+    "source_id": "src_a8779299c8",
+    "claim_type": "price_observation",
+    "text": "Inkbird's Australian store lists the ITC-308 at AUD 37.11.",
+    "quote": "Current price $37.11 AUD",
+    "stance": "supports",
+    "metric": "retail_price_aud:temperature_controller_itc308",
+    "value": 37.11,
+    "unit": "AUD",
+    "currency": "AUD"
+   },
+   {
+    "source_id": "src_d2e3bf9460",
+    "claim_type": "price_observation",
+    "text": "A US eBay listing prices the ITC-308 at $27.29.",
+    "quote": "US eBay listing: $27.29",
+    "stance": "supports",
+    "metric": "retail_price_usd:temperature_controller_itc308",
+    "value": 27.29,
+    "unit": "USD",
+    "currency": "USD"
+   },
+   {
+    "source_id": "src_5a8b5dd844",
+    "claim_type": "problem_signal",
+    "text": "A consumer complaint alleges substandard plywood damaged furniture within two years.",
+    "quote": "within a period of two years from its purchase he noticed the defects in the plywood which damaged his furniture",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_efe8f73be5",
+    "claim_type": "problem_signal",
+    "text": "A buyer alleges board sold as termite proof was not.",
+    "quote": "the seller assured the block boards and plywood were of superior quality and termite proof",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_006cb99334",
+    "claim_type": "problem_signal",
+    "text": "Online wooden furniture buyers report damage from poor packing.",
+    "quote": "damage due to improper packing for online wooden furniture",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_006cb99334",
+    "claim_type": "problem_signal",
+    "text": "Buyers report termite infestation complaints on wooden furniture sold online.",
+    "quote": "lot of complaints about termites infestation on Flipkart for wooden furniture",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_550b7285b2",
+    "claim_type": "supply_signal",
+    "text": "A manufacturer says 80% of plywood sales in India are unorganised.",
+    "quote": "eighty percent of the plywood sales in India are made in the unorganized sector",
+    "stance": "supports"
+   }
+  ]
+ },
+ "opt_14d0c6caf7": {
+  "claims": [
+   {
+    "source_id": "src_f7a65ba539",
+    "claim_type": "market_size",
+    "text": "The organised sector is about 21% (around $4 billion) of India's furniture market (Business Today).",
+    "quote": "organised sector currently accounts for just 21% (around $4 billion) of the market",
+    "stance": "supports",
+    "metric": "organised_share_pct:india_furniture",
+    "value": 21,
+    "unit": "percent",
+    "currency": ""
+   },
+   {
+    "source_id": "src_1f5352bd9b",
+    "claim_type": "market_size",
+    "text": "2025 estimates of India's furniture market range from about $25.2 billion to $29.3 billion.",
+    "quote": "Estimates range from about $25.2 billion to $29.3 billion",
+    "stance": "supports",
+    "metric": "market_size_usd_low:india_furniture_2025",
+    "value": 25200000000.0,
+    "unit": "USD",
+    "currency": "USD"
+   },
+   {
+    "source_id": "src_1f5352bd9b",
+    "claim_type": "supply_signal",
+    "text": "Local carpenters and small workshops make 80–85% of furniture by volume.",
+    "quote": "local carpenters and small workshops account for 80–85% of total production volume",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_0bc90143eb",
+    "claim_type": "problem_signal",
+    "text": "Counterfeit plywood is a known problem; buyers are told to verify ISI and CML numbers.",
+    "quote": "counterfeit plywood is a known problem",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_a2b917ea3f",
+    "claim_type": "technical_finding",
+    "text": "Surface termite treatment on plywood weakens with moisture, cutting, drilling and wear.",
+    "quote": "it can be affected by moisture, cutting, drilling, and general wear",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_1d19487bd3",
+    "claim_type": "cost_observation",
+    "text": "Quarter-sawn timber moves least but costs much more.",
+    "quote": "quarter sawn will move the least but will be quite a bit more expensive",
+    "stance": "supports"
+   },
+   {
+    "source_id": "src_dc0c743649",
+    "claim_type": "technical_finding",
+    "text": "Wood movement failures come from designs that leave the wood nowhere to move.",
+    "quote": "the problem is when a project is built in a way that gives the wood nowhere to move",
+    "stance": "supports"
+   }
+  ]
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "demand:cpt_5af7828f45": {
+  "answers": [
+   {
+    "key": "problem",
+    "answer": "Boards sold as termite proof fail, and factory surface treatment weakens at cuts and drill holes; buyers cannot see whether edges were protected.",
+    "claim_ids": [
+     "clm_4bc2d9c1cc",
+     "clm_d42b783ffd",
+     "clm_c2bc910396",
+     "clm_7817f35136"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "who",
+    "answer": "Homeowners commissioning carpenter-built interiors; local carpenters make most furniture by volume. Which homeowners care enough to pay is not shown.",
+    "claim_ids": [
+     "clm_eb9d5f3379"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "frequency_intensity",
+    "answer": "Once per renovation; failures can appear within two years and damage furniture. How often this happens is not measured.",
+    "claim_ids": [
+     "clm_4bc2d9c1cc"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "alternatives",
+    "answer": "Branded termite-treated boards, maker advice to treat edges with borate, guarantees from board brands. No verifiable edge-coverage product found.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "current_spend",
+    "answer": "Unknown. No data on what homeowners or carpenters spend on edge treatment.",
+    "claim_ids": [],
+    "status": "unknown"
+   },
+   {
+    "key": "why_choose",
+    "answer": "Visible proof of edge coverage with a UV torch. Whether buyers value proof enough to pay ₹1,499 is untested.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "switch_trigger",
+    "answer": "A past termite failure or a designer who insists on it. Assumption.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "reach",
+    "answer": "Interior designers and contractors; carpenters must agree to apply it. No channel tested.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "acquisition_cost",
+    "answer": "Modelled at ₹600 per customer; no evidence.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "delivery_cost",
+    "answer": "Kit materials about ₹495 plus packing and courier, all assumptions; registration and testing add about ₹4.8 lakh setup.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "working_capital",
+    "answer": "A 300-kit first batch and 60 inventory days; peak cash need is far above the ₹3 lakh budget in the model.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "failure_risks",
+    "answer": "Pesticide registration time and cost, carpenters skipping it, leaching in wet kitchens, tracer showing through finish, and a negative unit margin once founder time is paid.",
+    "claim_ids": [
+     "clm_c2bc910396"
+    ],
+    "status": "evidenced"
+   }
+  ]
+ },
+ "demand:cpt_a38a414885": {
+  "answers": [
+   {
+    "key": "problem",
+    "answer": "Termite infestation complaints on wooden furniture and boards that fail as termite proof suggest board chemistry alone does not protect buyers.",
+    "claim_ids": [
+     "clm_17b1634b5b",
+     "clm_d42b783ffd",
+     "clm_4bc2d9c1cc"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "who",
+    "answer": "Carpenters and contractors fitting built-ins, and homeowners on termite-prone ground floors. Not validated.",
+    "claim_ids": [
+     "clm_eb9d5f3379"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "frequency_intensity",
+    "answer": "Unknown frequency of termite entry through walls behind built-ins; no data.",
+    "claim_ids": [],
+    "status": "unknown"
+   },
+   {
+    "key": "alternatives",
+    "answer": "Anti-termite soil treatment by pest controllers, termite-treated boards, building-level ant caps (not found for furniture).",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "current_spend",
+    "answer": "Unknown.",
+    "claim_ids": [],
+    "status": "unknown"
+   },
+   {
+    "key": "why_choose",
+    "answer": "Works with any board and makes termite tubes visible early. Research shows shields aid detection more than prevention, which weakens the pitch.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "switch_trigger",
+    "answer": "A carpenter who has had termite callbacks. Assumption.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "reach",
+    "answer": "Hardware dealers and carpenter networks; dealer margin is assumed at 25%.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "acquisition_cost",
+    "answer": "Modelled at ₹800 per carpenter with 3 sets per carpenter; no evidence.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "delivery_cost",
+    "answer": "Parts about ₹980 per set plus courier ₹150, assumptions; shipping metal parts is heavy.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "working_capital",
+    "answer": "200-set batch plus 30-day dealer credit; peak need above budget in the model.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "failure_risks",
+    "answer": "Load and tipping safety, carpenters bridging the gap with trims, low perceived value, and a negative unit margin after dealer cut and acquisition.",
+    "claim_ids": [],
+    "status": "assumption"
+   }
+  ]
+ },
+ "demand:cpt_53d7f7d4b8": {
+  "answers": [
+   {
+    "key": "problem",
+    "answer": "Counterfeit plywood and false termite-proof claims mean the board delivered may not be the board promised, and homeowners are rarely on site.",
+    "claim_ids": [
+     "clm_7817f35136",
+     "clm_d42b783ffd",
+     "clm_4bc2d9c1cc"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "who",
+    "answer": "Homeowners with larger renovations who are not on site; size of this group unknown.",
+    "claim_ids": [
+     "clm_eb9d5f3379"
+    ],
+    "status": "evidenced"
+   },
+   {
+    "key": "frequency_intensity",
+    "answer": "Once per renovation; intensity unknown.",
+    "claim_ids": [],
+    "status": "unknown"
+   },
+   {
+    "key": "alternatives",
+    "answer": "Free BIS Care licence check, brand checklists, general home inspection agencies that charge by area.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "current_spend",
+    "answer": "Unknown. Inspection agencies exist, but no INR prices were found.",
+    "claim_ids": [],
+    "status": "unknown"
+   },
+   {
+    "key": "why_choose",
+    "answer": "An independent check at the moment of delivery, before cutting. Untested.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "switch_trigger",
+    "answer": "A bad past experience, or living away from the site. Assumption.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "reach",
+    "answer": "Interior designers and housing societies; designer referral fee assumed at 20%.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "acquisition_cost",
+    "answer": "Modelled at ₹400 per customer; no evidence.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "delivery_cost",
+    "answer": "About 3.3 founder hours per completed visit including travel and wasted trips; travel ₹300 assumed.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "working_capital",
+    "answer": "Low: about ₹39,000 peak in the model. The constraint is founder time, not cash.",
+    "claim_ids": [],
+    "status": "assumption"
+   },
+   {
+    "key": "failure_risks",
+    "answer": "Founder earns about ₹168/hour, below the ₹600/hour opportunity cost; capacity caps at about 30 visits a month; boards can be swapped after inspection; carpenters may resist.",
+    "claim_ids": [],
+    "status": "assumption"
+   }
+  ]
+ }
+}

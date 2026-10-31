@@ -190,6 +190,10 @@ def run_discovery(ctx: Ctx) -> dict:
         for i in industries:
             if i is None or i in inds:
                 by_ind[i].append(c)
+    if claims and not any(by_ind.values()):
+        # Evidence exists but could not be mapped to an industry: analyse it together rather than skip it.
+        by_ind = {None: claims}
+        ctx.log("opportunity_scout", "note", "claims not mapped to industries; analysing all evidence together")
     tasks, order = [], []
     for ind, cl in by_ind.items():
         if not cl:
@@ -282,16 +286,8 @@ def _opportunity_for_invention(ctx: Ctx) -> dict:
 
 
 def _facts(ctx: Ctx, opp: dict) -> list[str]:
-    db = ctx.db
-    first = [db.get("claims", c) for c in (opp.get("claim_ids") or [])]
-    rest = db.query("claims", "project_id=? AND support='verified_quote'", (ctx.project_id,), "created_at")
-    seen, out = set(), []
-    for c in [x for x in first if x] + rest:
-        if c["id"] in seen:
-            continue
-        seen.add(c["id"])
-        out.append(f"{c['id']}: {clip(c['text'], 220)}")
-    return out[:30]
+    from . import relevant_claims
+    return [f"{c['id']}: {clip(c['text'], 220)}" for c in relevant_claims(ctx, None, opp if opp.get("id") else None, limit=30)]
 
 
 def generate_concepts(ctx: Ctx, methods: list[str], avoid: list[str], tag: str) -> int | None:
@@ -384,7 +380,9 @@ def run_comparison(ctx: Ctx) -> dict:
     ctx.log("inventor", "diversity", rep["explanation"])
 
     reps = [by_id[r] for r in rep["representatives"]]
-    unchecked = [c for c in reps if not db.one("originality_checks", "concept_id=?", (c["id"],))]
+    job_created = (ctx.job or {}).get("created_at") or ""
+    unchecked = [c for c in reps if not db.one("originality_checks", "concept_id=? AND created_at>=?",
+                                                (c["id"], job_created))]
     if not cp.get("originality_done") and unchecked:
         queries = []
         for c in unchecked:
@@ -394,8 +392,13 @@ def run_comparison(ctx: Ctx) -> dict:
                  if (s.get("meta") or {}).get("label") in ("originality", "research")]
         searched = summary.get("used", [])
         results = {}
-        for c in unchecked:
-            r = originality.assess(ctx, c, cands, searched, summary["unavailable_connectors"])
+        preps = [originality.prepare(ctx, c, cands) for c in unchecked]
+        tasks = [p["task"] for p in preps if p["task"]]
+        judged = ctx.generate(tasks) if tasks else []
+        by_purpose = {t.purpose: j for t, j in zip(tasks, judged or [])}
+        for c, prep in zip(unchecked, preps):
+            j = by_purpose.get(prep["task"].purpose) if prep["task"] else None
+            r = originality.finalize(ctx, prep, j, searched, summary["unavailable_connectors"])
             results[c["id"]] = r["verdict"]
             dups = history_duplicates(db, c)
             if dups:

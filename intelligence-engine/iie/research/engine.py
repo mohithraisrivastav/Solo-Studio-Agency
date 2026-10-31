@@ -1,6 +1,7 @@
 """Research workflow: run queries across connectors, store citations, extract verified claims."""
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 from ..context import Ctx, source_block
@@ -77,7 +78,27 @@ BUNDLE_SCHEMA = obj(
 )
 
 
-def import_bundle(ctx: Ctx, bundle: dict, imported_by: str, label: str = "manual") -> dict:
+def infer_query(query_text: str, queries: list[RQuery] | None) -> RQuery | None:
+    """Match an operator-supplied query string back to the planned query (for industry and purpose)."""
+    if not query_text or not queries:
+        return None
+    qt = query_text.strip().lower()
+    for q in queries:
+        if q.text.lower() == qt:
+            return q
+    words = [w for w in re.findall(r"[a-z]+", qt) if len(w) > 4]
+    best, best_n = None, 0
+    for q in queries:
+        name = (q.industry or "").lower()
+        n = sum(1 for w in words if w in name or name and any(w.startswith(x) or x.startswith(w)
+                                                                for x in re.findall(r"[a-z]+", name) if len(x) > 4))
+        if n > best_n:
+            best, best_n = q, n
+    return best
+
+
+def import_bundle(ctx: Ctx, bundle: dict, imported_by: str, label: str = "manual",
+                  queries: list[RQuery] | None = None) -> dict:
     """Validate and store an operator-supplied source bundle. Returns counts and rejections."""
     added, dup, rejected = 0, 0, []
     for s in bundle.get("sources", []):
@@ -93,9 +114,12 @@ def import_bundle(ctx: Ctx, bundle: dict, imported_by: str, label: str = "manual
         if len((s.get("content") or "").strip()) < 20:
             rejected.append({"url": s["url"], "reason": "no usable content"})
             continue
+        matched = infer_query(s.get("query", ""), queries)
         doc = Doc(url=s["url"], title=s["title"], content=s["content"], source_type=s["source_type"],
                   publisher=s.get("publisher"), published_at=s.get("published_at"),
-                  meta={"imported_by": imported_by, "label": label, "query": s.get("query")})
+                  meta={"imported_by": imported_by, "label": label, "query": s.get("query"),
+                        "industry": matched.industry if matched else None,
+                        "purpose": matched.purpose if matched else None})
         _, new = store_doc(ctx, doc, f"operator_bundle:{imported_by}", s.get("query", ""),
                            retrieval_method=s.get("retrieval_method", "operator"), retrieved_at=s["retrieved_at"])
         added += int(new)
@@ -176,7 +200,7 @@ def run_research(ctx: Ctx, queries: list[RQuery], actor: str = "research_investi
         answer = op.generate(task)  # raises OperatorPending until answered
         row = ctx.db.one("operator_tasks", "request_key=?", (task.request_key(),))
         if not state.get("bundle_imported"):
-            res = import_bundle(ctx, answer, (row or {}).get("answered_by") or "operator", label)
+            res = import_bundle(ctx, answer, (row or {}).get("answered_by") or "operator", label, queries)
             state["bundle_imported"] = True
             ctx.save_checkpoint({**ctx.checkpoint(), label: state})
             summary["operator_bundle"] = res
