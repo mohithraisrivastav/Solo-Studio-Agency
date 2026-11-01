@@ -1,0 +1,136 @@
+{
+  "currency": "INR",
+  "unit_label": "per witnessed lot (fee = contained g x gold price x fee rate x share of lots where fee is due)",
+  "notes": {
+    "base": "30 g contained per lot, gold 14,100/g, 3% fee, fee due on 75% of lots",
+    "conservative": "15 g, 14,100/g, 3%, due on 50%",
+    "optimistic": "favourable case: 40 g, 15,200/g, 3%, due on 90%, cheap assay 3,000, 4 founder h per lot",
+    "favourable_with_agent": "optimistic plus a field agent who witnesses; founder 1 h per lot oversight; 50 lots a month",
+    "ceiling": "60 g, 15,200/g, 4% fee, due on 100%, assay 3,000, 3 h per lot",
+    "flat_fee_witness_only": "simpler alternative: flat 6,000 ex-GST per lot, owner pays the assay directly, 4 h per lot, no auction"
+  },
+  "price": 9517.5,
+  "price_includes_tax": false,
+  "tax_rate": 0.18,
+  "variable_costs": {
+    "assay_and_prep": 5822,
+    "umpire_reserve": 540,
+    "seals_bags_video": 500,
+    "travel_workshop_and_refiner": 1000
+  },
+  "reject_rate": 0.0,
+  "channel_fee_rate": 0.0,
+  "payment_fee_rate": 0.0,
+  "cac": 6000,
+  "orders_per_customer": 6,
+  "founder_hours_per_unit": 6,
+  "founder_hour_value": 750,
+  "founder_hours_available_per_month": 160,
+  "founder_fixed_hours_per_month": 40,
+  "hired_cost_per_unit": 0,
+  "fixed_monthly": {
+    "overhead_phone_software_books": 10000,
+    "liability_insurance": 1667,
+    "field_agent": 0
+  },
+  "one_time": {
+    "kit": 125000,
+    "legal_ca": 25000,
+    "field_test_5_lots": 45856
+  },
+  "depreciable": [
+    "kit"
+  ],
+  "depreciation_months": 36,
+  "units_per_month_at_scale": 33.3,
+  "pre_revenue_months": 4,
+  "ramp_months": 18,
+  "inventory_months": 0.0,
+  "receivable_days": 21,
+  "months": 24,
+  "capital_available": 500000,
+  "scenarios": {
+    "conservative": {
+      "price": 3172.5,
+      "variable_costs": {
+        "assay_and_prep": 5822,
+        "umpire_reserve": 1082,
+        "seals_bags_video": 800,
+        "travel_workshop_and_refiner": 1500
+      },
+      "founder_hours_per_unit": 10,
+      "cac": 12000,
+      "orders_per_customer": 3,
+      "ramp_months": 20,
+      "units_per_month_at_scale": "*0.5",
+      "receivable_days": 45
+    },
+    "optimistic": {
+      "price": 16416.0,
+      "variable_costs": {
+        "assay_and_prep": 3000,
+        "umpire_reserve": 300,
+        "seals_bags_video": 300,
+        "travel_workshop_and_refiner": 600
+      },
+      "founder_hours_per_unit": 4,
+      "founder_fixed_hours_per_month": 30,
+      "cac": 3000,
+      "orders_per_customer": 8,
+      "ramp_months": 12,
+      "units_per_month_at_scale": 40,
+      "receivable_days": 7
+    },
+    "favourable_with_agent": {
+      "price": 16416.0,
+      "variable_costs": {
+        "assay_and_prep": 3000,
+        "umpire_reserve": 300,
+        "seals_bags_video": 300,
+        "travel_workshop_and_refiner": 600
+      },
+      "founder_hours_per_unit": 1,
+      "founder_fixed_hours_per_month": 30,
+      "cac": 3000,
+      "orders_per_customer": 8,
+      "fixed_monthly": {
+        "field_agent": 25000
+      },
+      "ramp_months": 12,
+      "units_per_month_at_scale": 50,
+      "receivable_days": 7
+    },
+    "ceiling": {
+      "price": 36480.0,
+      "variable_costs": {
+        "assay_and_prep": 3000,
+        "umpire_reserve": 300,
+        "seals_bags_video": 300,
+        "travel_workshop_and_refiner": 600
+      },
+      "founder_hours_per_unit": 3,
+      "founder_fixed_hours_per_month": 30,
+      "cac": 3000,
+      "orders_per_customer": 8,
+      "ramp_months": 12,
+      "units_per_month_at_scale": 40,
+      "receivable_days": 7
+    },
+    "flat_fee_witness_only": {
+      "price": 6000,
+      "variable_costs": {
+        "assay_and_prep": 0,
+        "umpire_reserve": 0,
+        "seals_bags_video": 300,
+        "travel_workshop_and_refiner": 600
+      },
+      "founder_hours_per_unit": 4,
+      "founder_fixed_hours_per_month": 30,
+      "cac": 3000,
+      "orders_per_customer": 8,
+      "ramp_months": 12,
+      "units_per_month_at_scale": 32.5,
+      "receivable_days": 7
+    }
+  }
+}
