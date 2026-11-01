@@ -1,0 +1,18 @@
+== 1. Sports wheelchair / para-sport (closest miss) ==
+chair users ~390; replacements/yr ~98
+whole-market spend at local price Rs 14,625,000/yr; entrant revenue Rs 4,387,500; gross profit Rs 1,316,250
+buyer saving per chair vs import Rs 300,000 (one-off, no income to repay it)
+founder time at Rs 750/h x 1200h = Rs 900,000; gross profit covers it 1.46x
+
+== 2. Agarwood compliant-export desk (closest miss) ==
+implied export price Rs 209,821/kg
+quota x that price = Rs 3,170 crore/yr -> unrealistic, so first-consignment price is not a market average
+Rs 5 lakh buys ~3.0 kg; gross margin per cycle Rs 125,000
+  2 cycles/yr -> Rs 250,000/yr vs founder time Rs 900,000
+  4 cycles/yr -> Rs 500,000/yr vs founder time Rs 900,000
+
+== 3. Tea plucker, cheapest rival after subsidy ==
+Subsidy cap alone Rs 40,000; Assam general category subsidy 25% (S, 2019 report) so rival net price falls 25-50%
+
+== 4. Bowling machine (academy) ==
+Indian listings Rs 56,000 to Rs 2,09,500 (S); Indian makers exist, so import-gap thesis fails
