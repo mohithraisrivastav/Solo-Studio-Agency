@@ -1,0 +1,33 @@
+founder alternative threshold Rs 1800000
+
+A. Mechanical tithi clock (own-sale, pre-order)
+base                   rev 6,000,000 net 2,100,000 hours   960 net/hr   2,188 beats threshold True
+pieces halved          rev 3,000,000 net   900,000 hours   480 net/hr   1,875 beats threshold False
+price halved           rev 3,000,000 net   900,000 hours   960 net/hr     938 beats threshold False
+cogs share 0.8         rev 6,000,000 net   900,000 hours   960 net/hr     937 beats threshold False
+hours/piece doubled    rev 6,000,000 net 2,100,000 hours  1920 net/hr   1,094 beats threshold True
+licence royalty 8% x 20 units/yr: Rs 1,200,000
+licence royalty 8% x 10 units/yr: Rs 600,000
+licence royalty 4% x 20 units/yr: Rs 600,000
+deposit 50% = 375000.0 vs cogs 450000.0 -> covers cogs: False
+deposit 50% covers cogs if cogs share <= 0.5
+
+B. Predator-proof pen kits to forest depts
+base             rev 30,000,000 net  4,100,000 beats True
+units halved     rev 15,000,000 net  1,850,000 beats True
+margin halved    rev 30,000,000 net  1,850,000 beats True
+both halved      rev 15,000,000 net    725,000 beats False
+goat kills avoided to repay Rs 30000 shed at Rs 15000 compensation: 2.0
+Nashik cages Rs 6.5 crore /500 = 130000.0
+Junnar fence subsidy 75% of 30000 = 22500.0 ; farmers 660 x 30000 = 19800000
+
+C. Forensic evidence kits, one-state tender stream
+base                   rev  90,000,000 net  8,500,000 beats True
+districts halved       rev  44,400,000 net  3,940,000 beats True
+margin halved          rev  90,000,000 net  4,000,000 beats True
+both                   rev  44,400,000 net  1,720,000 beats False
+win rate 20% of base   rev  18,000,000 net  1,300,000 beats False
+Prayagraj 13.6 lakh, Mirzapur 10.6 lakh; mean 1210000.0
+
+D. Memorial gem: Rs per unit at USD 1400-3000 @ Rs 88/USD [A]: 123200 264000
+E. Hi-fi: Rethm USD 10750 @88 = 946000
