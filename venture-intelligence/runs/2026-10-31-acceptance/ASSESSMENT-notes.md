@@ -19,3 +19,10 @@ Observed during the acceptance run. Each item cites the file where it shows.
 7. **Undefined shortlist rule.** `/discover` says "if fewer pass" without defining pass.
 8. **Out-of-role action.** The gold investigator queued a user-facing task suggestion for unchecked items instead of only listing them in its file. Specialists should not create tasks, messages, or notifications.
 9. **Environment.** All sources came through search summaries; page fetching was blocked. Figures could not be confirmed at source.
+
+## Added 2026-11-01, after the full run
+
+10. **Service bias.** All nine round-1 theses and every surviving concept were service intermediaries. Fixed in the hunter, inventor, and business-architect instructions and in `/discover`; hunter D (revised) returned three product theses.
+11. **Commercial selection came too late.** Heavy expert and business work went into opportunities whose thin moats were visible at the market stage. Fixed: `/discover` now runs a commercial screen before any invention.
+12. **Business files lean on assumptions.** Sourced share fell from about 70% in hunts and market files to 35-47% in business files. Expected at design stage, but the gold assay cost (₹1,500 assumed against ₹5,400-5,822 sourced) shows why the Critic must rerun the numbers.
+13. **Rate limits.** Two agents failed mid-run; one had already written its full file. Directors must check files, not replies, before rerunning anything.
