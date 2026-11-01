@@ -38,6 +38,14 @@ Do not send an opportunity to `/invent` until it passes the commercial screen in
 
 Across a run, keep the range wide: if every survivor is a service intermediary, say so and send at least one hunter back with a product, material, or technology lens before inventing.
 
+### Outcomes for any idea
+
+- **REJECT:** strong evidence contradicts a critical assumption, or credible calculations show the approach is impractical.
+- **INVESTIGATE:** plausible, but an important commercial or technical assumption needs validation. Name it and the cheapest credible test.
+- **ADVANCE:** evidence and conservative assumptions support development. List the remaining risks.
+
+Missing evidence is not a reason to reject. An absence of competitors is not proof of originality. An absence of buyers is not proof of no demand. An unusual idea is not good because it is unusual. The seven gates below decide whether to recommend investment; the outcomes above decide what research happens next. Rank INVESTIGATE ideas by upside if true divided by test cost, and recommend only the best few tests, so INVESTIGATE does not become a place to park everything.
+
 ### Stop rules
 
 - At most one revision loop per concept.

@@ -48,6 +48,6 @@ Write `04-shortlist.md`: for each candidate, the hunter's claim, the investigato
 
 **Pass rule for "go":** problem spend strong L1, or weak L1 with a decisive test under ₹50,000; a payer whose profit improves; a beatable reason it is unsolved; a ceiling that pays the founder above the stated hourly value at a scale reachable in 24 months; and room for an accumulating asset. Drop an idea only when strong evidence shows its demand is weak. Missing demand evidence makes it INVESTIGATE, with a cheap test, not a drop.
 
-Choose up to 3 for invention, from unrelated industries. If fewer pass, take fewer. Never pad. If every survivor is a service intermediary, run one more `opportunity-hunter` with the lens "new capability into products: materials, processes, devices, or technology that became cheap or possible, applied to a costly problem" before inventing.
+Rank INVESTIGATE ideas by upside if true divided by test cost, and name the best 3 tests with INR cost and time. Choose up to 3 for invention, from unrelated industries. If fewer pass, take fewer. Never pad. If every survivor is a service intermediary, run one more `opportunity-hunter` with the lens "new capability into products: materials, processes, devices, or technology that became cheap or possible, applied to a costly problem" before inventing.
 
 Report to the user: the shortlist, what was dropped and why, and what was not checked.
