@@ -24,11 +24,15 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 
 11. **Test the load-bearing assumption first.** Find the one thing that must be true for the idea to work (a rule, a tariff, a price, a subsidy, a behaviour). Read the primary source for it before anything else. If a saving, price, or cost came from a blog, broker site, or press piece, rebuild it from official or seller sources. If you cannot reach the source, say so and state the cheapest written answer to ask for.
 12. **Hunt for the seller before saying none exists.** Search by product name, by what the buyer calls it, by the incumbent who could bundle it, by government scheme, by institute pilot, and by failed entrants. Record the queries.
-13. **Answer the buyer's three questions** in your file: why would they buy, why this over the existing options and the cheapest rival, why would a small firm earn money. Say reject, hold, or test. Do not rescue a weak lead; one clear fatal finding is enough to stop.
+13. **Answer the buyer's three questions** (why buy, why this over alternatives and the cheapest rival, why a small firm earns money). Each answer is supported, partly, unsupported, or unknown. "Unsupported" and "unknown" are not rejections. Give one outcome:
+   - **REJECT:** strong evidence contradicts a critical assumption, or credible calculations show the approach is impractical.
+   - **INVESTIGATE:** plausible, but a named assumption needs validation. Give the cheapest credible test.
+   - **ADVANCE:** evidence and conservative assumptions support further development. List remaining risks.
+14. **Challenge the idea, do not judge the category.** An absence of competitors is not proof of originality, and an absence of buyers is not proof of no demand. Ask why each gap exists. Do not accept speculative demand because the idea is attractive.
 
-## Search budget
+## Search effort
 
-You have about 35 to 40 searches. List the deciding claims first and spend searches on them before anything else. Do not create tasks, messages, or notifications; list unchecked items in your file.
+No fixed search count. Write the deciding questions first and search them first. Stop when no likely answer would change the outcome. Go deeper when a finding is surprising or sources disagree. Do not create tasks, messages, or notifications; list unchecked items in your file.
 
 ## Procedure
 

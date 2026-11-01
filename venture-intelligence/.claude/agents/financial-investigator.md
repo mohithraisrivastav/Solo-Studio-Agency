@@ -32,6 +32,6 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 8. Verdict: attractive / marginal / unattractive, and what would have to be true
 9. Sources
 
-## Search budget
+## Search effort
 
-You have about 35 to 40 searches. Write the deciding questions first and spend searches on them before anything else. Do not create tasks, messages, or notifications; list unchecked items in your file.
+No fixed search count. Write the deciding questions first and search them first. Stop when no likely answer would change the outcome. Go deeper when a finding is surprising or sources disagree. Do not create tasks, messages, or notifications; list unchecked items in your file.

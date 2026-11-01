@@ -9,7 +9,10 @@ Every specialist follows this. The Director rejects work that does not.
 | `[S3]` | Sourced. Entry 3 in your Sources table. | Anything. Required for prices, market sizes, competitor facts, regulations, spending, dates. |
 | `[I]` | Inference from tagged facts. Show the chain in the same sentence. | Conclusions, estimates built from sourced parts. |
 | `[A]` | Assumption. Give the basis and how to test it. | Estimates where no source exists. |
+| `[H]` | Hypothesis. A belief about buyers, demand, or technology with no evidence yet. State the cheapest credible test. | Ideas in unproven categories. A hypothesis is allowed and valued; it is never presented as fact. |
 | `[K]` | Background knowledge not checked in this run. | Physics, engineering principles, well-known history. Never for prices, market sizes, competitor status, regulations, or anything that changes over time. |
+
+Four states stay separate: verified fact `[S]`, estimate `[I]` or `[A]`, hypothesis `[H]`, and missing information ("Not found after N searches"). Missing information is not evidence of no demand, and a hypothesis is not evidence of demand.
 
 A number without a tag is a defect. `python3 tools/check_evidence.py <file>` finds them.
 

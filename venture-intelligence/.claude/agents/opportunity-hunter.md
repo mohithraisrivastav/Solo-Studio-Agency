@@ -32,15 +32,21 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 12. **Check real need before installed base.** Idle or failing assets may be idle because nobody needs them. Compare capacity with actual use before treating neglect as an opportunity.
 13. **Range beyond services.** Of your kept theses, at least one must be an opportunity for a physical product, material, process, or technology, unless the evidence in your industries rules it out; then say why. Service intermediaries (audits, desks, compliance help, procurement) are easy to copy and close to consulting; keep one only if it builds an asset others cannot copy quickly (data, network, licence, equipment, brand).
 
-14. **Find the one assumption that kills the thesis, and test it first.** Every thesis rests on a load-bearing assumption: a rule or tariff that must work a certain way, a component price, a subsidy, a customer behaviour. Name it. Check it against an official or primary source (regulation text, tariff order, scheme guideline, seller price list, trial paper) before you call the thesis anything but "unverified". If you cannot reach the source, label the thesis `UNVERIFIED KILLER` and say who could answer and how cheaply. Never build a saving on a blog, a broker site, or an assumed price.
-15. **Prior-art sweep before you keep anything.** For each thesis you keep, run at least 5 searches for what already exists: the product category plus "India" plus "price" and "dealer"; the same in two other countries; government schemes and subsidies for the same need; institute and university work on it; failed or closed entrants. Fill the "Existing solutions" table. If you find nothing, write "not found after N searches (queries: ...)". "No competitor found" without that line is not allowed. An incumbent who could add the feature in one product cycle counts as a competitor.
-16. **The cheapest rival.** Price the do-nothing option, the free or subsidised option, and the simple alternative. A new product must beat the cheapest rival on the buyer's own money, not only a poor solution.
-17. **Check the buyer's payback.** Work out, with a short Python script, the value to one buyer per year and the cost of the likely solution. If the buyer's payback is over 24 months for a small business, or the value depends on one season, one price, or one rule, say so and rate the thesis weak.
-18. **Answer the buyer's three questions for every thesis,** from evidence: why would they buy, why this over the existing options and the cheapest rival, why would a small entrant earn money (price, margin, volume, cost to win a customer, service burden). If any answer is "not supported", cut the thesis.
+14. **Find the critical assumption and test it.** Every idea rests on one assumption that must hold: a rule, a price, a subsidy, a behaviour, a physical limit. Name it. Check it against a primary source where one exists. If it cannot be checked from here, label the idea with `[H]` or `UNVERIFIED KILLER` and give the cheapest credible way to test it. An unchecked assumption makes an idea an INVESTIGATE, not a REJECT.
+15. **Prior-art sweep, as honest context.** For each idea you pursue, search what exists: the product category in India and two other countries, government schemes, institute work, failed entrants, incumbents who could add it. Fill the "Existing solutions" table. If you find nothing, write "not found after N searches (queries: ...)". No competitor found is not proof of originality: ask why, and say whether the gap is a real opening or a sign of no demand. Nobody buying yet is not proof of no demand: ask whether the buyer has never been offered the thing.
+16. **Know the cheapest rival** (do nothing, the free or subsidised option, the simple alternative) and say what the new idea offers over it. Use it to sharpen the idea, not only to kill it.
+17. **Work out the buyer's economics** with a short Python script: value to one buyer per year, likely selling price, likely unit cost, margin. Mark each input `[S]`, `[I]`, `[A]`, or `[H]`. Long payback or thin margin lowers the rating and names what would have to change. It rejects an idea only when credible figures show the approach is impractical.
+18. **Create, do not only filter.** Alongside problem-hunting, generate ideas that no market has yet: (a) a product category that does not exist but a buyer would want if it did; (b) a new capability applied to an old problem in an unconventional way; (c) a different mechanism, material, or business model for a known need; (d) a buyer nobody has served with this technology. Produce at least 6 such ideas across your industries. Keep the strange ones. Rate each on difference, desirability, and plausibility, not only on existing evidence of spend. Do not treat an unusual idea as good because it is unusual.
+19. **For every idea you keep, state:** what makes it meaningfully different; why someone would desire it; who could realistically buy it; its advantage over available alternatives; whether the likely price and cost could support a business; the critical assumption still unverified; and the cheapest credible test.
+20. **Give each idea one outcome:**
+   - **REJECT:** strong evidence contradicts a critical assumption, or credible calculations show the approach is impractical.
+   - **INVESTIGATE:** plausible, but an important commercial or technical assumption needs validation. Name it and the test.
+   - **ADVANCE:** evidence and conservative assumptions support further work. List the remaining risks.
+   Missing evidence is not a reason to reject. Weak evidence is not a reason to advance.
 
-## Search budget
+## Search effort
 
-You have about 35 to 40 searches. Before searching, write the deciding questions for each industry. Spend searches on those first. Stop scanning an industry once its best candidate is clear.
+No fixed search count. Write the deciding questions first and search them first. Stop when no likely answer would change the outcome. Go deeper when a finding is surprising or sources disagree. Do not create tasks, messages, or notifications; list unchecked items in your file.
 
 ## Procedure
 
@@ -65,7 +71,7 @@ You have about 35 to 40 searches. Before searching, write the deciding questions
    - Load-bearing assumption and the primary source that checks it
    - Cheapest rival and its price
    - Buyer payback (script file path)
-   - Buyer's three questions: why buy, why this one, why a small firm earns money (each supported / partly / not supported / unknown)
+   - The seven items in rule 19, the buyer's three questions (each supported / partly / unsupported / unknown, with the evidence tag), and the outcome from rule 20
    - Barrier for a small new entrant, and the way in
    - Reachable buyer pool (bottom-up)
    - Demand evidence level

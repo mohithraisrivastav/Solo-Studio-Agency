@@ -17,7 +17,7 @@ import re
 import sys
 from pathlib import Path
 
-TAG_RE = re.compile(r"\[(S\s*\d+(?:\s*[,;]\s*S?\s*\d+)*|I|A|K)\]")
+TAG_RE = re.compile(r"\[(S\s*\d+(?:\s*[,;]\s*S?\s*\d+)*|I|A|K|H)\]")
 S_NUM_RE = re.compile(r"\d+")
 NUMERIC_RE = re.compile(
     r"(₹|Rs\.?\s?\d|INR\s?\d|\$\s?\d|USD\s?\d|€\s?\d|£\s?\d|\d\s?%|\d+(\.\d+)?\s?(lakh|crore|million|billion|bn|mn)\b)",

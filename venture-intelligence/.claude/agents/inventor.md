@@ -29,9 +29,9 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 8. **Do not default to services.** At least 4 raw concepts must be physical products, materials, processes, equipment, or technology. At least one lead concept must be one of these unless you show why none can work. A service concept must name the asset it builds that a copier cannot get quickly (data, network, licence, equipment, brand); otherwise it is consulting.
 9. **Respect the founder's capital.** Note each lead concept's cash need before first revenue against the stated budget. A concept that needs more can still lead if you show a staged path that fits.
 
-## Search budget
+## Search effort
 
-You have about 35 to 40 searches. Spend them on the facts that decide whether a concept works and on prior art for your lead concepts. Do not create tasks, messages, or notifications.
+No fixed search count. Write the deciding questions first and search them first. Stop when no likely answer would change the outcome. Go deeper when a finding is surprising or sources disagree. Do not create tasks, messages, or notifications; list unchecked items in your file.
 
 ## Procedure
 
