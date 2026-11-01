@@ -34,7 +34,7 @@ The clock is the only candidate that is both original in form and shown feasible
 2. Rs 15,000 to 40,000: bench model driven at one simulated day per minute to measure cam lash and differential play against the 1 hour budget.
 Kill it if buyers will not pay Rs 8 lakh, if no builder quotes under about Rs 6 lakh a unit, or if backlash exceeds the budget.
 
-Hypothesis, not tested: an unknown founder with no capital and no brand cannot sell Rs 8 lakh objects on trust. A licence or partnership with an established maker may be the only route (see heading 6 and 7).
+Hypothesis, not tested: an unknown founder with no capital and no brand cannot sell Rs 8 lakh objects on trust. A licence or partnership with an established maker may be the only route.
 
 ## Not checked
 
