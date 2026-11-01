@@ -8,7 +8,7 @@ Constraints from the brief: founder capital ₹5,00,000 and founder time at ₹7
 
 **Method and limits.**
 - I read the Inventor's file (05-invent-1-gold.md) and the background buyer file (03-market-1-gold-loss.md). I treated their claims as unverified and re-checked the ones that decide feasibility.
-- I ran 36 web searches. I did not use WebFetch. I opened no pages. Every source I found is marked `search summary`. Sources taken from 03 or 05 without my own re-check are marked "reported in 03" or "reported in 05, not re-checked".
+- I ran 38 web searches. I did not use WebFetch. I opened no pages. Every source I found is marked `search summary`. Sources taken from 03 or 05 without my own re-check are marked "reported in 03" or "reported in 05, not re-checked".
 - I contacted no refiner, lab, insurer, regulator or buyer. Nothing here is above demand level L1.
 - I ran no new patent searches. The IP sections rest on the Inventor's prior-art list.
 - Gold price: IBJA 999 fine gold was ₹1,41,082 per 10 g on 27 October 2026 (AM), excluding GST [S66]. I use ₹14,108 per gram [S66]. The Inventor used ₹14,300 [I] (1.4% higher; it changes no conclusion).
@@ -118,6 +118,8 @@ To compare the concepts fairly, each delivery plan below uses the same five cont
 **Market check.** No Indian refiner's sweeps terms were found (2 searches, queries in Section 0). A foreign refiner pays 92-94% of assayed gold on sweeps after a USD 75 assay fee (reported in 05 and 03, not re-checked) [S74].
 
 ### 3. Calculations (inputs, method, results)
+
+Calculation C2 (lot economics).
 
 Inputs: gold ₹14,108 per g [S66]; assay ₹5,408 (gold only) [S9]; fee 4% of contained value [A] (Inventor's assumption); founder time ₹750 per hour [A] (brief); seals and travel ₹1,000 per lot [A] (basis: local travel; test: first 3 lots). Method: per-lot cost divided by fee per gram. Script output:
 
@@ -248,6 +250,8 @@ Per lot:
 
 ### 3. Calculations (inputs, method, results)
 
+Calculations C3 (settling) and C4 (payback).
+
 Inputs: plant throughput 12.5 kg a month [A] (Inventor's 50-worker plant); new capture 0.05%, 0.1% and 0.3% of throughput [A] (Inventor's test threshold, low and high cases); our share 25% [A] (Inventor); refiner payable 92% [S74] (foreign benchmark, reported in 03 and 05); monthly settlement cost of one assay ₹5,408 [S9] plus 4 hours of swap time [A]; kit ₹1.3, ₹2.5 and ₹3.7 lakh including GST [I] (from the cost sketch). Stokes inputs: density 15,600 kg/m³ [K], water viscosity 0.001 Pa·s [K].
 
 ```
@@ -291,7 +295,7 @@ Recommendation: Route B for the test; Route A only after a site passes the test 
 - Numbered drums, seals, cartridges: ₹5,000-10,000 [A] (basis: not priced; test: 2 quotes).
 - Installation and plumbing: ₹10,000-20,000 [A] (basis: not priced; test: local plumber quote).
 - GST at 18% on equipment where listings exclude it [S52].
-- Total: about ₹1.3 lakh (wash plus dry dust collector) to ₹3.7 lakh (wash plus water curtain), including GST [I] (sum of lines, rounded).
+- Total: about ₹1.3 lakh (wash plus dry dust collector) to ₹3.7 lakh (wash plus water curtain) if listed prices include GST, and up to about ₹4.2 lakh if they do not [I] (sum of lines: ₹1,13,000-3,55,000 before GST, × 1.18 at most).
 - Running cost: one assay ₹5,408 per settlement [S9]; founder 4 hours per swap, ₹3,000 [I].
 
 ### 7. Safety, compliance, certification
@@ -320,6 +324,7 @@ Recommendation: Route B for the test; Route A only after a site passes the test 
 - **Duration:** 6-8 weeks [A] (4 weeks running plus refining).
 - **Pass:** new-stream fine gold of at least 0.1% of the plant's monthly throughput, scaled from the lines tested [A] (basis: C4 gives payback under 8 months for a ₹2.5 lakh kit at 0.1%); and the owner confirms the stream was not sold before.
 - **Fail:** under 0.05% [A] (payback over 11 months on the cheapest kit, C4); or every candidate stream is already sold.
+- The top of the cost range is above ₹50,000 [I]. To stay under it, test one plant first (about ₹21,000-28,000 [I]: one trap ₹8,000-15,000 [A], 2 assays ₹10,816 [I], travel ₹2,500 [A]).
 
 ### 11. What a qualified expert or lab must review
 - An environmental engineer: effluent category after install; whether sludge is hazardous waste.
@@ -364,6 +369,8 @@ Recommendation: Route B for the test; Route A only after a site passes the test 
 **Demand-side check.** No Indian polishing-only rate was found; making charges bundle polishing into ₹100-250 per gram in older Rajkot practice [S71]. GJEPC's Rajkot CFC lists laser, 3D and refining machines; usage fees not found [S70].
 
 ### 3. Calculations (inputs, method, results)
+
+Calculation C5 (custody, credits, spread, insurance).
 
 Inputs: hub throughput 20 kg a month [A] (Inventor); 25 working days [A]; removal 0.3-1% [A] (Inventor's range); credit 70% [A] (Inventor); payable 92% [S74]; capture 80-95% [A]; gold ₹14,108 per g [S66]; insurance 0.3-1% a year [S90] (weak, consumer band).
 
@@ -432,6 +439,7 @@ Recommendation: Route A for the test, then Route C before B [I].
 - **Duration:** 4-6 weeks [A] (2 weeks running plus refining).
 - **Pass:** recovered fine gold at least 85% of fine-equivalent removed [A] (basis: margin above the 76% break-even, C5).
 - **Fail:** below 76% [I] (C5). Then the 70% credit cannot be offered.
+- The top of the cost range is above ₹50,000 [I]. To stay under it, use the rented station's own collector if it has one, saving ₹21,000 [S50].
 - Note: at 0.5% removal [A], 2 kg yields only about 10 g removed [I] (2,000 g × 0.5%), so assay and weighing errors matter; do not run the test on less than 2 kg [I].
 
 ### 11. What a qualified expert or lab must review
@@ -467,6 +475,8 @@ Recommendation: Route A for the test, then Route C before B [I].
 
 ### 3. Calculations (inputs, method, results)
 
+Calculation C6 (per-karigar and pooled assay economics).
+
 ```
 Wildcard capture 0.2% of 250 g/month: contained 0.50 g = INR 7,054; karigar 25% = INR 1,622; our 5% fee = INR 353; one assay = INR 5,408
 Wildcard capture 0.5% of 250 g/month: contained 1.25 g = INR 17,635; karigar 25% = INR 4,056; our 5% fee = INR 882
@@ -485,11 +495,11 @@ Inputs: 250 g a month per karigar [A] (Inventor); capture 0.2-0.5% [A]; 25% kari
 | Route | Setup | Unit cost driver | Minimum | Quality risk | Tags |
 |---|---|---|---|---|---|
 | A. Per-karigar kit, assayed monthly | Kits ₹1,000-3,000 each | ₹5,408 per assay | 1 karigar | Assay cost exceeds fee | [S9] [A] [I] |
-| B. Per-karigar kit, assayed quarterly | Same | Same | 1 karigar | Still 26-77% of contained per assay at 0.2% | [I] |
+| B. Per-karigar kit, assayed quarterly | Same | Same | 1 karigar | Still 10-26% of contained value per assay (0.5% and 0.2% capture) | [I] |
 | C. Pooled workshop lot, allocated by kit dry weight | Kits plus a scale | One assay a month | 10 karigars | Weight is gameable | [I] |
 | D. Pooled lot, rupee bonus by bank, team-level | Same | One assay a month | 10 karigars | Weaker individual incentive | [S64] [I] |
 
-Route B check: at 0.2% capture, a quarterly kit holds 1.5 g, ₹21,162, so one assay is 26% of it [I]. Recommendation: Route D [I].
+Route B check: at 0.2% capture, a quarterly kit holds 1.5 g, ₹21,162, so one assay is 26% of it; at 0.5%, 3.75 g, ₹52,905, so 10% [I]. Recommendation: Route D [I].
 
 ### 6. Bill of materials or delivery cost sketch
 - Personal kit (bench skin, apron, hand-wash pouch): ₹1,000-3,000 per karigar [A] (basis: not priced; test: 2 quotes).
@@ -533,7 +543,7 @@ Route B check: at 0.2% capture, a quarterly kit holds 1.5 g, ₹21,162, so one a
 | Feasibility class | Plausible | Plausible hardware, speculative yield | Plausible technically; infeasible at stated scale | Infeasible as designed |
 | Biggest technical risk | Refiners settle small lots on out-turn [S1] | Streams already sold [S58, S87] | Custody and capture below 76% [I] | Assay cost per karigar [I] |
 | Gold custody | None if refiner collects [I] | Sealed cartridges at client [I] | ₹1.13-3.39 crore [I] | Pooled lots only (redesigned) [I] |
-| Capital at risk | ₹73,000-1,48,000 kit [I] | ₹1.3-3.7 lakh per site [I] | ₹3-8 lakh plus gold float [I] | Under ₹1 lakh [I] |
+| Capital at risk | ₹73,000-1,48,000 kit [I] | ₹1.3-4.2 lakh per site [I] | ₹3-8 lakh plus gold float [I] | Under ₹1 lakh [I] |
 | Regulatory load | Low for us; partners need consent [S26, S31] | Medium: effluent, possible hazardous waste [S29] | Medium: job work, GST on spread, PMLA [S42, S44] | High: wages and deposits law [S61, S64] |
 | Cheapest test | About ₹45,856, 6-8 weeks [I] | About ₹37,000-51,000, 6-8 weeks [I] | About ₹45,000-52,000, 4-6 weeks [I] | About ₹31,000-66,000, 3 months [I] |
 | Confidence | Medium | Medium-low | Medium | Medium |
