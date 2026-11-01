@@ -1,0 +1,49 @@
+Unit: per retrofit kit. Currency: INR. Founder time valued at INR 750/h.
+
+| Metric | conservative | base | optimistic |
+|---|---|---|---|
+| Price paid by buyer | INR 30,000 | INR 30,000 | INR 30,000 |
+| Net revenue per unit | INR 21,646 | INR 21,646 | INR 21,646 |
+| Variable cost per unit | INR 18,500 | INR 18,500 | INR 18,500 |
+| Acquisition per unit | INR 3,000 | INR 3,000 | INR 3,000 |
+| Contribution per unit | INR 146 | INR 146 | INR 146 |
+| Contribution margin % | 0.6 | 0.6 | 0.6 |
+| Contribution after founder time | INR -8,854 | INR -8,854 | INR -8,854 |
+| Fixed costs per month | INR 6,000 | INR 6,000 | INR 6,000 |
+| Break-even units per month | 41.2 | 41.2 | 41.2 |
+| Founder capacity units per month | 10.0 | 10.0 | 10.0 |
+| Units per month at scale | 4.0 | 8 | 10.0 |
+| Cash profit per month at scale | INR -5,417 | INR -4,834 | INR -4,542 |
+| Profit after paying founder | INR -71,417 | INR -106,834 | INR -124,542 |
+| Founder earnings per hour | INR -62 | INR -36 | INR -28 |
+| One-time costs | INR 120,000 | INR 120,000 | INR 120,000 |
+| Peak cash needed | INR 503,295 | INR 741,424 | INR 858,593 |
+| Cash payback month | None | None | None |
+| Cumulative cash at end | INR -503,295 | INR -741,424 | INR -858,593 |
+
+Flags (conservative):
+- Each sale loses money once founder time is paid at the stated rate.
+- Thin contribution margin (1% of ex-tax price).
+- Planned volume never covers fixed costs.
+- Peak cash need exceeds available capital (500,000).
+- Cash does not pay back within 24 months.
+- Founder earns -62 an hour, below the stated value of 750.
+
+Flags (base):
+- Each sale loses money once founder time is paid at the stated rate.
+- Thin contribution margin (1% of ex-tax price).
+- Planned volume never covers fixed costs.
+- Peak cash need exceeds available capital (500,000).
+- Cash does not pay back within 24 months.
+- Founder earns -36 an hour, below the stated value of 750.
+
+Flags (optimistic):
+- Each sale loses money once founder time is paid at the stated rate.
+- Thin contribution margin (1% of ex-tax price).
+- Founder capacity caps sales at 10.0 units a month.
+- Planned volume never covers fixed costs.
+- Peak cash need exceeds available capital (500,000).
+- Cash does not pay back within 24 months.
+- Founder earns -28 an hour, below the stated value of 750.
+
+Cash by quarter (base): m0: -120,000, m3: -138,000, m6: -174,500, m9: -355,354, m12: -556,542, m15: -697,919, m18: -712,420, m21: -726,922, m24: -741,424

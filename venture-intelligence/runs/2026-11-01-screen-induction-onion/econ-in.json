@@ -1,0 +1,7 @@
+{"currency":"INR","unit_label":"per retrofit kit","price":30000,"price_includes_tax":true,"tax_rate":0.18,
+"variable_costs":{"fans_controller_solar_BOM":14000,"transport_install":2500,"warranty_service_reserve":2000},
+"channel_fee_rate":0.10,"payment_fee_rate":0.02,"returns_rate":0.05,"cac":3000,"orders_per_customer":1,
+"founder_hours_per_unit":12,"founder_hour_value":750,"founder_hours_available_per_month":160,"founder_fixed_hours_per_month":40,
+"fixed_monthly":{"workspace_travel_misc":6000},"one_time":{"prototype_and_trial_bays":120000},"depreciable":["prototype_and_trial_bays"],
+"units_per_month_at_scale":8,"pre_revenue_months":6,"ramp_months":8,"inventory_months":1,"receivable_days":60,"months":24,"capital_available":500000,
+"scenarios":{"conservative":{"units_per_month_at_scale":"*0.5","ramp_months":10},"optimistic":{"units_per_month_at_scale":"*2"}}}

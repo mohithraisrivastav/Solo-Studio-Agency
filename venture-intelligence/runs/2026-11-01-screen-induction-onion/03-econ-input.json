@@ -1,0 +1,12 @@
+{"currency":"INR","unit_label":"per installed battery-buffer kitchen system (base case)",
+ "price":850000,"price_includes_tax":true,"tax_rate":0.18,
+ "variable_costs":{"hardware_ex_gst":584746,"warranty_reserve":36000,"travel_commissioning":15000},
+ "reject_rate":0.02,"channel_fee_rate":0.0,"payment_fee_rate":0.01,
+ "returns_rate":0.0,"cac":40000,"orders_per_customer":1,
+ "founder_hours_per_unit":60,"founder_hour_value":750,
+ "founder_hours_available_per_month":160,"founder_fixed_hours_per_month":40,
+ "fixed_monthly":{"workspace":5000,"insurance_software":2500},
+ "one_time":{"certification_and_testing":60000,"demo_unit_stock":200000},
+ "units_per_month_at_scale":2,"pre_revenue_months":4,"ramp_months":8,
+ "inventory_months":0.5,"receivable_days":30,"months":24,"capital_available":500000,
+ "scenarios":{"conservative":{"units_per_month_at_scale":"*0.5","ramp_months":12},"optimistic":{"units_per_month_at_scale":"*2"}}}
