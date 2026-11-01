@@ -1,0 +1,49 @@
+=== SIZE FIRST (pool a one-person firm could reach in 24 months) ===
+mechanical elephants, cumulative 26 units x Rs 5.0 lakh = Rs 130.0 lakh over ~3 years, one funder (PETA) buys most
+mechanical elephants, cumulative 26 units x Rs 6.0 lakh = Rs 156.0 lakh over ~3 years, one funder (PETA) buys most
+mechanical elephants, cumulative 40 units x Rs 5.0 lakh = Rs 200.0 lakh over ~3 years, one funder (PETA) buys most
+mechanical elephants, cumulative 40 units x Rs 6.0 lakh = Rs 240.0 lakh over ~3 years, one funder (PETA) buys most
+RECD 500 kVA listed range: Rs 3.5 to 9.15 lakh (outlier 0.7 and gazette benchmark 12.5); installed base not found -> pool not computable
+REPM scheme outlay Rs 7,280 crore for 6,000 tpa; 25 firms at pre-bid; capex route, not Rs 0
+
+=== T1: field tester for scrap CRGO in distribution transformers (instrument, B2B) ===
+  sites: 240.0
+  units: 36.0
+  rev: 21,600,000.0
+  gm: 8,640,000.0
+  fixed: 2,460,000.0
+  hours: 2,880.0
+  hours_per_month: 120.0
+  net_after_own_time: 4,020,000.0
+  annual_pay_before_own_time: 3,090,000.0
+  preorders_needed: 5.0
+  verdict base: positive after own time | FT-equivalent: True
+  sensitivity (one unsourced input halved at a time):
+   utilities halved -> net after own time Rs 11.8 lakh; annual pay Rs 12.0 lakh; FT-equiv False
+   sites_per_util halved -> net after own time Rs 11.8 lakh; annual pay Rs 12.0 lakh; FT-equiv False
+   labs halved -> net after own time Rs 36.1 lakh; annual pay Rs 28.2 lakh; FT-equiv True
+   price halved -> net after own time Rs -3.0 lakh; annual pay Rs 9.3 lakh; FT-equiv False
+   share24 halved -> net after own time Rs 7.8 lakh; annual pay Rs 9.3 lakh; FT-equiv False
+   margin halved -> net after own time Rs -3.0 lakh; annual pay Rs 9.3 lakh; FT-equiv False
+   dev_cost doubled -> net Rs 25.2 lakh; pre-orders needed 10.0
+   share24 = 0 (no utility funds it): loss = Rs -24.6 lakh
+
+=== T2 bet: harmonically tuned large temple bell, cast by subcontract foundry ===
+  cost/kg from reports: 21 lakh/2100 kg = 1000.0 ; 25 lakh/2400 kg = 1042 ; 25 lakh/2100 = 1190
+  cost/kg 1000: foundry cost Rs 7.0 lakh, margin/bell Rs 3.0 lakh, net after own time/bell Rs 2.4 lakh, per year Rs 24.0 lakh, FT-equiv True
+    foundry advance Rs 3.5 lakh vs buyer deposit Rs 4.0 lakh -> cash gap Rs 0.0 lakh
+  cost/kg 1190: foundry cost Rs 8.3 lakh, margin/bell Rs 1.7 lakh, net after own time/bell Rs 1.1 lakh, per year Rs 10.7 lakh, FT-equiv True
+    foundry advance Rs 4.2 lakh vs buyer deposit Rs 4.0 lakh -> cash gap Rs 0.2 lakh
+  sensitivity: premium over foundry cost halved (premium = price - cost)
+   cost/kg 1000: premium Rs 3.0 lakh -> Rs 1.5 lakh; net/bell Rs 0.9 lakh; per year Rs 9.0 lakh; positive=True
+   cost/kg 1190: premium Rs 1.7 lakh -> Rs 0.8 lakh; net/bell Rs 0.2 lakh; per year Rs 2.4 lakh; positive=True
+   units/year halved (cost/kg 1190): net/bell Rs 1.1 lakh, per year Rs 5.3 lakh, FT-equiv False
+   design hours doubled (cost/kg 1190): net/bell Rs 0.5 lakh, per year Rs 4.7 lakh, FT-equiv True
+  buyers' pricing check: bell price Rs 8 lakh at 1000-1190/kg buys 672 to 800 kg of cost-equivalent bell
+
+=== T3 bet: magnetic-domain display table (grain-oriented steel + viewing film) ===
+  margin/piece Rs 4.1 lakh, net after own time Rs 3.0 lakh, year Rs 12.0 lakh, FT-equiv True (FT needs Rs 14.4 lakh gross margin)
+  units/year 8: year Rs 24.0 lakh, FT-equiv True
+  units/year 12: year Rs 36.0 lakh, FT-equiv True
+  price halved: net/piece Rs 0.9 lakh, year Rs 3.8 lakh
+  units halved: year Rs 6.0 lakh
