@@ -1,0 +1,27 @@
+tiles/yr per station 3600000
+gain 2700000 loss 4477500 net saving/yr -1777500
+payback yr never
+seller gross margin/unit 450000 founder h/unit 120 time cost 90000 net per unit yr1 345000
+units/yr to earn 1200000 : 3.5 founder h: 417
+100 customers: capital for BOM 15000000 founder hours 12000
+
+sensitivity (payback yr, net saving/yr):
+crack_rate   net= -3138750 payback=never seller_yr1=345000
+catch        net= -3127500 payback=never seller_yr1=345000
+cost_escape  net= -3127500 payback=never seller_yr1=345000
+manual_catch net= -2587500 payback=never seller_yr1=345000
+util         net=  -888750 payback=never seller_yr1=345000
+false_rej    net= -6255000 payback=never seller_yr1=345000
+bom          net= -1777500 payback=never seller_yr1=270000
+sell_h       net= -1777500 payback=never seller_yr1=285000
+ALL unfavourable: net -4421250 payback never
+crack_rate 0.001 net -3955500 payback never
+crack_rate 0.002 net -3411000 payback never
+crack_rate 0.005 net -1777500 payback never
+crack_rate 0.01 net 945000 payback 0.63
+crack_rate 0.02 net 6390000 payback 0.09
+units 400 x 1 station each at 5% adoption yr 20.0
+units 1200 x 1 station each at 5% adoption yr 60.0
+
+EVEN-IF-TRUE net 7663500 payback 0.08
+stations per 60,000 tiles/day line at 20h: 2.5

@@ -1,0 +1,17 @@
+founder threshold Rs 1350000
+base                         instr/yr  2,800,000 svc/yr  2,700,000 net/yr  5,200,000 beats threshold True payback_dev_yrs 0.3
+buyers halved (30)           instr/yr  1,400,000 svc/yr  2,700,000 net/yr  3,800,000 beats threshold True payback_dev_yrs 0.4
+price halved (1.5 lakh)      instr/yr   -200,000 svc/yr  2,700,000 net/yr  2,200,000 beats threshold True payback_dev_yrs 0.7
+tests/yr halved (750)        instr/yr  2,800,000 svc/yr  1,350,000 net/yr  3,850,000 beats threshold True payback_dev_yrs 0.4
+fee halved (1500)            instr/yr  2,800,000 svc/yr    450,000 net/yr  2,950,000 beats threshold True payback_dev_yrs 0.5
+unit cost x1.5 (1.8 lakh)    instr/yr  1,600,000 svc/yr  2,700,000 net/yr  4,000,000 beats threshold True payback_dev_yrs 0.4
+all unsourced halved         instr/yr   -100,000 svc/yr    225,000 net/yr   -175,000 beats threshold False payback_dev_yrs inf
+
+Reachable buyers: DISCOM-type utilities 72 (PFC 12th round) ; inspection agencies [A] 15; labs [A] 30 -> 117
+ceiling, every reachable buyer buys 1 unit at Rs 3 lakh: Rs 35100000
+if 1% of failures traced to substandard core: Rs 600,000,000 to 800,000,000 per yr nationally
+if 5% of failures traced to substandard core: Rs 3,000,000,000 to 4,000,000,000 per yr nationally
+if 20% of failures traced to substandard core: Rs 12,000,000,000 to 16,000,000,000 per yr nationally
+
+MSEDCL inspection rate Rs 10,000 + 1,800 travel per visit; my fee Rs 3,000 is 0.2542372881355932 of one inspection visit
+hours to sell 60 units at 12 months/sale, 40 h per sale: 2400 h = 1800000 Rs of founder time
