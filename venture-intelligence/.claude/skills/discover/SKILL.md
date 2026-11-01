@@ -30,9 +30,13 @@ Run `python3 tools/check_evidence.py` on the three files. Read them. Write `02-t
 - Pick 4 to 6 candidates from at least 3 unrelated industries. Judge on: strength of spending evidence, cost of the problem to the buyer, a beatable reason it is unsolved, a way in for a small firm, room for real differentiation, and early economics. Do not judge by how many sources a thesis cites.
 - Drop theses whose reason-unsolved is weak demand, unless contrary evidence is strong. Say why each drop happened.
 
-## 4. Verify independently, in parallel
+## 3b. Kill probe, cheap and in parallel
 
-Launch one `market-investigator` per candidate in one message. Give each only: the problem statement in one paragraph, the target buyer, and the hunter file path labelled "unverified hypotheses, do your own research". Output `03-market-<n>-<short-name>.md`.
+Before any full investigation, launch one `market-investigator` per candidate (up to 6) with a short brief: "Kill probe, about 15 searches. Name the one assumption that must be true. Read its primary source. Search hard for existing sellers, bundlers, subsidies, and failed entrants. Recompute the buyer's value and payback from verified inputs. Answer the buyer's three questions. Say reject, hold, or continue. Do not rescue." Output `03-probe-<n>-<short-name>.md`. Drop every candidate the probe rejects. Do not spend a full investigation on it.
+
+## 4. Verify independently, in parallel (survivors only)
+
+Launch one `market-investigator` per surviving candidate in one message. Give each only: the problem statement in one paragraph, the target buyer, and the hunter file path labelled "unverified hypotheses, do your own research". Output `03-market-<n>-<short-name>.md`.
 
 ## 5. Commercial screen, in parallel
 

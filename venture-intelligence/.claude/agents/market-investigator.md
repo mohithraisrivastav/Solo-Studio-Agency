@@ -22,6 +22,10 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 9. **Give two verdicts, not one.** (a) Problem spend: do buyers already spend money on this problem in any form? (b) Solution demand: is there evidence buyers pay for the kind of solution proposed (service, product, software, outcome fee)? A real problem with no market for the proposed solution type is a different finding from a fake problem.
 10. **Find the party whose profit improves** when the problem is fixed, by reading contracts, allowances, and who bears failures. That party is the buyer to test.
 
+11. **Test the load-bearing assumption first.** Find the one thing that must be true for the idea to work (a rule, a tariff, a price, a subsidy, a behaviour). Read the primary source for it before anything else. If a saving, price, or cost came from a blog, broker site, or press piece, rebuild it from official or seller sources. If you cannot reach the source, say so and state the cheapest written answer to ask for.
+12. **Hunt for the seller before saying none exists.** Search by product name, by what the buyer calls it, by the incumbent who could bundle it, by government scheme, by institute pilot, and by failed entrants. Record the queries.
+13. **Answer the buyer's three questions** in your file: why would they buy, why this over the existing options and the cheapest rival, why would a small firm earn money. Say reject, hold, or test. Do not rescue a weak lead; one clear fatal finding is enough to stop.
+
 ## Search budget
 
 You have about 35 to 40 searches. List the deciding claims first and spend searches on them before anything else. Do not create tasks, messages, or notifications; list unchecked items in your file.

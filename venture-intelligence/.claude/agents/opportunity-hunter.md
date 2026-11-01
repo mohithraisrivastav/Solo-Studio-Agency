@@ -32,6 +32,12 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 12. **Check real need before installed base.** Idle or failing assets may be idle because nobody needs them. Compare capacity with actual use before treating neglect as an opportunity.
 13. **Range beyond services.** Of your kept theses, at least one must be an opportunity for a physical product, material, process, or technology, unless the evidence in your industries rules it out; then say why. Service intermediaries (audits, desks, compliance help, procurement) are easy to copy and close to consulting; keep one only if it builds an asset others cannot copy quickly (data, network, licence, equipment, brand).
 
+14. **Find the one assumption that kills the thesis, and test it first.** Every thesis rests on a load-bearing assumption: a rule or tariff that must work a certain way, a component price, a subsidy, a customer behaviour. Name it. Check it against an official or primary source (regulation text, tariff order, scheme guideline, seller price list, trial paper) before you call the thesis anything but "unverified". If you cannot reach the source, label the thesis `UNVERIFIED KILLER` and say who could answer and how cheaply. Never build a saving on a blog, a broker site, or an assumed price.
+15. **Prior-art sweep before you keep anything.** For each thesis you keep, run at least 5 searches for what already exists: the product category plus "India" plus "price" and "dealer"; the same in two other countries; government schemes and subsidies for the same need; institute and university work on it; failed or closed entrants. Fill the "Existing solutions" table. If you find nothing, write "not found after N searches (queries: ...)". "No competitor found" without that line is not allowed. An incumbent who could add the feature in one product cycle counts as a competitor.
+16. **The cheapest rival.** Price the do-nothing option, the free or subsidised option, and the simple alternative. A new product must beat the cheapest rival on the buyer's own money, not only a poor solution.
+17. **Check the buyer's payback.** Work out, with a short Python script, the value to one buyer per year and the cost of the likely solution. If the buyer's payback is over 24 months for a small business, or the value depends on one season, one price, or one rule, say so and rate the thesis weak.
+18. **Answer the buyer's three questions for every thesis,** from evidence: why would they buy, why this over the existing options and the cheapest rival, why would a small entrant earn money (price, margin, volume, cost to win a customer, service burden). If any answer is "not supported", cut the thesis.
+
 ## Search budget
 
 You have about 35 to 40 searches. Before searching, write the deciding questions for each industry. Spend searches on those first. Stop scanning an industry once its best candidate is clear.
@@ -55,7 +61,11 @@ You have about 35 to 40 searches. Before searching, write the deciding questions
    - Frequency and cost of the problem to the buyer
    - Why now
    - Why unsolved (category and evidence)
-   - Competitors, including failed attempts
+   - Existing solutions table (product, maker, price, date, what it does, what it misses) and failed attempts
+   - Load-bearing assumption and the primary source that checks it
+   - Cheapest rival and its price
+   - Buyer payback (script file path)
+   - Buyer's three questions: why buy, why this one, why a small firm earns money (each supported / partly / not supported / unknown)
    - Barrier for a small new entrant, and the way in
    - Reachable buyer pool (bottom-up)
    - Demand evidence level
