@@ -46,21 +46,21 @@ Computed in `01-approach-A-calc.py`.
 - Mechanical elephants: 26 to 40 units cumulative at Rs 5 to 6 lakh is Rs 130 lakh to Rs 240 lakh over about three years [I: 26 to 40 units from S11 and S12 times Rs 5 to 6 lakh from S11]. One funder buys most units [S12]. Pool too small for a repeat business.
 - Generator retrofit: price range found but installed base not found after 2 searches (queries: "number of diesel generator sets installed India Delhi NCR", "CPCB approved RECD list price per kVA"). Pool not computable.
 - Rare earths: capex route, not reachable with Rs 0 [S4].
-- Distribution-transformer instrument: about 240 sites and 36 units in 24 months, revenue Rs 216 lakh [A: counts and 15 percent share assumed, see section 3].
-- Tuned bell: 10 bells a year at Rs 10 lakh is Rs 100 lakh revenue [A: units per year assumed]. Number of large bell commissions per year not found.
+- Distribution-transformer instrument: about 240 sites and 36 units in 24 months, revenue Rs 216 lakh [A] [I] (counts and the 15 percent share are assumed, see section 3).
+- Tuned bell: 10 bells a year at Rs 10 lakh is Rs 100 lakh revenue [A] [I] (units per year assumed). Number of large bell commissions per year not found.
 - Domain object: 4 pieces a year at Rs 7.5 lakh is Rs 30 lakh revenue [A].
 
 ## 3. Evidence-backed theses
 
 ### Thesis 1: Portable scrap-CRGO check for distribution transformers (a B2B instrument)
 
-**Outcome: INVESTIGATE, low confidence.** Not original in method; kept because the pain is documented and the instrument price fits a Rs 5 to 10 lakh B2B instrument.
+**Outcome: INVESTIGATE, low confidence.** Not original in method; kept because the pain is documented [S5] and the instrument price would fit a Rs 5 to 10 lakh B2B instrument [A].
 
 **Original.** Five nearest methods and products:
 1. Stresstech Rollscan Barkhausen-noise analysers, sold in India through Stresstech Bharat; handheld use is possible, price on request [S7] (unverified at source).
 2. Chinese patent CN106199282A: identify distribution transformers built with secondary silicon steel by measuring no-load loss, then again after over-excitation [S6] (unverified at source).
 3. Chinese patent CN118760958B: Barkhausen-noise features plus machine learning to assess silicon-steel sheet condition; it states secondary sheets raise quality risk [S10] (unverified at source).
-4. Vendor "core loss tester" (VEER make) for motor stator cores, portable [S33a: see S30] and Epstein frame or single-sheet testers for sheets (standard methods) [S30].
+4. Vendor "core loss tester" (VEER make) for motor stator cores, portable [S30] and Epstein frame or single-sheet testers for sheets (standard methods) [S30].
 5. Pre-dispatch inspection by RITES for REC schemes [S9] (unverified at source).
 
 Novelty queries run (9): "portable non-destructive core loss tester assembled transformer core"; Chinese "变压器铁芯 硅钢片 铁损 现场 无损 检测仪 便携式"; German "Prüfgerät Elektroblech Kernverlust Transformatorkern zerstörungsfrei"; Hindi on poor-quality scrap CRGO utility inquiries; patent query on secondary steel and Barkhausen; Barkhausen handheld price; "CRGO issues still haunt transformer industry"; "distribution transformer failure rate India"; "DISCOM pre-dispatch inspection no-load loss". Not found: a commercial product sold to utilities for this purpose after these queries. The Chinese patent shows the method is not new and needs only a standard test set, which weakens the case for a new instrument.
@@ -70,8 +70,8 @@ Novelty queries run (9): "portable non-destructive core loss tester assembled tr
 **Feasible.** A yoke or flux probe plus a loss meter is established technology [K]. The open engineering question is whether grade can be told reliably on an assembled core without dismantling. Experiment: measure known prime and non-prime core samples. Parts list and catalogue prices not found.
 
 **Profitable.** Script: `01-approach-A-calc.py`. Inputs: price Rs 6 lakh [A: brief range for B2B instruments, not sourced], margin 40 percent [A], 70 utilities [A], 3 sites each [A], 30 labs or inspectors [A], 15 percent captured in 24 months [A], development cost Rs 15 lakh [A], fixed cost Rs 40,000 a month [A], 80 founder hours per unit [A], founder hour value Rs 750 [A: default in `tools/econ.py`].
-- Base: 36 units, revenue Rs 216 lakh, margin Rs 86.4 lakh, net after paying own time Rs 40.2 lakh over 24 months [I: script output].
-- Sensitivity, one unsourced input halved at a time: price halved gives Rs -3.0 lakh; margin halved gives Rs -3.0 lakh; utilities, sites or capture share halved gives positive but below full-time pay (Rs 9.3 lakh to Rs 12.0 lakh a year against Rs 14.4 lakh) [I: script output].
+- Base: 36 units, revenue Rs 216 lakh, margin Rs 86.4 lakh, net after paying own time Rs 40.2 lakh over 24 months [I: script output][A].
+- Sensitivity, one unsourced input halved at a time: price halved gives Rs -3.0 lakh [I]; margin halved gives Rs -3.0 lakh [I]; utilities, sites or capture share halved gives positive but below full-time pay (Rs 9.3 lakh to Rs 12.0 lakh a year against Rs 14.4 lakh) [I: script output][A].
 - The verdict flips. **Unknown. Driven by the price a utility will pay and the margin.**
 - Contrary data: a 500 kVA unit with scrap steel sells for about Rs 5 lakh against Rs 8 to 9 lakh normally [S5] (unverified at source). That shows cost saving for makers, not a utility willing to pay for detection.
 
@@ -122,7 +122,7 @@ Both are bets. Neither has demand evidence at L2 or above.
 
 | Candidate | Reason cut |
 |---|---|
-| Mechanical festival elephants (#2) | Fails Original: Prasanth Prakashan of Chalakudy builds them at Rs 5.25 lakh including GST [S11], PETA India buys and donates [S11][S12], and a PETA release shows one used at a wedding in Bengaluru [S13]. Pool is Rs 130 lakh to Rs 240 lakh cumulative [I: see section 2] and one funder buys most units [S12]. Rentals by temples are reported [S12]. The Supreme Court stayed the Kerala High Court's elephant guidelines [S14], which weakens the regulatory push. Near neighbours in other languages: Spanish report on the robotic elephant [S12]. |
+| Mechanical festival elephants (#2) | Fails Original: Prasanth Prakashan of Chalakudy builds them at Rs 5.25 lakh including GST [S11], PETA India buys and donates [S11][S12], and a PETA release shows one used at a wedding in Bengaluru [S13]. Pool is Rs 130 lakh to Rs 240 lakh cumulative [I: see section 2] and one funder buys most units [S12]. Rentals by temples are reported [S12]. The Supreme Court stayed the Kerala High Court's elephant guidelines [S14], which weakens the regulatory push. A Spanish-language news item on the robotic elephant also appeared in search (not added to Sources). |
 | Generator retrofit devices (#3) | Not original and crowded: Kirloskar sells a retrofit device [S16]; certified vendors only (CPCB list, ARAI certification) [S16] (unverified at source); price sources conflict, Rs 0.7 lakh to Rs 12.5 lakh for 500 kVA [S16]; installed base not found. Diesel generators are about 4 percent of NCR PM2.5 [S17], so rule tightening is not assured. |
 | Ship-salvage designer goods (#4) | Fails Original: Trinity Marine, 1stDibs, Pieces of Ship and collector Peter Knego already sell salvage [S19][S18]. Market shrinking: FY 2024-25 was the lowest recycling count in over a decade [S18]. Turkish-language search found no design use but a tax issue on reused items [S18]. |
 | Rare-earth magnet plants (#5) | Scheme Rs 7,280 crore for 6,000 tonnes a year [S4]. Capex-heavy and Rs 0 cannot enter. |
