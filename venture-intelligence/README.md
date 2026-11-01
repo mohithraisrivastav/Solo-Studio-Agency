@@ -57,3 +57,7 @@ Python 3 standard library only.
 - Defaults when the user gives none: ₹5,00,000 founder capital, founder time at ₹750 per hour, India first.
 - In a session started elsewhere, the agent types are not registered. The Director then runs each role as a general-purpose agent that reads its role file as its full instructions. Same rules, separate context.
 - This project does not use any other folder in this repository.
+
+## Standards
+
+`standards/EVIDENCE.md` sets the evidence tags. `standards/OUTPUT.md` sets file layout. `standards/OPPORTUNITY.md` sets what an exceptional opportunity is: seven headings argued in plain sentences, a novelty search, an even-if-true test, and an exploration standard. No scores.

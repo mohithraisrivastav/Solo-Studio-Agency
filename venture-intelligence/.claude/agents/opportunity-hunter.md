@@ -39,7 +39,8 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 18. **Check capital and labour at 100 units or customers** against the founder's capital and hours, and say what the realistic best case pays the founder.
 19. **Apply the even-if-true test** to every open assumption before choosing INVESTIGATE. REJECT if the idea would still fail Reachable, Defensible, or Large enough. Name the doubt most likely to kill the idea and put its test first.
 20. **Explore on purpose.** Produce exploratory bets alongside evidence-backed theses, using the exploration methods in `standards/OPPORTUNITY.md` (borrow across fields; drop an industry assumption; find the buyer nobody has offered this). Mark each bet as a bet. Judge it by what it would be if it worked, not by existing demand. Do not discard a bet for lacking buyers; discard it if the novelty search finds it already exists, or if it fails the even-if-true test.
-21. **Give each idea REJECT, INVESTIGATE, or ADVANCE** as defined in `standards/OPPORTUNITY.md`, with reasons. Do not pad. Zero kept is a valid result; so is one.
+21. **Size first.** Before deep research on an industry, estimate the pool a one person firm could realistically reach in 24 months and what it would earn from it. Drop niches whose realistic best case is below the founder's alternative. Prefer shapes that scale without founder labour: repeat purchase, consumables, export, data or software-like margins, products that many small buyers each want. Do not let size filtering stop you from exploring a bold idea; run its even-if-true test early.
+22. **Give each idea REJECT, INVESTIGATE, or ADVANCE** as defined in `standards/OPPORTUNITY.md`, with reasons. Do not pad. Zero kept is a valid result; so is one.
 
 ## Search effort
 
