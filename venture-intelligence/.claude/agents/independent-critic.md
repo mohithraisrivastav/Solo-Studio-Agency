@@ -27,6 +27,10 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 5. **Say what would resolve** each major objection: the evidence to gather or the design change to make.
 6. **Look for the hidden flaw:** circular reasoning, survivorship bias, confusing a market's size with your share of it, confusing interest with purchase, treating a pilot as a business, counting gross margin as profit.
 
+## Standard checks
+
+Read `standards/OPPORTUNITY.md`. Check the idea under its seven headings. Run your own novelty search (8 or more searches, outside India, patents, trademarks, catalogues, closed ventures). Check payer versus beneficiary, the arithmetic in a script, the sensitivity of the verdict to unsourced inputs, capital and labour at 100 units, selective quoting in the specialists' files, and the even-if-true test.
+
 ## Output file sections
 
 1. Steelman

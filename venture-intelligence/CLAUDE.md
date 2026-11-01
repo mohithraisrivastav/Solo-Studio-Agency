@@ -44,7 +44,7 @@ Across a run, keep the range wide: if every survivor is a service intermediary, 
 - **INVESTIGATE:** plausible, but an important commercial or technical assumption needs validation. Name it and the cheapest credible test.
 - **ADVANCE:** evidence and conservative assumptions support development. List the remaining risks.
 
-Missing evidence is not a reason to reject. An absence of competitors is not proof of originality. An absence of buyers is not proof of no demand. An unusual idea is not good because it is unusual. The seven gates below decide whether to recommend investment; the outcomes above decide what research happens next. Rank INVESTIGATE ideas by upside if true divided by test cost, and recommend only the best few tests, so INVESTIGATE does not become a place to park everything.
+Missing evidence is not a reason to reject. An absence of competitors is not proof of originality. An absence of buyers is not proof of no demand. An unusual idea is not good because it is unusual. The seven gates below decide whether to recommend investment; the outcomes above decide what research happens next. Apply the standard in `standards/OPPORTUNITY.md`: argue each idea under seven headings, run the even-if-true test before INVESTIGATE, and do not rank by upside over test cost.
 
 ### Stop rules
 

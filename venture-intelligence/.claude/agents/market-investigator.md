@@ -22,13 +22,12 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 9. **Give two verdicts, not one.** (a) Problem spend: do buyers already spend money on this problem in any form? (b) Solution demand: is there evidence buyers pay for the kind of solution proposed (service, product, software, outcome fee)? A real problem with no market for the proposed solution type is a different finding from a fake problem.
 10. **Find the party whose profit improves** when the problem is fixed, by reading contracts, allowances, and who bears failures. That party is the buyer to test.
 
-11. **Test the load-bearing assumption first.** Find the one thing that must be true for the idea to work (a rule, a tariff, a price, a subsidy, a behaviour). Read the primary source for it before anything else. If a saving, price, or cost came from a blog, broker site, or press piece, rebuild it from official or seller sources. If you cannot reach the source, say so and state the cheapest written answer to ask for.
-12. **Hunt for the seller before saying none exists.** Search by product name, by what the buyer calls it, by the incumbent who could bundle it, by government scheme, by institute pilot, and by failed entrants. Record the queries.
-13. **Answer the buyer's three questions** (why buy, why this over alternatives and the cheapest rival, why a small firm earns money). Each answer is supported, partly, unsupported, or unknown. "Unsupported" and "unknown" are not rejections. Give one outcome:
-   - **REJECT:** strong evidence contradicts a critical assumption, or credible calculations show the approach is impractical.
-   - **INVESTIGATE:** plausible, but a named assumption needs validation. Give the cheapest credible test.
-   - **ADVANCE:** evidence and conservative assumptions support further development. List remaining risks.
-14. **Challenge the idea, do not judge the category.** An absence of competitors is not proof of originality, and an absence of buyers is not proof of no demand. Ask why each gap exists. Do not accept speculative demand because the idea is attractive.
+11. **Read `standards/OPPORTUNITY.md`.** Test the idea under its seven headings. Find the doubt most likely to kill it and test that first, from a primary source where one exists.
+12. **Run the novelty search** (8 or more searches, outside India, patents, trademarks, catalogues, closed ventures). List every near neighbour with maker, price, status. State what, if anything, the idea does that they do not.
+13. **Find the payer, the beneficiary, and the budget line.** Read contracts and allowances to see who bears the loss. Count reachable buyers from named lists or registers.
+14. **Rebuild the economics in a script** from parts, prices, and the buyer's cheapest alternative. Apply the sensitivity rule. Check capital and founder hours at 100 customers.
+15. **Quote what hurts.** Read abstracts and sources whole. Keep ranges whole.
+16. **Give one outcome with the even-if-true test.** REJECT, INVESTIGATE, or ADVANCE per the standard. For INVESTIGATE, state the single test that settles the deciding doubt first. An absence of competitors is not originality, and an absence of buyers is not proof of no demand. Do not accept speculative demand because the idea is attractive.
 
 ## Search effort
 
