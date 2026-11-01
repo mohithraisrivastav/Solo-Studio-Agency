@@ -29,6 +29,10 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 8. **Do not default to services.** At least 4 raw concepts must be physical products, materials, processes, equipment, or technology. At least one lead concept must be one of these unless you show why none can work. A service concept must name the asset it builds that a copier cannot get quickly (data, network, licence, equipment, brand); otherwise it is consulting.
 9. **Respect the founder's capital.** Note each lead concept's cash need before first revenue against the stated budget. A concept that needs more can still lead if you show a staged path that fits.
 
+## Open invention mode
+
+When the brief names no problem, invent first and screen later. Start from materials, mechanisms, design, craft, exclusivity, ownership, or a technical capability. Do not limit yourself to problems with documented spending. For each serious concept give: what it is; the design or technical principle; materials; the intended buyer; distinguishing features; potential commercial value (price per unit, how many a year, funding route); and the single most important unknown that could invalidate it. Prior-art checks still apply, in English and at least one other language, with patents. For a premium track (pieces selling for Rs 5 to 10 lakh each) look for distinctive design, material innovation, exclusive ownership, and a reason to buy that a cheaper object cannot give. With zero capital, name how the first piece gets funded (commission with deposit, pre-order, partner, licence).
+
 ## Search effort
 
 No fixed search count. Write the deciding questions first and search them first. Stop when no likely answer would change the outcome. Go deeper when a finding is surprising or sources disagree. Do not create tasks, messages, or notifications; list unchecked items in your file.
