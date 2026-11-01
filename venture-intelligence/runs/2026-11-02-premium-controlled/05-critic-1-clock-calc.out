@@ -1,0 +1,46 @@
+BASE
+  n= 1 cost Rs 2,380,000 margin Rs-1,580,000 (-197.5%)  after founder time Rs-1,767,500  Rs/founder-hour -6,320
+  n= 3 cost Rs 1,180,000 margin Rs  -380,000 (-47.5%)  after founder time Rs  -567,500  Rs/founder-hour -1,520
+  n=10 cost Rs   760,000 margin Rs    40,000 (  5.0%)  after founder time Rs  -147,500  Rs/founder-hour 160
+  n=25 cost Rs   652,000 margin Rs   148,000 ( 18.5%)  after founder time Rs   -39,500  Rs/founder-hour 592
+DEV HOURS halved (favourable)
+  n= 1 cost Rs 1,480,000 margin Rs  -680,000 (-85.0%)  after founder time Rs  -867,500  Rs/founder-hour -2,720
+  n= 3 cost Rs   880,000 margin Rs   -80,000 (-10.0%)  after founder time Rs  -267,500  Rs/founder-hour -320
+  n=10 cost Rs   670,000 margin Rs   130,000 ( 16.2%)  after founder time Rs   -57,500  Rs/founder-hour 520
+  n=25 cost Rs   616,000 margin Rs   184,000 ( 23.0%)  after founder time Rs    -3,500  Rs/founder-hour 736
+DEV HOURS x2 (unfavourable)
+  n= 1 cost Rs 4,180,000 margin Rs-3,380,000 (-422.5%)  after founder time Rs-3,567,500  Rs/founder-hour -13,520
+  n= 3 cost Rs 1,780,000 margin Rs  -980,000 (-122.5%)  after founder time Rs-1,167,500  Rs/founder-hour -3,920
+  n=10 cost Rs   940,000 margin Rs  -140,000 (-17.5%)  after founder time Rs  -327,500  Rs/founder-hour -560
+  n=25 cost Rs   724,000 margin Rs    76,000 (  9.5%)  after founder time Rs  -111,500  Rs/founder-hour 304
+RATES x2 (Swiss-like independent)
+  n= 1 cost Rs 4,467,500 margin Rs-3,667,500 (-458.4%)  after founder time Rs-3,855,000  Rs/founder-hour -14,670
+  n= 3 cost Rs 2,067,500 margin Rs-1,267,500 (-158.4%)  after founder time Rs-1,455,000  Rs/founder-hour -5,070
+  n=10 cost Rs 1,227,500 margin Rs  -427,500 (-53.4%)  after founder time Rs  -615,000  Rs/founder-hour -1,710
+  n=25 cost Rs 1,011,500 margin Rs  -211,500 (-26.4%)  after founder time Rs  -399,000  Rs/founder-hour -846
+PARTS x2
+  n= 1 cost Rs 2,552,500 margin Rs-1,752,500 (-219.1%)  after founder time Rs-1,940,000  Rs/founder-hour -7,010
+  n= 3 cost Rs 1,352,500 margin Rs  -552,500 (-69.1%)  after founder time Rs  -740,000  Rs/founder-hour -2,210
+  n=10 cost Rs   932,500 margin Rs  -132,500 (-16.6%)  after founder time Rs  -320,000  Rs/founder-hour -530
+  n=25 cost Rs   824,500 margin Rs   -24,500 ( -3.1%)  after founder time Rs  -212,000  Rs/founder-hour -98
+BUILD HOURS x2
+  n= 1 cost Rs 2,667,500 margin Rs-1,867,500 (-233.4%)  after founder time Rs-2,055,000  Rs/founder-hour -7,470
+  n= 3 cost Rs 1,467,500 margin Rs  -667,500 (-83.4%)  after founder time Rs  -855,000  Rs/founder-hour -2,670
+  n=10 cost Rs 1,047,500 margin Rs  -247,500 (-30.9%)  after founder time Rs  -435,000  Rs/founder-hour -990
+  n=25 cost Rs   939,500 margin Rs  -139,500 (-17.4%)  after founder time Rs  -327,000  Rs/founder-hour -558
+ALL unfavourable by half (dev x1.5, rates x1.5, parts x1.5, build x1.5)
+  n= 1 cost Rs 5,075,625 margin Rs-4,275,625 (-534.5%)  after founder time Rs-4,463,125  Rs/founder-hour -17,102
+  n= 3 cost Rs 2,375,625 margin Rs-1,575,625 (-197.0%)  after founder time Rs-1,763,125  Rs/founder-hour -6,302
+  n=10 cost Rs 1,430,625 margin Rs  -630,625 (-78.8%)  after founder time Rs  -818,125  Rs/founder-hour -2,522
+  n=25 cost Rs 1,187,625 margin Rs  -387,625 (-48.5%)  after founder time Rs  -575,125  Rs/founder-hour -1,550
+ALL favourable by half
+  n= 1 cost Rs   728,125 margin Rs    71,875 (  9.0%)  after founder time Rs  -115,625  Rs/founder-hour 288
+  n= 3 cost Rs   428,125 margin Rs   371,875 ( 46.5%)  after founder time Rs   184,375  Rs/founder-hour 1,488
+  n=10 cost Rs   323,125 margin Rs   476,875 ( 59.6%)  after founder time Rs   289,375  Rs/founder-hour 1,908
+  n=25 cost Rs   296,125 margin Rs   503,875 ( 63.0%)  after founder time Rs   316,375  Rs/founder-hour 2,016
+deposit 30% = Rs240,000; cash needed before delivery of piece 1 = Rs2,200,000; gap = Rs1,960,000
+deposit 50% = Rs400,000; cash needed before delivery of piece 1 = Rs2,200,000; gap = Rs1,800,000
+series 10: margin/piece Rs40,000; pieces/yr for Rs1,500,000 = 37.5; founder hours at 250/piece = 9,375; watchmakers needed (250 h/piece, 1800 h/yr) = 5.2
+series 25: margin/piece Rs148,000; pieces/yr for Rs1,500,000 = 10.1; founder hours at 250/piece = 2,534; watchmakers needed (250 h/piece, 1800 h/yr) = 1.4
+deposit 30%=Rs240,000; cash before delivery of piece 1=Rs2,200,000; gap=Rs1,960,000; deposits needed to cover = 9.2 buyers
+deposit 50%=Rs400,000; cash before delivery of piece 1=Rs2,200,000; gap=Rs1,800,000; deposits needed to cover = 5.5 buyers

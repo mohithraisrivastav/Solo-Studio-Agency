@@ -1,0 +1,129 @@
+== 1. Blur vs distance (sun disc 0.53 deg) ==
+d=0.5 m blur=4.6 mm
+d=1 m blur=9.3 mm
+d=2 m blur=18.5 mm
+d=3 m blur=27.8 mm
+d=5 m blur=46.3 mm
+
+== 2. Resolution: pixels across ~ full angular extent / 0.53 deg (distance cancels) ==
+image full angle 10 deg -> ~19 resolvable px across
+image full angle 20 deg -> ~38 resolvable px across
+image full angle 30 deg -> ~57 resolvable px across
+image full angle 40 deg -> ~75 resolvable px across
+image full angle 60 deg -> ~113 resolvable px across
+
+Image width for panel W=0.6 m, d, half-angle theta (flat target): L=W+2 d tan(theta)
+d=1 th=10: L=0.95 m, blur=9 mm, px~103
+d=1 th=20: L=1.33 m, blur=9 mm, px~144
+d=2 th=10: L=1.31 m, blur=19 mm, px~71
+d=2 th=20: L=2.06 m, blur=19 mm, px~111
+d=3 th=10: L=1.66 m, blur=28 mm, px~60
+d=3 th=20: L=2.78 m, blur=28 mm, px~100
+
+== 3. Contrast / brightness (assumptions [A]) ==
+panel 0.6 m -> image 1.0 m: mean image lux 28059; ratio to ambient 300 lx:95:1, 1000 lx:29:1, 3000 lx:10:1
+panel 0.6 m -> image 2.0 m: mean image lux 7015; ratio to ambient 300 lx:24:1, 1000 lx:8:1, 3000 lx:3:1
+panel 1.0 m -> image 1.5 m: mean image lux 34641; ratio to ambient 300 lx:116:1, 1000 lx:36:1, 3000 lx:13:1
+hazy-sky circumsolar/haze floor: if 5% or 15% of transmitted light is scattered uniformly over image area, black-level lux=
+ scatter 2%: black-level floor ~648 lx extra; max contrast mean/black ~50:1 (upper bound)
+ scatter 5%: black-level floor ~1620 lx extra; max contrast mean/black ~20:1 (upper bound)
+ scatter 15%: black-level floor ~4860 lx extra; max contrast mean/black ~7:1 (upper bound)
+
+== 4. Dispersion (PMMA Abbe 57, glass ~64) ==
+PMMA deviation 10 deg: colour fringe ~0.18 deg vs sun disc 0.53
+PMMA deviation 20 deg: colour fringe ~0.35 deg vs sun disc 0.53
+low-iron glass deviation 10 deg: colour fringe ~0.16 deg vs sun disc 0.53
+low-iron glass deviation 20 deg: colour fringe ~0.31 deg vs sun disc 0.53
+
+== 5. Surface accuracy ==
+allowed pointing error = 0.5*sun disc = 0.265 deg -> slope error 0.541 deg (9.4 mrad)
+   ripple wavelength 2 mm -> height amp 3.0 um
+   ripple wavelength 5 mm -> height amp 7.5 um
+   ripple wavelength 10 mm -> height amp 15.0 um
+   ripple wavelength 30 mm -> height amp 45.1 um
+allowed pointing error = 0.25*sun disc = 0.133 deg -> slope error 0.270 deg (4.7 mrad)
+   ripple wavelength 2 mm -> height amp 1.5 um
+   ripple wavelength 5 mm -> height amp 3.8 um
+   ripple wavelength 10 mm -> height amp 7.5 um
+   ripple wavelength 30 mm -> height amp 22.5 um
+allowed pointing error = 0.1*sun disc = 0.053 deg -> slope error 0.108 deg (1.9 mrad)
+   ripple wavelength 2 mm -> height amp 0.6 um
+   ripple wavelength 5 mm -> height amp 1.5 um
+   ripple wavelength 10 mm -> height amp 3.0 um
+   ripple wavelength 30 mm -> height amp 9.0 um
+Ball-nose scallop: h=s^2/(8R); max slope = (s/2)/R rad
+ R=1 mm step=0.05 mm: scallop 0.31 um, slope 1.43 deg -> deflection scatter +/-0.70 deg
+ R=1 mm step=0.1 mm: scallop 1.25 um, slope 2.86 deg -> deflection scatter +/-1.40 deg
+ R=1 mm step=0.3 mm: scallop 11.25 um, slope 8.59 deg -> deflection scatter +/-4.21 deg
+ R=3 mm step=0.05 mm: scallop 0.10 um, slope 0.48 deg -> deflection scatter +/-0.23 deg
+ R=3 mm step=0.1 mm: scallop 0.42 um, slope 0.95 deg -> deflection scatter +/-0.47 deg
+ R=3 mm step=0.3 mm: scallop 3.75 um, slope 2.86 deg -> deflection scatter +/-1.40 deg
+ R=6 mm step=0.05 mm: scallop 0.05 um, slope 0.24 deg -> deflection scatter +/-0.12 deg
+ R=6 mm step=0.1 mm: scallop 0.21 um, slope 0.48 deg -> deflection scatter +/-0.23 deg
+ R=6 mm step=0.3 mm: scallop 1.88 um, slope 1.43 deg -> deflection scatter +/-0.70 deg
+Roughness scatter: rms slope sig_s -> halo ~ (n-1)*sig_s. Ra 0.4 um at corr length 50 um: slope ~2pi*Ra/lambda
+ Ra 0.1 um lam 0.05 mm: slope 0.72 deg, halo ~0.35 deg (vs 0.53 sun)
+ Ra 0.1 um lam 0.2 mm: slope 0.18 deg, halo ~0.09 deg (vs 0.53 sun)
+ Ra 0.4 um lam 0.05 mm: slope 2.88 deg, halo ~1.41 deg (vs 0.53 sun)
+ Ra 0.4 um lam 0.2 mm: slope 0.72 deg, halo ~0.35 deg (vs 0.53 sun)
+ Ra 1.6 um lam 0.05 mm: slope 11.52 deg, halo ~5.64 deg (vs 0.53 sun)
+ Ra 1.6 um lam 0.2 mm: slope 2.88 deg, halo ~1.41 deg (vs 0.53 sun)
+
+== 6. Image shift with sun motion ==
+sun moves ~15 deg/h (hour angle); image shifts ~ d*dalpha
+d=1 m: shift 0.26 m/h; time to shift 1 blur (9 mm): 2.1 min
+d=2 m: shift 0.52 m/h; time to shift 1 blur (19 mm): 2.1 min
+d=3 m: shift 0.79 m/h; time to shift 1 blur (28 mm): 2.1 min
+
+Deviation of tilted back surface (tilt 20 deg) vs incidence on front (thin-wedge model)
+ inc 0: deflection -10.64 deg; relative to normal-incidence 0.0 deg
+ inc 10: deflection -10.06 deg; relative to normal-incidence 0.58 deg
+ inc 20: deflection -10.06 deg; relative to normal-incidence 0.58 deg
+ inc 30: deflection -10.59 deg; relative to normal-incidence 0.05 deg
+ inc 40: deflection -11.7 deg; relative to normal-incidence -1.07 deg
+ inc 50: deflection -13.58 deg; relative to normal-incidence -2.94 deg
+ inc 60: deflection -16.48 deg; relative to normal-incidence -5.84 deg
+Rigid image shift = d*dalpha; extra distortion = change in deflection above (deg), e.g. 10 deg off-design -> 1 to 2 deg change, >sun disc
+
+== 7. Sun geometry & legible hours ==
+noon altitude (deg) [calc] at solstices/equinox
+Delhi [84.8, 61.0, 38.0]
+Bengaluru [79.6, 76.6, 53.6]
+Kochi [76.6, 79.6, 56.6]
+
+(a) Registered hours/year with sun within 2.9 deg of design direction (fixed panel, clear sky)
+ Delhi design doy355 12h (alt 38, az 180): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+ Delhi design doy80 10h (alt 49, az 130): 9 h/yr within tol, ~1 min/day avg; days=8.766666666666646
+ Delhi design doy172 9h (alt 49, az 87): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+ Bengaluru design doy355 12h (alt 54, az 180): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+ Bengaluru design doy80 10h (alt 57, az 112): 9 h/yr within tol, ~1 min/day avg; days=8.766666666666646
+ Bengaluru design doy172 9h (alt 46, az 70): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+ Kochi design doy355 12h (alt 57, az 180): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+ Kochi design doy80 10h (alt 58, az 107): 9 h/yr within tol, ~1 min/day avg; days=8.766666666666646
+ Kochi design doy172 9h (alt 45, az 67): 22 h/yr within tol, ~4 min/day avg; days=21.800000000000242
+
+(b) Sliding-image hours/day: vertical window facing az_w; sun incidence on glass <=60 deg; central ray lands 0.5-4.0 m inside (h=1.5 m); floor stretch 1/cos(zenith)
+ Delhi     Jun21        N:0.0h  E:3.0h  S:0.0h  W:3.0h
+ Delhi     Mar21/Sep23  N:0.0h  E:2.4h  S:0.0h  W:2.4h
+ Delhi     Dec21        N:0.0h  E:1.0h  S:6.4h  W:1.0h
+ Bengaluru Jun21        N:0.0h  E:2.6h  S:0.0h  W:2.6h
+ Bengaluru Mar21/Sep23  N:0.0h  E:2.6h  S:0.0h  W:2.6h
+ Bengaluru Dec21        N:0.0h  E:1.8h  S:7.6h  W:1.8h
+ Kochi     Jun21        N:0.0h  E:2.6h  S:0.0h  W:2.6h
+ Kochi     Mar21/Sep23  N:0.0h  E:2.6h  S:0.0h  W:2.6h
+ Kochi     Dec21        N:0.0h  E:1.9h  S:6.3h  W:1.9h
+
+(c) Skylight/horizontal panel: sun incidence=zenith; image on floor below at depth H=3 m shifts H*tan(z) horizontally
+ Delhi Jun21: hours with altitude>50deg = 5.9; noon alt 85
+ Delhi Dec21: hours with altitude>50deg = 0.0; noon alt 38
+ Bengaluru Jun21: hours with altitude>50deg = 5.4; noon alt 80
+ Bengaluru Dec21: hours with altitude>50deg = 2.2; noon alt 54
+ Kochi Jun21: hours with altitude>50deg = 5.3; noon alt 77
+ Kochi Dec21: hours with altitude>50deg = 3.0; noon alt 57
+
+== 8. Thermal / material ==
+PMMA 0.6 m panel dT 10 K: expansion 0.42 mm (0.07 %); glass 9e-6: 0.05 mm
+PMMA 0.6 m panel dT 30 K: expansion 1.26 mm (0.21 %); glass 9e-6: 0.16 mm
+PMMA 0.6 m panel dT 40 K: expansion 1.68 mm (0.28 %); glass 9e-6: 0.22 mm
+PMMA water uptake, creep etc: not computed [K]
+Fresnel loss per surface at normal incidence n=1.49: 3.9 %; two surfaces ~ 7.6 %

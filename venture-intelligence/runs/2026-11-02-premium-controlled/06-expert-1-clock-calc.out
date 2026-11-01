@@ -1,0 +1,108 @@
+Mean synodic month (this series, J2000) 29.530589 d ; sidereal-ish (tropical) 27.321582 d ; anomalistic 27.554550 d
+
+TITHI durations in 1 yr from 2026-11-01 (n=371): min 20.19 h, max 26.73 h, mean 23.62 h, sd 2.04
+mean tithi = synodic/30 = 23.62 h
+Tithi#(k mod 30; 0 = new-moon boundary ->tithi 1 starts) min/mean/max hours
+  boundary  0->tithi  1: 20.3 / 23.1 / 26.7
+  boundary  1->tithi  2: 20.4 / 23.1 / 26.6
+  boundary  2->tithi  3: 20.6 / 23.2 / 26.7
+  boundary  3->tithi  4: 20.9 / 23.3 / 26.7
+  boundary  4->tithi  5: 21.2 / 23.4 / 26.7
+  boundary  5->tithi  6: 21.6 / 23.5 / 26.6
+  boundary  6->tithi  7: 21.8 / 23.6 / 26.3
+  boundary  7->tithi  8: 21.9 / 23.7 / 26.3
+  boundary  8->tithi  9: 21.8 / 23.7 / 26.6
+  boundary  9->tithi 10: 21.6 / 23.6 / 26.6
+  boundary 10->tithi 11: 21.2 / 23.5 / 26.6
+  boundary 11->tithi 12: 20.9 / 23.4 / 26.6
+  boundary 12->tithi 13: 20.5 / 23.4 / 26.6
+  boundary 13->tithi 14: 20.3 / 23.3 / 26.6
+  boundary 14->tithi 15: 20.2 / 23.4 / 26.5
+  boundary 15->tithi 16: 20.2 / 23.4 / 26.6
+  boundary 16->tithi 17: 20.3 / 23.6 / 26.6
+  boundary 17->tithi 18: 20.6 / 23.7 / 26.6
+  boundary 18->tithi 19: 20.8 / 23.9 / 26.6
+  boundary 19->tithi 20: 21.2 / 24.1 / 26.5
+  boundary 20->tithi 21: 21.8 / 24.3 / 26.6
+  boundary 21->tithi 22: 22.2 / 24.4 / 26.5
+  boundary 22->tithi 23: 22.1 / 24.2 / 26.5
+  boundary 23->tithi 24: 21.9 / 24.2 / 26.6
+  boundary 24->tithi 25: 21.6 / 24.1 / 26.6
+  boundary 25->tithi 26: 21.3 / 23.9 / 26.7
+  boundary 26->tithi 27: 20.9 / 23.7 / 26.6
+  boundary 27->tithi 28: 20.6 / 23.4 / 26.7
+  boundary 28->tithi 29: 20.4 / 23.3 / 26.6
+  boundary 29->tithi 30: 20.3 / 23.2 / 26.7
+Lunation (new moon to new moon) in this period: min 29.291 d max 29.814 d mean 29.5269
+Next new moons (this model): ['2026-11-09 07:04 UT', '2026-12-09 00:54 UT', '2027-01-07 20:25 UT']
+Tithis shorter than 24 h: 207 of 371 ; longer than 24h: 164
+Tithis < 20 h: 0 ; > 26 h: 74
+
+NAKSHATRA durations (n=362): min 20.93 h max 27.17 h mean 24.28 h
+moon daily motion range this series: 11.78-15.30 deg/day
+
+TITHI boundary timing error vs this model's 'true' (hours), whole year, best constant offset (phase set once):
+  A_const         : max|err|  16.85 h  rms  9.63 h   (n=361, offset removed -10.12 h)
+  C_sunC_only     : max|err|  15.34 h  rms  9.16 h   (n=361, offset removed -7.83 h)
+  B1_moonC        : max|err|   6.86 h  rms  3.53 h   (n=361, offset removed -6.87 h)
+  B2_moonC+sunC   : max|err|   4.29 h  rms  2.07 h   (n=361, offset removed -3.24 h)
+  B3_+evec+var    : max|err|   1.03 h  rms  0.43 h   (n=361, offset removed -0.92 h)
+  B4_+3more       : max|err|   0.70 h  rms  0.27 h   (n=361, offset removed -0.44 h)
+
+(same, but clock set exactly at a true new moon i.e. error zero there, as a customer would do)
+  A_const         : error span (max-min) 33.70 h ; worst if set at new moon ~ up to 30.10 h
+  B1_moonC        : error span (max-min) 13.73 h ; worst if set at new moon ~ up to  8.48 h
+  B2_moonC+sunC   : error span (max-min)  8.58 h ; worst if set at new moon ~ up to  6.15 h
+  B3_+evec+var    : error span (max-min)  2.05 h ; worst if set at new moon ~ up to  1.08 h
+
+NAKSHATRA boundary timing error (hours), best constant offset:
+  A_const       : max|err|  14.20 h rms  8.48 h
+  B1_moonC      : max|err|   3.96 h rms  1.91 h
+  B3_+evec+var  : max|err|   0.92 h rms  0.39 h
+  B4_+3more     : max|err|   0.61 h rms  0.24 h
+
+Amplitude of each term converted to hours of tithi timing (deg / 12.19 deg/day mean relative rate *24):
+  lunar equation of centre                          6.289 deg -> +/- 12.38 h
+  evection                                          1.274 deg -> +/-  2.51 h
+  variation                                         0.658 deg -> +/-  1.30 h
+  solar equation of centre (EoT-style annual cam)   1.915 deg -> +/-  3.77 h
+  2M' term                                          0.214 deg -> +/-  0.42 h
+  annual (moon M)                                   0.185 deg -> +/-  0.36 h
+
+GEAR-RATIO ROUNDING. Wheel train from 24h-hour wheel to tithi disc. Required: mean tithi period (hours)= 23.62447
+Single-stage-like p/q with q<=200 (p=days per rev of disc, q = hour-wheel turns): 
+   502/17 = 29.529412 d ; drift -0.0283 h per lunation ; per year -0.349 h
+   443/15 = 29.533333 d ; drift +0.0659 h per lunation ; per year +0.815 h
+   561/19 = 29.526316 d ; drift -0.1026 h per lunation ; per year -1.268 h
+   384/13 = 29.538462 d ; drift +0.1889 h per lunation ; per year +2.337 h
+Common watch moon discs:
+   59/2 teeth (29.5 d)                     : 29.500000 -> -9.080 h/yr (phase), days per year -0.3783
+   135-tooth wheel, 27 + 20 * ... =29.530612 (a=135/2... ): 29.530612 -> +0.007 h/yr (phase), days per year +0.0003
+   Atmos/Hermle-type 29.53059              : 29.530590 -> +0.000 h/yr (phase), days per year +0.0000
+Best p/q with p,q products of two wheels <=120 teeth (4 wheels) for SYN*2 (hour wheel 12h/24h): 
+Convergents of synodic month in days:
+   29/1 = 29.0000000 ; drift -157.4991 h/yr
+   30/1 = 30.0000000 ; drift +139.3393 h/yr
+   59/2 = 29.5000000 ; drift -9.0799 h/yr
+   443/15 = 29.5333333 ; drift +0.8147 h/yr
+   502/17 = 29.5294118 ; drift -0.3494 h/yr
+   1447/49 = 29.5306122 ; drift +0.0069 h/yr
+   25101/850 = 29.5305882 ; drift -0.0002 h/yr
+   51649/1749 = 29.5305889 ; drift +0.0000 h/yr
+   334995/11344 = 29.5305889 ; drift -0.0000 h/yr
+
+Going-train rate contribution (clock time error accumulates 1:1 into display):
+     2 s/day mean rate error ->  0.20 h over 365 d
+     5 s/day mean rate error ->  0.51 h over 365 d
+    10 s/day mean rate error ->  1.01 h over 365 d
+    30 s/day mean rate error ->  3.04 h over 365 d
+    60 s/day mean rate error ->  6.09 h over 365 d
+
+Display: tithi ring 12 deg per tithi at r=40.0 mm -> 8.4 mm per mean tithi; 1 h = 0.35 mm
+   cam max lift +/-10.0 mm for 6.29 deg: tolerance for 0.5 h error = 404 micron (profile)
+   cam max lift +/-10.0 mm for 6.29 deg: tolerance for 1.0 h error = 808 micron (profile)
+   cam max lift +/-20.0 mm for 6.29 deg: tolerance for 0.5 h error = 808 micron (profile)
+   cam max lift +/-20.0 mm for 6.29 deg: tolerance for 1.0 h error = 1615 micron (profile)
+Cam load power (1 mN.m at slow cam): 2.64e-09 W (vs ~5e-6 W for an 8-day table clock, [A])
+
+Truncation: next Meeus terms are <=0.03 deg ~ <=0.06 h; sum of omitted largest ~0.1 deg ~ 0.2 h (order of magnitude)

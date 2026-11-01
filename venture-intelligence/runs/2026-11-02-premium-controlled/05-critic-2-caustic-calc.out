@@ -1,0 +1,40 @@
+Sun angular diameter mrad: 9.30
+Blur width = throw * 0.0093 (any lens: each panel point images the whole sun disc)
+ throw 1 m: blur  0.9 cm; image 0.5 m wide -> ~  54 resolvable elements across
+ throw 1 m: blur  0.9 cm; image 1.0 m wide -> ~ 107 resolvable elements across
+ throw 1 m: blur  0.9 cm; image 2.0 m wide -> ~ 215 resolvable elements across
+ throw 2 m: blur  1.9 cm; image 0.5 m wide -> ~  27 resolvable elements across
+ throw 2 m: blur  1.9 cm; image 1.0 m wide -> ~  54 resolvable elements across
+ throw 2 m: blur  1.9 cm; image 2.0 m wide -> ~ 107 resolvable elements across
+ throw 3 m: blur  2.8 cm; image 0.5 m wide -> ~  18 resolvable elements across
+ throw 3 m: blur  2.8 cm; image 1.0 m wide -> ~  36 resolvable elements across
+ throw 3 m: blur  2.8 cm; image 2.0 m wide -> ~  72 resolvable elements across
+ throw 4 m: blur  3.7 cm; image 0.5 m wide -> ~  13 resolvable elements across
+ throw 4 m: blur  3.7 cm; image 1.0 m wide -> ~  27 resolvable elements across
+ throw 4 m: blur  3.7 cm; image 2.0 m wide -> ~  54 resolvable elements across
+
+Delhi noon altitude: solstice-summer 84.8, equinox 61.0, winter 38.0 deg
+Sun moves 15 deg/hour; at 2 m throw the image shifts 52 cm per hour (small-angle)
+ tolerance 1.0 deg of design direction: 9 days/yr touch it, avg 6 min on those days, 1.0 h/yr total
+ tolerance 2.0 deg of design direction: 19 days/yr touch it, avg 13 min on those days, 4.0 h/yr total
+ tolerance 5.0 deg of design direction: 50 days/yr touch it, avg 31 min on those days, 25.5 h/yr total
+ total sun-above-5deg hours/yr: 4082; share within 5 deg of design: see above
+
+Base: net-of-GST 593220, cash cost 232975, founder hours 215, profit before founder time 360245, after founder time 198995
+ effective Rs/hour on founder time: 1676
+
+Sensitivity: each input made unfavourable by 50 pct (cost up 1.5x or hours up 1.5x) one at a time; and price at 3.5 lakh
+ material                             profit pre-labour    323945  Rs/h   1507  after labour    162695
+ cnc hours                            profit pre-labour    342095  Rs/h   1591  after labour    180845
+ polish hours                         profit pre-labour    355526  Rs/h   1654  after labour    194276
+ sales hours (one sale per 240h)      profit pre-labour    360245  Rs/h   1075  after labour    108995
+ redo prob 0.7                        profit pre-labour    339770  Rs/h   1580  after labour    178520
+ install cash                         profit pre-labour    340245  Rs/h   1583  after labour    178995
+ framing                              profit pre-labour    335245  Rs/h   1559  after labour    173995
+ architect/designer commission 15%    profit pre-labour    271262  Rs/h   1262  after labour    110012
+ price 3.5 lakh                       profit pre-labour     63635  Rs/h    296  after labour    -97615
+ price 4.5 lakh                       profit pre-labour    148381  Rs/h    690  after labour    -12869
+ combined bad case (comm 15 pct, sales 240h, price 4.5L, vendor 2x): pre-labour 45803, Rs/h 137
+
+Pieces per year for Rs 1200000 founder income at base: 3.3; founder hours then: 716
+Hours available if full time 1800 h: max pieces by hours = 8.4

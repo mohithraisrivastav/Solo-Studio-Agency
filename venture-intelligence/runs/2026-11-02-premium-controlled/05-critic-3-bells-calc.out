@@ -1,0 +1,33 @@
+BASE: Rs 7.5 lakh ex-GST, 300 kg
+{'metal_per_kg': 1974, 'foundry_price': 802914, 'founder_time': 90000, 'total': 927914, 'net': -177914, 'net_cash_before_time': -87914}
+
+Market price per kg implied by listings: 500kg Rs8.5L=1700, 750kg Rs15L=2000, 1000kg Rs18L=1800, Ayodhya 2400kg Rs25L=1041, 2100kg Rs21L=1000
+
+Weight a Rs 5/7.5/10 lakh bell buys at 1,700-2,000 per kg: [294, 250, 441, 375, 588, 500]
+
+SENSITIVITY (each unsourced input made unfavourable by half, i.e. cost x1.5 or hours x1.5; one at a time)
+tune_hours 40->60            net Rs  -187,114 (base -177,914)
+tune_rate 400->600           net Rs  -187,114 (base -177,914)
+cast_labour 250->375         net Rs  -221,039 (base -177,914)
+tooling 15k->22.5k           net Rs  -186,539 (base -177,914)
+foundry_margin 15%->22.5%    net Rs  -230,278 (base -177,914)
+logistics 15k->22.5k         net Rs  -185,414 (base -177,914)
+founder_hours_sale 60->90    net Rs  -200,414 (base -177,914)
+buyer_acq 20k->30k           net Rs  -187,914 (base -177,914)
+Cu Rs1000->1500              net Rs  -324,164 (base -177,914)
+
+GRID net (founder time included) by price and kg, base other inputs
+500000 [(150, -44282), (250, -300036), (350, -555791), (500, -939423)]
+750000 [(150, 205718), (250, -50036), (350, -305791), (500, -689423)]
+1000000 [(150, 455718), (250, 199964), (350, -55791), (500, -439423)]
+
+Co-owned set of 12, each bell Rs 7.5L ex-GST, 12 x 120 kg bells, shared design 120h, 12 buyers each 60h sale
+net per bell 319945 set net 3839340
+
+Buyers needed for the set: 12 distinct buyers; if conversion from conversation to Rs7.5L purchase is 2%, conversations needed = 600.0
+
+Yearly: founder income at Rs750/h, 1800 h = Rs 1350000
+2 bells/yr: cash net before founder time -175828 vs hours cost 180000
+4 bells/yr: cash net before founder time -351656 vs hours cost 360000
+6 bells/yr: cash net before founder time -527484 vs hours cost 540000
+8 bells/yr: cash net before founder time -703312 vs hours cost 720000

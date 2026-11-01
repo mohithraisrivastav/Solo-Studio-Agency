@@ -1,0 +1,76 @@
+== 1. Ideal European partial ladder (nominal N=1) ==
+hum         ratio to nominal 0.250  ratio to prime 0.500  cents above hum     0.0
+prime       ratio to nominal 0.500  ratio to prime 1.000  cents above hum  1200.0
+tierce      ratio to nominal 0.600  ratio to prime 1.200  cents above hum  1515.6
+quint       ratio to nominal 0.750  ratio to prime 1.500  cents above hum  1902.0
+nominal     ratio to nominal 1.000  ratio to prime 2.000  cents above hum  2400.0
+superquint  ratio to nominal 1.500  ratio to prime 3.000  cents above hum  3102.0
+strike note (virtual pitch of 2:3:4 series) = N/2 = 0.5 of nominal -> equals prime pitch
+tierce/prime = 6/5 (just minor third 315.6 cents; ET minor third 300 cents)
+=> a bell sounds 'minor' by design; major-third tuned bells are a special modern design
+
+== 2. Scaling: frequency ~ 1/D, mass ~ D^3 for similar shape ==
+calibration D0=1.0 m M0=600.0 kg prime F0=196.0 Hz  (assumption, +/-20% on mass)
+1 semitone(s) lower pitch at same shape: mass x1.189, diameter x1.059
+12 semitone(s) lower pitch at same shape: mass x8.000, diameter x2.000
+
+Large single bell options (prime Hz -> D, mass)
+prime  110.0 Hz (A2) D=1.78 m  mass=   3394 kg
+prime  130.8 Hz (C3) D=1.50 m  mass=   2019 kg
+prime  165.0 Hz (E3) D=1.19 m  mass=   1006 kg
+prime  196.0 Hz (G3) D=1.00 m  mass=    600 kg
+prime  261.6 Hz (C4) D=0.75 m  mass=    252 kg
+check vs reported Ayodhya bell: 2100 kg ->D= 1.52 m (reported ~5 ft = 1.52 m); prime 129.1 Hz
+
+== 3. Twelve-bell chromatic set, prime tuned ET, A4=440 ==
+tabletop C5-B5 total mass 173.4 kg; heaviest 31.5 kg D=0.37 m; lightest 4.7 kg D=0.20 m
+hall G3-F#4 total mass 3299.7 kg; heaviest 600.0 kg D=1.00 m; lightest 89.2 kg D=0.53 m
+
+== 4. Tolerance: wall-thickness error -> pitch error ==
+D=0.4 m, sound-bow t~27 mm: dt=0.5 mm -> -33..-16 cents; dt=1 mm -> -66..-33 cents; dt=2 mm -> -135..-66 cents; dt=3 mm -> -207..-100 cents
+D=1.0 m, sound-bow t~67 mm: dt=0.5 mm -> -13..-7 cents; dt=1 mm -> -26..-13 cents; dt=2 mm -> -53..-26 cents; dt=3 mm -> -80..-39 cents
+D=1.5 m, sound-bow t~100 mm: dt=0.5 mm -> -9..-4 cents; dt=1 mm -> -17..-9 cents; dt=2 mm -> -35..-17 cents; dt=3 mm -> -53..-26 cents
+1% change in thickness/frequency = 17.2 cents
++/-3 cents = +/-0.17% frequency
++/-5 cents = +/-0.29% frequency
++/-10 cents = +/-0.58% frequency
++/-20 cents = +/-1.16% frequency
++/-50 cents = +/-2.93% frequency
++/-100 cents = +/-5.95% frequency
+As-cast scatter if founder holds thickness to +/-3% (sand, core shift): ~ +/-52 cents [I from 1%=17 cents]
+Needed to tune to +/-5 cents (0.3%) by turning: remove metal only (lowers some partials, lip cut raises others)
+
+== 5. Metal cost, 78Cu/22Sn ==
+base      alloy metal value  22.43 USD/kg = INR    1974/kg (excl. melt loss, GST, fuel, labour)
+tin -50%  alloy metal value  16.84 USD/kg = INR    1482/kg (excl. melt loss, GST, fuel, labour)
+tin +25%  alloy metal value  25.23 USD/kg = INR    2220/kg (excl. melt loss, GST, fuel, labour)
+cast bell     3.0 kg: metal incl 8% melt loss and gating/returns not credited = INR 6,396
+cast bell    31.6 kg: metal incl 8% melt loss and gating/returns not credited = INR 67,369
+cast bell    60.0 kg: metal incl 8% melt loss and gating/returns not credited = INR 127,915
+cast bell   600.0 kg: metal incl 8% melt loss and gating/returns not credited = INR 1,279,151
+cast bell  1000.0 kg: metal incl 8% melt loss and gating/returns not credited = INR 2,131,918
+cast bell  2100.0 kg: metal incl 8% melt loss and gating/returns not credited = INR 4,477,028
+Ayodhya report INR 21 lakh /2100 kg = INR 1000 /kg all-in (vs alloy metal-only INR 1974 /kg) -> not 78/22 tin bronze or price is wrong
+Listing asks: INR 2,500/kg (1000 kg brass), 580-750/kg brass church bell, 2,200/kg copper bell-metal church bell
+
+== 6. Doublets: axisymmetry error -> beat ==
+split 2 cents at 196 Hz prime = beat 0.23 Hz; at 523 Hz = 0.60 Hz
+split 5 cents at 196 Hz prime = beat 0.57 Hz; at 523 Hz = 1.51 Hz
+split 10 cents at 196 Hz prime = beat 1.14 Hz; at 523 Hz = 3.03 Hz
+split 20 cents at 196 Hz prime = beat 2.28 Hz; at 523 Hz = 6.08 Hz
+
+== 7. ET vs just vs shruti (cents from Sa) ==
+Sa  ET     0  JI     0.0  diff   +0.0
+re  ET   100  JI   111.7  diff  +11.7
+Re  ET   200  JI   203.9  diff   +3.9
+ga  ET   300  JI   315.6  diff  +15.6
+Ga  ET   400  JI   386.3  diff  -13.7
+ma  ET   500  JI   498.0  diff   -2.0
+Ma  ET   600  JI   590.2  diff   -9.8
+Pa  ET   700  JI   702.0  diff   +2.0
+dha ET   800  JI   813.7  diff  +13.7
+Dha ET   900  JI   884.4  diff  -15.6
+ni  ET  1000  JI   996.1  diff   -3.9
+Ni  ET  1100  JI  1088.3  diff  -11.7
+22 shrutis: finer than 12 bells can supply; 12-bell set = 12 swarasthanas only
+max JI-vs-ET gap 15.600000000000023 cents -> needs tuning tolerance well below ~10 cents to be audible/defensible
