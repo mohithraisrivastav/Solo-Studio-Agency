@@ -4,8 +4,8 @@ Date: 2026-11-01. Files relied on: `01-hunt-A/B/C.md`, `02-hunt-A/B/C-r2.md`, an
 
 ## What happened
 
-- Round 1 (rules that cut on any unsupported buyer question): 3 hunters, 0 ideas kept, about 36 candidates cut. Several cuts rested on missing evidence or blocked sources, not on contradiction.
-- Round 2 (three outcomes, creative mandate): 24 new ideas and 38 re-sorted candidates. Result: 0 ADVANCE, many INVESTIGATE, 13 REJECT (4 by hunter B, 8 by hunter C, 1 by hunter A; each with stated reason).
+- Round 1 (rules that cut on any unsupported buyer question): 3 hunters, 0 ideas kept, about 34 candidates cut. Several cuts rested on missing evidence or blocked sources, not on contradiction.
+- Round 2 (three outcomes, creative mandate): 24 new ideas and 34 re-sorted candidates. Result: 0 ADVANCE, many INVESTIGATE, 13 REJECT (4 by hunter B, 8 by hunter C, 1 by hunter A; each with stated reason).
 - No buyer was contacted. Every source is a search summary, because page fetching is blocked. Demand evidence is L0 to L1 for every idea.
 
 ## Judgment of the hunters
