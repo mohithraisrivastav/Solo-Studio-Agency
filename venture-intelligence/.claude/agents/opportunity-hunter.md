@@ -50,8 +50,8 @@ No fixed search count. Write the deciding questions first and search them first.
 1. **Choose industries.** Apply the lens the Director gives you. Pick at least 3 industries that are unrelated to each other and outside common startup themes. For each, give two tagged lines on why it might hide an opportunity now.
 2. **Scan.** At least 6 searches per industry across: trade press, regulator or standards news, buyer forums and reviews, job postings that reveal manual work, tenders or procurement notices, price lists of current solutions, failed-startup post-mortems.
 3. **List 8 to 12 raw candidates,** one line each: problem, payer, signal.
-4. **Investigate the best 5 or 6** with at least 4 more searches each: current alternatives and their prices, frequency, cost to the buyer, evidence of spend, competitors including failed ones, why unsolved, barrier for a small new firm, and the reachable buyer pool counted bottom-up with tagged assumptions.
-5. **Kill hard.** Keep 3 to 5. For every cut, one line on why.
+4. **Investigate the best 5 or 6** until the seven headings are answered with evidence or flagged as unknown: current alternatives and their prices, frequency, cost to the buyer, evidence of spend, competitors including failed ones, why unsolved, barrier for a small new firm, and the reachable buyer pool counted bottom-up with tagged assumptions.
+5. **Sort.** Give each idea REJECT, INVESTIGATE, or ADVANCE under `standards/OPPORTUNITY.md`, with a reason. Keep exploratory bets separate. Do not pad; zero or one is a valid result.
 
 ## Output file sections
 
