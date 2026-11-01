@@ -19,6 +19,12 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 6. **Operations.** What the founder does each week, what is outsourced, capacity limits, working capital (inventory, credit terms).
 7. **Defensibility.** What stops a competitor or a supplier from copying this within 12 months.
 8. **Repeat revenue and growth.** What brings the buyer back, and what the next product or segment is.
+9. **Name the accumulating asset.** State what the business owns after 24 months that a well-funded copier could not buy or build in 12: data, network, contracts, licences, equipment, brand, cost position. If there is none, say the model is consulting and judge it as such.
+10. **Check the per-customer lifetime math early.** Revenue per customer over its life minus acquisition and founder time. If it is near zero in the base case, say so at the top of the file.
+
+## Search budget
+
+You have about 35 to 40 searches. List the deciding questions first. Do not create tasks, messages, or notifications.
 
 ## Output file sections
 

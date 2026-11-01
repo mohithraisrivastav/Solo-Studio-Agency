@@ -17,7 +17,7 @@ Starting Claude Code inside this folder loads the agents in `.claude/agents/`, t
 |---|---|---|
 | `/discover <objective>` | Three Opportunity Hunters search unrelated industries in parallel through different lenses. The Director triages. Independent Market Investigators verify each candidate. Returns a ranked shortlist with evidence levels. | `/discover Find high-margin opportunities a two-person team could start with ₹5 lakh` |
 | `/invent <opportunity>` | The Inventor produces substantially different concepts. The Multidisciplinary Expert and Business Architect assess them in parallel. The Financial Investigator models the best two. Returns a concept slate. | `/invent runs/2026-10-31-x/04-shortlist.md opportunity 2` |
-| `/challenge <concept>` | The Independent Critic tries to kill the concept with its own research. One revision loop at most. Verdict against six gates. | `/challenge runs/2026-10-31-x/09-slate-2.md` |
+| `/challenge <concept>` | The Independent Critic tries to kill the concept with its own research. One revision loop at most. Verdict against seven gates. | `/challenge runs/2026-10-31-x/09-slate-2.md` |
 | `/develop <concept>` | Prototype and production plan, go-to-market and pricing test, validation plan up the evidence ladder, budget with stage gates. | `/develop runs/2026-10-31-x/12-revision-2.md` |
 | `/venture <objective>` | All four in sequence. Develops only a concept that passes every gate. Says so when nothing passes. | `/venture Independently discover three commercially promising opportunities in unrelated industries` |
 
@@ -42,7 +42,7 @@ Each run writes numbered files to `runs/<date>-<slug>/`, ending in `DECISION.md`
 - No agent may invent buyers, quotes, orders, market sizes, prices, or sources. Gaps are reported as gaps.
 - Demand evidence follows a ladder from L0 to L5. Desk research reaches L1 at most.
 - Specialists receive other specialists' claims labelled "unverified" and check them independently.
-- Six gates decide a recommendation. If nothing passes, the system says so.
+- Seven gates decide a recommendation, and a commercial screen comes before any invention. If nothing passes, the system says so.
 - Contacting people, publishing, buying, and spending are never done by agents. Plans list them for the user to approve.
 
 ## Tools

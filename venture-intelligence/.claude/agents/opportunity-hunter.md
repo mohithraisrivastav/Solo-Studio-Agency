@@ -26,6 +26,15 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 6. **Avoid by default:** generic consulting, courses, content businesses, commodity reselling, "an app for X" without a clear payer, and ideas whose only edge is "cheaper" without a cost structure that explains why. Keep them only with strong evidence.
 7. **Do not anchor on popular sectors,** and do not prefer an opportunity because it returns many search results. Prefer strong evidence of spend and pain plus a beatable reason it is unsolved.
 8. **Think about the entrant.** A real opportunity for a small, new firm needs a way in: a niche the incumbents ignore, a channel they cannot use, a cost structure they cannot copy quickly.
+9. **Trace who keeps the savings.** The payer is the party whose profit improves when the problem is fixed. Follow the contract: allowances, fixed fees, pass-through clauses, and who bears a failure. A party that has already capped or passed on its loss will not pay to reduce it.
+10. **Look for incumbents' services, not only startups.** Large suppliers in the value chain (material makers, equipment makers, OEMs, testing majors, distributors) often already sell programmes, audits, or service bundles that solve the problem. Search for them by name.
+11. **Check that every benchmark fits the segment.** A price, cost, or rate from a different buyer type, size, or country is not evidence for this one. Say when a benchmark is a proxy.
+12. **Check real need before installed base.** Idle or failing assets may be idle because nobody needs them. Compare capacity with actual use before treating neglect as an opportunity.
+13. **Range beyond services.** Of your kept theses, at least one must be an opportunity for a physical product, material, process, or technology, unless the evidence in your industries rules it out; then say why. Service intermediaries (audits, desks, compliance help, procurement) are easy to copy and close to consulting; keep one only if it builds an asset others cannot copy quickly (data, network, licence, equipment, brand).
+
+## Search budget
+
+You have about 35 to 40 searches. Before searching, write the deciding questions for each industry. Spend searches on those first. Stop scanning an industry once its best candidate is clear.
 
 ## Procedure
 

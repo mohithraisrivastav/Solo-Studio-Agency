@@ -34,8 +34,16 @@ Run `python3 tools/check_evidence.py` on the three files. Read them. Write `02-t
 
 Launch one `market-investigator` per candidate in one message. Give each only: the problem statement in one paragraph, the target buyer, and the hunter file path labelled "unverified hypotheses, do your own research". Output `03-market-<n>-<short-name>.md`.
 
-## 5. Shortlist
+## 5. Commercial screen, in parallel
 
-Write `04-shortlist.md`: for each candidate, the hunter's claim, the investigator's verdict, where they disagree, the evidence level, and go / hold / drop. Choose up to 3 for invention, from unrelated industries. If fewer pass, take fewer. Never pad.
+For each candidate whose problem spend is at least weak L1, launch a `business-architect` with a short brief: "Screen this opportunity before any invention. Who keeps the savings when it is fixed? How much money flows to the problem each year in one reachable cluster or segment (bottom-up)? What share could a small entrant plausibly capture, and what would it earn per customer over a customer's life after acquisition and founder time? What asset could accumulate that a copier could not buy in 12 months? Give a ceiling estimate with `tools/econ.py` if useful. No concept design." Output `04-screen-<n>.md`. Keep each to about 15 searches.
+
+## 6. Shortlist
+
+Write `04-shortlist.md`: for each candidate, the hunter's claim, the investigator's two verdicts (problem spend, solution demand), the screen's ceiling, where they disagree, and go / hold / drop.
+
+**Pass rule for "go":** problem spend strong L1, or weak L1 with a decisive test under ₹50,000; a payer whose profit improves; a beatable reason it is unsolved; a ceiling that pays the founder above the stated hourly value at a scale reachable in 24 months; and room for an accumulating asset. Drop anything whose reason-unsolved is weak demand.
+
+Choose up to 3 for invention, from unrelated industries. If fewer pass, take fewer. Never pad. If every survivor is a service intermediary, run one more `opportunity-hunter` with the lens "new capability into products: materials, processes, devices, or technology that became cheap or possible, applied to a costly problem" before inventing.
 
 Report to the user: the shortlist, what was dropped and why, and what was not checked.

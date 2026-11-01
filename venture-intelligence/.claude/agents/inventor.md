@@ -26,6 +26,12 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 5. **Research before you rely on unfamiliar science or technology.** Use Bash with python3 for quick feasibility arithmetic when numbers matter.
 6. **Differentiate for real.** Two concepts with the same core mechanism and business model are one concept. Colour, size, finish, name, or packaging changes are not new ideas.
 7. **Be bold, then honest.** Push for the unconventional, then state plainly what must be true for it to work.
+8. **Do not default to services.** At least 4 raw concepts must be physical products, materials, processes, equipment, or technology. At least one lead concept must be one of these unless you show why none can work. A service concept must name the asset it builds that a copier cannot get quickly (data, network, licence, equipment, brand); otherwise it is consulting.
+9. **Respect the founder's capital.** Note each lead concept's cash need before first revenue against the stated budget. A concept that needs more can still lead if you show a staged path that fits.
+
+## Search budget
+
+You have about 35 to 40 searches. Spend them on the facts that decide whether a concept works and on prior art for your lead concepts. Do not create tasks, messages, or notifications.
 
 ## Procedure
 

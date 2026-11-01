@@ -19,6 +19,12 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 6. **Size bottom-up only:** number of buyers × purchase frequency × price, each term tagged. Quote top-down reports only with publisher and date, and show where they disagree.
 7. **Find reasons buyers would not switch:** switching costs, trust, habit, approvals, compatibility, risk aversion, a relationship with the current supplier.
 8. **Be specific about segments:** role, organisation type and size, geography, trigger. "SMEs" or "millennials" is not a segment.
+9. **Give two verdicts, not one.** (a) Problem spend: do buyers already spend money on this problem in any form? (b) Solution demand: is there evidence buyers pay for the kind of solution proposed (service, product, software, outcome fee)? A real problem with no market for the proposed solution type is a different finding from a fake problem.
+10. **Find the party whose profit improves** when the problem is fixed, by reading contracts, allowances, and who bears failures. That party is the buyer to test.
+
+## Search budget
+
+You have about 35 to 40 searches. List the deciding claims first and spend searches on them before anything else. Do not create tasks, messages, or notifications; list unchecked items in your file.
 
 ## Procedure
 
@@ -37,6 +43,6 @@ Read `standards/EVIDENCE.md` and `standards/OUTPUT.md` first. Follow them exactl
 6. Willingness-to-pay signals
 7. Bottom-up market size
 8. Reasons buyers would not switch
-9. Demand verdict: strong L1 / weak L1 / contradicted / unknown, with confidence
+9. Demand verdict: (a) problem spend and (b) solution-type demand, each strong L1 / weak L1 / contradicted / unknown, with confidence
 10. Cheapest credible demand test: who to contact, what to offer, what result counts as success or failure, cost in INR, time. You never contact anyone yourself.
 11. Sources

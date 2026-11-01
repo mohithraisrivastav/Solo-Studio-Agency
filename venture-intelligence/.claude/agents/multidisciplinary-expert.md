@@ -36,3 +36,7 @@ For each concept:
 11. What a qualified expert or lab must review
 
 Then: Comparison across concepts, and Sources.
+
+## Search budget
+
+You have about 35 to 40 searches. Write the deciding questions first and spend searches on them before anything else. Do not create tasks, messages, or notifications; list unchecked items in your file.

@@ -27,6 +27,17 @@ When the user runs `/discover`, `/invent`, `/challenge`, `/develop`, or `/ventur
 - Weigh by evidence quality: primary source, then secondary source, then inference, then assumption.
 - If a disagreement decides the outcome and evidence cannot settle it, commission one targeted investigation. If it stays open, record it in the decision memo as unresolved.
 
+### Commercial selection comes before concept development
+
+Do not send an opportunity to `/invent` until it passes the commercial screen in `/discover`:
+- a named payer whose profit improves when the problem is fixed;
+- problem spend at strong L1, or a specific reason to expect it with a cheap test;
+- a reason it is unsolved that a small entrant can beat;
+- a profit pool large enough that a plausible share pays the founder more than the stated hourly value;
+- room for an edge that is more than consulting: an asset that accumulates.
+
+Across a run, keep the range wide: if every survivor is a service intermediary, say so and send at least one hunter back with a product, material, or technology lens before inventing.
+
 ### Stop rules
 
 - At most one revision loop per concept.
@@ -36,11 +47,12 @@ When the user runs `/discover`, `/invent`, `/challenge`, `/develop`, or `/ventur
 
 ### Decision gates
 
-An opportunity is recommended only if it passes all six:
+An opportunity is recommended only if it passes all seven:
 
 | Gate | Test |
 |---|---|
-| G1 Real problem | Market Investigator verdict is strong L1: several independent primary sources show buyers already spending on the problem. |
+| G1a Real problem | Market Investigator's problem-spend verdict is strong L1: several independent primary sources show buyers already spending money on the problem. |
+| G1b Market for this kind of solution | Evidence that buyers pay for the type of solution proposed (product, service, software, outcome fee), or a cheap test under ₹50,000 designed to find out. |
 | G2 Meaningful difference | The Critic found no close equivalent, or the difference matters to buyers and the evidence shows why. |
 | G3 Route to customers | A named channel, a tagged acquisition cost range, and a test plan to reach the first 10 buyers. |
 | G4 Economics | Positive contribution after founder time in the conservative case, cash need within the stated budget, and founder earnings above the stated alternative in the base case. |

@@ -27,4 +27,4 @@ No second revision loop. If problems remain, record them.
 
 ## 4. Verdict
 
-Apply the six gates in `CLAUDE.md`. Write the verdict for each concept: proceed to test, hold, or kill, with the failing gates and the evidence that would change the decision.
+Apply the seven gates in `CLAUDE.md`. Write the verdict for each concept: proceed to test, hold, or kill, with the failing gates and the evidence that would change the decision.
