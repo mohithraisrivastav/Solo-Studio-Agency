@@ -52,7 +52,7 @@ def check(path: Path) -> list[str]:
                 if not DATE_RE.search(line):
                     problems.append(f"source {n} has no date")
 
-    counts = {"S": 0, "I": 0, "A": 0, "K": 0}
+    counts = {"S": 0, "I": 0, "A": 0, "K": 0, "H": 0}
     in_code = False
     body = lines if src_start is None else lines[:src_start]
     for no, line in enumerate(body, 1):
@@ -75,7 +75,7 @@ def check(path: Path) -> list[str]:
             problems.append(f"line {no}: number without an evidence tag: {s[:110]}")
 
     total = sum(counts.values()) or 1
-    print(f"{path}: tags S={counts['S']} I={counts['I']} A={counts['A']} K={counts['K']} "
+    print(f"{path}: tags S={counts['S']} I={counts['I']} A={counts['A']} K={counts['K']} H={counts['H']} "
           f"(sourced share {counts['S'] / total:.0%}); sources listed={len(sources)}; problems={len(problems)}")
     return problems
 

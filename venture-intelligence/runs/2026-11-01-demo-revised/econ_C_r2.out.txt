@@ -1,0 +1,38 @@
+== C1 Cask passport (sensor + record per cask) ==
+annual fee as % of cask price Rs 200,000: 1.25%
+annual fee as % of cask price Rs 1,400,000: 0.18%
+500 casks: tag capex Rs 2,000,000, yearly fee Rs 1,250,000, payback on tags 1.6 yr
+2000 casks: tag capex Rs 8,000,000, yearly fee Rs 5,000,000, payback on tags 1.6 yr
+2 customers x 1,000 casks: yearly fee Rs 5,000,000 vs founder time Rs 900,000
+Customers needed for fee to cover founder time (1,000 casks each): 0.4
+
+== C2 Passive RH buffer for a collection case ==
+case 0.5 m3 at 2 kg/m3 -> 1.0 kg imported buffer ~Rs 9,164
+case 0.5 m3 at 4 kg/m3 -> 2.0 kg imported buffer ~Rs 18,328
+case 1.0 m3 at 4 kg/m3 -> 4.0 kg imported buffer ~Rs 36,656
+imported buffer ~Rs 9,164/kg [A rate]; H local Rs 1200/kg -> buffer cost for 1 kg Rs 1,200
+H case margin Rs 18,000; cases/yr to cover founder time 50
+
+== C3 Shared coffee drying service ==
+small farmers ~358,680
+H: 100 t dried/season at Rs 6.0/kg = Rs 600,000
+H: dryer Rs 1,500,000 exceeds the Rs 5,00,000 capital; operating surplus Rs 300,000/season; payback 5.0 seasons
+Break-even at Rs 5,00,000 capital needs a leased or subsidised dryer (curing-unit scheme 40% to Rs 25 lakh, S)
+
+== C4 Authenticity lab (agarwood grade, attar fingerprint) ==
+200 samples/yr: contribution Rs 360,000 vs fixed Rs 1,050,000
+500 samples/yr: contribution Rs 900,000 vs fixed Rs 1,050,000
+1000 samples/yr: contribution Rs 1,800,000 vs fixed Rs 1,050,000
+Break-even samples 583
+S-derived export price Rs 209,821/kg; fee Rs 3000 per sample is 1.43% of 1 kg
+
+== C5 Sport chair lending pool ==
+fleet 20 chairs cost Rs 3,000,000; fee income Rs 300,000.0/yr; payback 10 yr -> needs grant or CSR capital
+CSR/grant funded fleet: fleet cost Rs 3,000,000 vs imported Rs 9,000,000; saving Rs 6,000,000
+
+== C6 Cask revitalisation ==
+abroad: reconditioning USD 50-150 vs new oak USD 700+ => 21% max of new
+H: Rs 6,000 per cask x 1500 casks = Rs 9,000,000/yr revenue
+
+== C7 Tactile STEM diagrams ==
+No priced inputs found; economics left as missing information.
